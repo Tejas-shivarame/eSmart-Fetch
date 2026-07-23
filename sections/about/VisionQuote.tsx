@@ -32,7 +32,7 @@ export function VisionQuote() {
 
           <div className="relative mt-8 flex flex-col items-center gap-3">
             <span className="h-px w-16 bg-gradient-purple-blue" />
-            <span className="text-xs font-medium uppercase tracking-[0.2em] text-accent-gray">
+            <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/90">
               Vision Statement 2024.01
             </span>
           </div>

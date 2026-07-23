@@ -45,7 +45,7 @@ export function Navbar() {
                     "relative pb-1 text-sm font-medium transition-colors",
                     active
                       ? "text-accent-blue after:absolute after:inset-x-0 after:-bottom-1 after:h-px after:bg-accent-blue"
-                      : "text-accent-gray hover:text-accent-white"
+                      : "text-white/90 hover:text-accent-white"
                   )}
                 >
                   {link.label}
@@ -58,7 +58,7 @@ export function Navbar() {
         <div className="hidden items-center gap-6 lg:flex">
           <Link
             href="#login"
-            className="text-sm font-medium text-accent-gray transition-colors hover:text-accent-white"
+            className="text-sm font-medium text-white/90 transition-colors hover:text-accent-white"
           >
             Login
           </Link>
@@ -97,7 +97,7 @@ export function Navbar() {
                       onClick={() => setOpen(false)}
                       className={cn(
                         "block py-2.5 text-sm font-medium",
-                        active ? "text-accent-blue" : "text-accent-gray hover:text-accent-white"
+                        active ? "text-accent-blue" : "text-white/90 hover:text-accent-white"
                       )}
                     >
                       {link.label}
@@ -106,7 +106,7 @@ export function Navbar() {
                 );
               })}
               <li className="mt-3 flex flex-col gap-3">
-                <Link href="#login" className="text-sm font-medium text-accent-gray">
+                <Link href="#login" className="text-sm font-medium text-white/90">
                   Login
                 </Link>
                 <Button variant="primary" className="w-full">

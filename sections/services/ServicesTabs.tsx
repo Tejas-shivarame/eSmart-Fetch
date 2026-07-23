@@ -77,12 +77,12 @@ function MaterialGrid() {
             <GlowCard accent={i % 2 === 0 ? "purple" : "blue"} tilt={false} className="h-full">
               <div className="flex items-center justify-between">
                 <h4 className="font-display text-lg font-medium text-accent-white">{cat.title}</h4>
-                <Icon className="h-5 w-5 text-accent-gray" strokeWidth={1.75} />
+                <Icon className="h-5 w-5 text-white/90" strokeWidth={1.75} />
               </div>
 
               <ul className="mt-5 flex flex-col gap-2.5">
                 {cat.items.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm text-accent-gray">
+                  <li key={item} className="flex items-start gap-2.5 text-sm text-white/90">
                     <Check className="mt-0.5 h-3.5 w-3.5 flex-none text-accent-blue" strokeWidth={2.5} />
                     {item}
                   </li>
@@ -111,7 +111,7 @@ export function ServicesTabs() {
                 "flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-all",
                 tab === "engineering"
                   ? "bg-gradient-purple-blue text-white shadow-glow-blue"
-                  : "text-accent-gray hover:text-accent-white"
+                  : "text-white/90 hover:text-accent-white"
               )}
             >
               <Wrench className="h-4 w-4" />
@@ -124,7 +124,7 @@ export function ServicesTabs() {
                 "flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-all",
                 tab === "material"
                   ? "bg-gradient-purple-blue text-white shadow-glow-blue"
-                  : "text-accent-gray hover:text-accent-white"
+                  : "text-white/90 hover:text-accent-white"
               )}
             >
               <Box className="h-4 w-4" />

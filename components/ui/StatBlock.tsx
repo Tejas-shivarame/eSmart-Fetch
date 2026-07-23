@@ -15,7 +15,7 @@ interface StatBlockProps {
 export function StatBlock({ label, value, accent, className }: StatBlockProps) {
   return (
     <div className={cn("flex flex-col gap-1", className)}>
-      <span className="text-[11px] font-medium uppercase tracking-[0.2em] text-accent-gray">
+      <span className="text-[11px] font-medium uppercase tracking-[0.2em] text-white/90">
         {label}
       </span>
       <span

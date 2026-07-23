@@ -18,7 +18,7 @@ export function Footer() {
               Smart Fetch
             </span>
           </Link>
-          <p className="max-w-xs text-sm text-accent-gray">
+          <p className="max-w-xs text-sm text-white/90">
             Leading provider of technology solutions — innovating for a
             safer, smarter future with top-tier security and audiovisual
             systems.
@@ -33,7 +33,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-accent-gray transition-colors hover:border-accent-blue/40 hover:text-accent-blue"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/90 transition-colors hover:border-accent-blue/40 hover:text-accent-blue"
                 >
                   <Icon className="h-4 w-4" />
                 </a>
@@ -51,7 +51,7 @@ export function Footer() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-sm text-accent-gray transition-colors hover:text-accent-white"
+                className="text-sm text-white/90 transition-colors hover:text-accent-white"
               >
                 {link.label}
               </Link>
@@ -66,7 +66,7 @@ export function Footer() {
           {COMPANY.locations.map((loc) => (
             <div key={loc.label} className="flex items-start gap-2.5">
               <MapPin className="mt-0.5 h-4 w-4 flex-none text-accent-blue" />
-              <span className="text-sm text-accent-gray">
+              <span className="text-sm text-white/90">
                 <span className="font-medium text-accent-white/80">
                   {loc.label}:
                 </span>{" "}
@@ -76,14 +76,14 @@ export function Footer() {
           ))}
           <a
             href={`tel:${COMPANY.phone}`}
-            className="flex items-center gap-2.5 text-sm text-accent-gray transition-colors hover:text-accent-white"
+            className="flex items-center gap-2.5 text-sm text-white/90 transition-colors hover:text-accent-white"
           >
             <Phone className="h-4 w-4 flex-none text-accent-blue" />
             +91-{COMPANY.phoneDisplay}
           </a>
           <a
             href={`mailto:${COMPANY.email}`}
-            className="flex items-center gap-2.5 text-sm text-accent-gray transition-colors hover:text-accent-white"
+            className="flex items-center gap-2.5 text-sm text-white/90 transition-colors hover:text-accent-white"
           >
             <Mail className="h-4 w-4 flex-none text-accent-blue" />
             {COMPANY.email}
@@ -92,7 +92,7 @@ export function Footer() {
       </div>
 
       <div className="mx-auto mt-12 max-w-container border-t border-white/[0.06] pt-6">
-        <p className="text-center text-xs text-accent-gray">
+        <p className="text-center text-xs text-white/90">
           &copy; {year} Smart Fetch Infra. All rights reserved.
         </p>
       </div>

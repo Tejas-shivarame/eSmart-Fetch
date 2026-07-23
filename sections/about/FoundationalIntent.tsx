@@ -77,7 +77,7 @@ export function FoundationalIntent() {
             <h3 className="font-display text-3xl font-medium text-accent-white sm:text-4xl">
               Our Foundational Intent
             </h3>
-            <p className="mt-4 max-w-lg text-accent-gray">
+            <p className="mt-4 max-w-lg text-white/90">
               We believe that infrastructure should be invisible yet
               invincible. By merging sophisticated automation with
               human-centric design, we eliminate the friction between

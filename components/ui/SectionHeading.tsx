@@ -32,7 +32,7 @@ export function SectionHeading({
         {title}
       </h2>
       {description && (
-        <p className="max-w-xl text-base text-accent-gray sm:text-lg">
+        <p className="max-w-xl text-base text-white/90 sm:text-lg">
           {description}
         </p>
       )}

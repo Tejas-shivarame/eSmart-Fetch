@@ -50,7 +50,7 @@ export function OurVision() {
             To be the global benchmark in enterprise security and system
             integration.
           </p>
-          <p className="mt-4 max-w-lg text-accent-gray">
+          <p className="mt-4 max-w-lg text-white/90">
             We envision a future where every organization is resilient,
             secure, and technologically advanced — driven by our commitment
             to innovation and to the growth of our people.

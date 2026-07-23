@@ -191,10 +191,10 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
   {
     title: "Our Services",
     links: [
-      { label: "Audio Video Solutions", href: "/#features" },
-      { label: "Security Surveillance", href: "/#features" },
-      { label: "Fire Safety Systems", href: "/#features" },
-      { label: "IT Infrastructure", href: "/#features" },
+      { label: "Audio Video Solutions", href: "/services" },
+      { label: "Security Surveillance", href: "/services" },
+      { label: "Fire Safety Systems", href: "/services" },
+      { label: "IT Infrastructure", href: "/services" },
     ],
   },
 ];export const ENGINEERING_CATEGORIES = [

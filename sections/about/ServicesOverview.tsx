@@ -39,7 +39,7 @@ export function ServicesOverview() {
                   <h4 className="mt-6 font-display text-lg font-medium text-accent-white">
                     {service.title}
                   </h4>
-                  <p className="mt-2 text-sm leading-relaxed text-accent-gray">
+                  <p className="mt-2 text-sm leading-relaxed text-white/90">
                     {service.description}
                   </p>
                 </GlowCard>

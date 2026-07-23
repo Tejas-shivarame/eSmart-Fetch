@@ -41,7 +41,7 @@ export function ValuePillars() {
                       <h4 className="font-display text-xl font-medium text-accent-white">
                         {pillar.title}
                       </h4>
-                      <p className="mt-2 text-sm leading-relaxed text-accent-gray">
+                      <p className="mt-2 text-sm leading-relaxed text-white/90">
                         {pillar.description}
                       </p>
                     </div>

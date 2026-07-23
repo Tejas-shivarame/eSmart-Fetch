@@ -28,10 +28,10 @@ export function FeatureCards() {
                 >
                   <Icon className="h-5 w-5" strokeWidth={2} />
                 </span>
-                <h4 className="mt-6 font-display text-xl font-medium text-accent-white">
+                <h4 className="mt-6 font-display text-xl font-medium text-white/90">
                   {feature.title}
                 </h4>
-                <p className="mt-2 text-sm leading-relaxed text-accent-gray">
+                <p className="mt-2 text-sm leading-relaxed text-white/90">
                   {feature.description}
                 </p>
               </GlowCard>

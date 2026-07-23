@@ -60,7 +60,7 @@ export function OurMission() {
           <h2 className="mt-6 font-display text-3xl font-medium text-accent-white sm:text-4xl">
             Our Mission
           </h2>
-          <p className="mt-4 max-w-lg text-accent-gray">
+          <p className="mt-4 max-w-lg text-white/90">
             To provide state-of-the-art security and surveillance solutions
             that empower enterprises to operate with confidence, anywhere in
             the country.

@@ -55,7 +55,7 @@ export function AboutHero() {
           initial="hidden"
           animate="show"
           custom={2}
-          className="mx-auto mt-6 max-w-2xl text-base text-accent-gray sm:text-lg"
+          className="mx-auto mt-6 max-w-2xl text-base text-white/90 sm:text-lg"
         >
           For India&apos;s leading enterprises, we integrate hardware,
           software, and human expertise into security systems that hold up

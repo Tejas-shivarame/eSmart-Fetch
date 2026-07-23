@@ -54,7 +54,7 @@ export function CTASection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="terminal@yourcompany.com"
-              className="w-full rounded-full border border-white/10 bg-white/[0.03] px-5 py-3.5 text-sm text-accent-white placeholder:text-accent-gray/70 outline-none backdrop-blur-sm transition-all focus:border-accent-blue focus:shadow-glow-blue"
+              className="w-full rounded-full border border-white/10 bg-white/[0.03] px-5 py-3.5 text-sm text-accent-white placeholder:text-white/90/70 outline-none backdrop-blur-sm transition-all focus:border-accent-blue focus:shadow-glow-blue"
             />
             <Button type="submit" variant="primary" className="shrink-0">
               Launch System
@@ -63,7 +63,7 @@ export function CTASection() {
           </form>
         )}
 
-        <p className="mt-4 text-xs text-accent-gray">
+        <p className="mt-4 text-xs text-white/90">
           No credit card required for initial deployment.
         </p>
       </motion.div>

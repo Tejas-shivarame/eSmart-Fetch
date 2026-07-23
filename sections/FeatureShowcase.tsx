@@ -22,7 +22,7 @@ export function FeatureShowcase() {
             <h3 className="mt-4 font-display text-3xl font-medium text-accent-white sm:text-4xl">
               Neural Data Fetching
             </h3>
-            <p className="mt-4 max-w-lg text-accent-gray">
+            <p className="mt-4 max-w-lg text-white/90">
               Our proprietary algorithm predicts data needs before they
               arise, pre-warming infrastructure nodes and reducing latency
               by up to 85% for enterprise-grade applications.

@@ -32,7 +32,7 @@ export function ServicesHero() {
           initial="hidden"
           animate="show"
           custom={1}
-          className="mx-auto mt-8 max-w-3xl font-display text-5xl font-bold leading-[1.05] text-accent-white sm:text-6xl lg:text-7xl"
+          className="mx-auto mt-8 max-w-3xl font-display text-5xl font-bold leading-[1.05] text-white/90 sm:text-6xl lg:text-7xl"
         >
           Mastery In{" "}
           <span className="bg-gradient-purple-blue bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-x">
@@ -45,7 +45,7 @@ export function ServicesHero() {
           initial="hidden"
           animate="show"
           custom={2}
-          className="mx-auto mt-6 max-w-2xl text-base text-accent-gray sm:text-lg"
+          className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/90"
         >
           We deliver precision-engineered solutions for complex facilities —
           from technical installations to the strategic sourcing of every

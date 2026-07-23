@@ -22,7 +22,7 @@ export function AboutCTA() {
         <h2 className="font-display text-4xl font-medium text-accent-white sm:text-5xl">
           Ready to Secure Your Enterprise?
         </h2>
-        <p className="mt-4 max-w-lg text-accent-gray">
+        <p className="mt-4 max-w-lg text-white/90">
           Talk to our team about a turnkey security, fire safety, or AV
           rollout — no obligation, just a straight assessment of what your
           site needs.
@@ -43,7 +43,7 @@ export function AboutCTA() {
           </a>
         </div>
 
-        <p className="mt-4 text-xs text-accent-gray">
+        <p className="mt-4 text-xs text-white/90">
           Serving enterprises across India, 24/7 support included.
         </p>
       </motion.div>

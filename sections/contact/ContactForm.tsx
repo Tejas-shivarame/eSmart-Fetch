@@ -21,12 +21,12 @@ function Field({
   textarea?: boolean;
 }) {
   const shared =
-    "w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-accent-white placeholder:text-accent-gray/60 outline-none backdrop-blur-sm transition-all focus:border-accent-blue focus:shadow-glow-blue";
+    "w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-accent-white placeholder:text-white/90/60 outline-none backdrop-blur-sm transition-all focus:border-accent-blue focus:shadow-glow-blue";
   return (
     <div className="flex flex-col gap-2">
       <label
         htmlFor={id}
-        className="text-[11px] font-semibold uppercase tracking-[0.2em] text-accent-gray"
+        className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/90"
       >
         {label}
       </label>
@@ -80,7 +80,7 @@ export function ContactForm() {
                   <Phone className="h-4 w-4" />
                 </span>
                 <div>
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-accent-gray">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/90">
                     Call Us
                   </p>
                   <p className="mt-0.5 text-accent-white">+91-{COMPANY.phoneDisplay}</p>
@@ -92,7 +92,7 @@ export function ContactForm() {
                   <Mail className="h-4 w-4" />
                 </span>
                 <div>
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-accent-gray">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/90">
                     Email Us
                   </p>
                   <p className="mt-0.5 text-accent-white">{COMPANY.email}</p>
@@ -105,7 +105,7 @@ export function ContactForm() {
                     <MapPin className="h-4 w-4" />
                   </span>
                   <div>
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-accent-gray">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/90">
                       {loc.label}
                     </p>
                     <p className="mt-0.5 max-w-xs text-accent-white">{loc.address}</p>
@@ -118,7 +118,7 @@ export function ContactForm() {
                   <FileText className="h-4 w-4" />
                 </span>
                 <div>
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-accent-gray">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/90">
                     GSTIN
                   </p>
                   <p className="mt-0.5 text-accent-white">{COMPANY.gstin}</p>
@@ -136,7 +136,7 @@ export function ContactForm() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-accent-gray transition-colors hover:border-accent-blue/40 hover:text-accent-blue"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/90 transition-colors hover:border-accent-blue/40 hover:text-accent-blue"
                   >
                     <Icon className="h-4 w-4" />
                   </a>
@@ -155,7 +155,7 @@ export function ContactForm() {
                 <p className="font-display text-xl font-medium text-accent-white">
                   Message sent.
                 </p>
-                <p className="max-w-xs text-sm text-accent-gray">
+                <p className="max-w-xs text-sm text-white/90">
                   Our team will get back to you within one business day.
                 </p>
               </div>
