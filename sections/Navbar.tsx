@@ -4,11 +4,12 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X} from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { useScrollProgress } from "@/hooks/useScrollProgress";
+import Image from "next/image";
 
 export function Navbar() {
   const { scrolled } = useScrollProgress();
@@ -25,14 +26,20 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex max-w-container items-center justify-between px-6 py-4 lg:px-10">
-        <Link href="/" className="flex items-center gap-2" aria-label="Smart Fetch home">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-purple-blue">
-            <Zap className="h-4 w-4 text-white" strokeWidth={2.5} />
-          </span>
-          <span className="font-display text-lg font-semibold text-accent-white">
-            Smart Fetch
-          </span>
-        </Link>
+ <Link
+  href="/"
+  className="flex items-center gap-3"
+  aria-label="Smart Fetch home"
+>
+  <Image
+    src="/eSmart-fetch-logo.png"
+    alt="eSmart Fetch Logo"
+    width={50}
+    height={180}
+    priority
+    className="h-16 w-auto object-contain"
+  />
+</Link>
 
         <ul className="hidden items-center gap-10 lg:flex">
           {NAV_LINKS.map((link) => {
