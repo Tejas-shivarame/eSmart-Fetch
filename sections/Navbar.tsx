@@ -31,7 +31,6 @@ export function Navbar() {
   className="flex items-center gap-3"
   aria-label="Smart Fetch home"
 >
-  {"Update logo image source path in Navbar component"}
   <Image
     src="images/eSmart-Fetch-logo.png"
     alt="eSmart Fetch Logo"
@@ -40,6 +39,7 @@ export function Navbar() {
     priority
     className="h-16 w-auto object-contain"
   />
+
 </Link>
 
         <ul className="hidden items-center gap-10 lg:flex">
