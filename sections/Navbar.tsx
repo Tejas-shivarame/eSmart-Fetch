@@ -31,8 +31,9 @@ export function Navbar() {
   className="flex items-center gap-3"
   aria-label="Smart Fetch home"
 >
+  {"Update logo image source path in Navbar component"}
   <Image
-    src="/eSmart-fetch-logo.png"
+    src="images/eSmart-Fetch-logo.png"
     alt="eSmart Fetch Logo"
     width={50}
     height={180}
