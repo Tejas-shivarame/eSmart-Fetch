@@ -53,6 +53,7 @@ export interface CompanyInfo {
   email: string;
   since: string;
   locations: CompanyLocation[];
+  gstin: string;
 }
 
 export interface SocialLink {

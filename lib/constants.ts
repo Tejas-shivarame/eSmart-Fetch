@@ -60,6 +60,7 @@ export const COMPANY: CompanyInfo = {
     },
     { label: "Godown", address: "R.M. Nagar, Bangalore" },
   ],
+   gstin: "GST"
 };
 
 export const MISSION_POINTS: MissionPoint[] = [
@@ -183,8 +184,8 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
     links: [
       { label: "Home", href: "/" },
       { label: "About Us", href: "/about" },
-      { label: "Services", href: "/#features" },
-      { label: "Contact", href: "/#contact" },
+      { label: "Services", href: "/services" },
+      { label: "Contact", href: "/contact" }, 
     ],
   },
   {

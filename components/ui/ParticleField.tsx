@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 
 interface Particle {
   id: number;
@@ -24,21 +24,20 @@ const COLORS = [
  * Positions are randomized once per mount via useMemo.
  */
 export function ParticleField({ count = 45 }: { count?: number }) {
-  const particles = useMemo<Particle[]>(
-    () =>
-      Array.from({ length: count }, (_, id) => ({
-        id,
-        left: `${Math.random() * 100}%`,
-        top: `${Math.random() * 100}%`,
-        size: Math.random() * 4 + 1,
-        opacity: Math.random() * 0.6 + 0.2,
-        blur: Math.random() > 0.7 ? 4 : 0,
-        color: COLORS[Math.floor(Math.random() * COLORS.length)],
-        duration: `${Math.random() * 8 + 8}s`,
-        delay: `${Math.random() * 6}s`,
-      })),
-    [count]
-  );
+  const [particles, setParticles] = useState<Particle[]>([]);
+
+  useEffect(() => {
+    const generated = Array.from({ length: count }, (_, id) => ({
+      id,
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      size: Math.random() * 4 + 1,
+      duration: `${Math.random() * 8 + 8}s`,
+      delay: `${Math.random() * 6}s`,
+    }));
+
+    setParticles(generated);
+  }, [count]);
 
   return (
     <div

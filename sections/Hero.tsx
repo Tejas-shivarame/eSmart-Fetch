@@ -76,7 +76,7 @@ export function Hero() {
           initial="hidden"
           animate="show"
           custom={2}
-          className="mt-6 max-w-2xl text-base text-accent-gray sm:text-lg"
+          className="mt-6 max-w-2xl text-base text-accent-white sm:text-lg"
         >
           Modern enterprise infrastructure powered by AI. Delivering
           ultra-fast, secure, scalable data pipelines for businesses
