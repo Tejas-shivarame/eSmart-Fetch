@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { MapPin, Phone, Mail } from "lucide-react";
-import { Zap } from "lucide-react";
+// import { Zap } from "lucide-react";
 import { FOOTER_LINKS, SOCIAL_LINKS, COMPANY } from "@/lib/constants";
+import Image from "next/image";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -10,14 +11,20 @@ export function Footer() {
     <footer className="relative border-t border-white/[0.06] px-6 py-16">
       <div className="mx-auto grid max-w-container gap-12 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1.2fr]">
         <div className="flex flex-col gap-4">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-purple-blue">
-              <Zap className="h-4 w-4 text-white" strokeWidth={2.5} />
-            </span>
-            <span className="font-display text-lg font-semibold text-accent-white">
-              Smart Fetch
-            </span>
-          </Link>
+ <Link
+  href="/"
+  className="flex items-center gap-3"
+  aria-label="Smart Fetch home"
+>
+  <Image
+    src="images/eSmart-Fetch-logo.png"
+    alt="eSmart Fetch Logo"
+    width={50} 
+    height={180}
+    priority
+    className="h-16 w-auto object-contain"
+  />  
+</Link>
           <p className="max-w-xs text-sm text-white/90">
             Leading provider of technology solutions — innovating for a
             safer, smarter future with top-tier security and audiovisual
