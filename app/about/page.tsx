@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Navbar } from "@/sections/Navbar";
 import { AboutHero } from "@/sections/about/AboutHero";
 import { OurMission } from "@/sections/about/OurMission";
-// import { AnimatedGrid } from "@/components/ui/AnimatedGrid";
-// import { ParticleField } from "@/components/ui/ParticleField";
-
 import { OurVision } from "@/sections/about/OurVision";
 import { TrackRecord } from "@/sections/about/TrackRecord";
 import { ValuePillars } from "@/sections/about/ValuePillars";
@@ -30,8 +27,6 @@ export default function AboutPage() {
   return (
     <main className="relative overflow-hidden">
       <Navbar />
-      {/* <AnimatedGrid /> */}
-      {/* <ParticleField /> */}
       <AboutHero />
       <OurMission />
       <OurVision />

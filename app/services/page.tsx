@@ -3,6 +3,7 @@ import { Navbar } from "@/sections/Navbar";
 import { ServicesHero } from "@/sections/services/ServicesHero";
 import { ServicesTabs } from "@/sections/services/ServicesTabs";
 import { ServicesCTA } from "@/sections/services/ServicesCTA";
+
 import { Footer } from "@/sections/Footer";
 
 export const metadata: Metadata = {
