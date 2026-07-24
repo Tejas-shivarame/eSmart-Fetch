@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, PhoneCall } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
@@ -69,16 +70,22 @@ export function AboutHero() {
           custom={3}
           className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
         >
-          <Button variant="primary">
-            Explore Our Services
-            <ArrowRight className="h-4 w-4" />
-          </Button>
-          <Button variant="secondary">
-            <PhoneCall className="h-4 w-4" />
-            Talk to Our Team
-          </Button>
+          <Link href="/services">
+            <Button variant="primary">
+              Explore Our Services
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          </Link>
+
+          <Link href="/contact">
+            <Button variant="secondary">
+              <PhoneCall className="h-4 w-4" />
+              Talk to Our Team
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
   );
 }
+Convert buttons to links for navigation
