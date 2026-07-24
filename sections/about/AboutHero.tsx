@@ -88,4 +88,3 @@ export function AboutHero() {
     </section>
   );
 }
-Convert buttons to links for navigation
