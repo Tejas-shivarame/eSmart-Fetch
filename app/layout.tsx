@@ -9,7 +9,7 @@ import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "./globals.css";
-// import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { WhatsAppWidget } from "@/components/ui/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Smart Fetch — Critical Infrastructure for the Next Era",
@@ -34,6 +34,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/images/eSmart-Fetch-logo-Favi-icon.png",
+    shortcut: "/images/eSmart-Fetch-logo-Favi-icon.png",
+    apple: "/images/eSmart-Fetch-logo-Apple-Favi-icon",
+  },
 };
 
 export default function RootLayout({
@@ -45,8 +50,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
-        {/* <WhatsAppButton /> */}
+        <WhatsAppWidget/> 
       </body>
     </html>
   );
 }
+
