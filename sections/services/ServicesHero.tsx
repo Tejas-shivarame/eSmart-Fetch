@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/Badge";
+import { ParticleField } from "@/components/ui/ParticleField";
 import { AnimatedGrid } from "@/components/ui/AnimatedGrid";
 import { GlowBlob } from "@/components/ui/GlowBlob";
 
