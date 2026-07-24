@@ -6,6 +6,7 @@ import { Phone, Mail, MapPin, FileText, Send, Zap } from "lucide-react";
 import { GlowBlob } from "@/components/ui/GlowBlob";
 import { Button } from "@/components/ui/Button";
 import { COMPANY, SOCIAL_LINKS } from "@/lib/constants";
+import Image from "next/image";
 
 function Field({
   id,
@@ -62,12 +63,14 @@ export function ContactForm() {
             <GlowBlob color="purple" className="right-0 top-0 h-64 w-64" />
 
             <div className="relative z-10 flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-purple-blue">
-                <Zap className="h-4 w-4 text-white" strokeWidth={2.5} />
-              </span>
-              <span className="font-display text-lg font-semibold text-accent-white">
-                Smart Fetch
-              </span>
+              <Image
+                src="/images/eSmart-Fetch-logo-Contact.png"
+                alt="eSmart Fetch Logo"
+                width={160}
+                height={140}
+                className="h-34 w-auto object-contain items-center"
+                priority
+              />
             </div>
 
             <h3 className="relative z-10 mt-10 font-display text-2xl font-medium text-accent-white">
