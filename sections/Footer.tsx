@@ -17,12 +17,12 @@ export function Footer() {
   aria-label="Smart Fetch home"
 >
   <Image
-    src="images/eSmart-Fetch-logo.png"
+    src="/images/eSmart-Fetch-logo-Footer.png"
     alt="eSmart Fetch Logo"
-    width={50} 
-    height={180}
+    width={320} 
+    height={90}
     priority
-    className="h-16 w-auto object-contain"
+    className="h-20 w-auto object-contain"
   />  
 </Link>
           <p className="max-w-xs text-sm text-white/90">
