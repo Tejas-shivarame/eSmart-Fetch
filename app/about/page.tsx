@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Navbar } from "@/sections/Navbar";
 import { AboutHero } from "@/sections/about/AboutHero";
 import { OurMission } from "@/sections/about/OurMission";
 import { OurVision } from "@/sections/about/OurVision";
@@ -7,7 +6,6 @@ import { TrackRecord } from "@/sections/about/TrackRecord";
 import { ValuePillars } from "@/sections/about/ValuePillars";
 import { ServicesOverview } from "@/sections/about/ServicesOverview";
 import { AboutCTA } from "@/sections/about/AboutCTA";
-import { Footer } from "@/sections/Footer";
 
 export const metadata: Metadata = {
   title: "About — Smart Fetch",
@@ -26,7 +24,6 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="relative overflow-hidden">
-      <Navbar />
       <AboutHero />
       <OurMission />
       <OurVision />
@@ -34,7 +31,6 @@ export default function AboutPage() {
       <ValuePillars />
       <ServicesOverview />
       <AboutCTA />
-      <Footer />
     </main>
   );
 }

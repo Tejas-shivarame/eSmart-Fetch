@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Navbar } from "@/sections/Navbar";
 import { ContactHero } from "@/sections/contact/ContactHero";
 import { ContactForm } from "@/sections/contact/ContactForm";
-import { Footer } from "@/sections/Footer";
 
 export const metadata: Metadata = {
   title: "Contact — Smart Fetch",
@@ -21,10 +19,8 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className="relative overflow-hidden">
-      <Navbar />
       <ContactHero />
       <ContactForm />
-      <Footer />
     </main>
   );
 }

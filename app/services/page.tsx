@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Navbar } from "@/sections/Navbar";
 import { ServicesHero } from "@/sections/services/ServicesHero";
 import { ServicesTabs } from "@/sections/services/ServicesTabs";
 import { ServicesCTA } from "@/sections/services/ServicesCTA";
 
-import { Footer } from "@/sections/Footer";
 
 export const metadata: Metadata = {
   title: "Services — Smart Fetch",
@@ -23,11 +21,9 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <main className="relative overflow-hidden">
-      <Navbar />
       <ServicesHero />
       <ServicesTabs />
       <ServicesCTA />
-      <Footer />
     </main>
   );
 }
