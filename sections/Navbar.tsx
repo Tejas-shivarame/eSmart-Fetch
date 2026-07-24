@@ -31,14 +31,14 @@ export function Navbar() {
   className="flex items-center gap-3"
   aria-label="Smart Fetch home"
 >
-  <Image
-    src="images/eSmart-Fetch-logo.png"
-    alt="eSmart Fetch Logo"
-    width={50}
-    height={180}
-    priority
-    className="h-16 w-auto object-contain"
-  />
+<Image
+  src="/images/eSmart-Fetch-logo-Navabar.png"
+  alt="eSmart Fetch Logo"
+   width={240}
+  height={68}
+  priority
+  className="h-14 w-auto object-contain"
+/>
 
 </Link>
 
