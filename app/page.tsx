@@ -4,11 +4,13 @@ import { FeatureCards } from "@/sections/FeatureCards";
 import { LiveInfrastructure } from "@/sections/LiveInfrastructure";
 import { CTASection } from "@/sections/CTASection";
 import { Footer } from "@/sections/Footer";
+import { TrustedBy } from "@/sections/TrustedBy";
 
 export default function Home() {
   return (
     <main className="relative overflow-hidden">
       <Hero />
+      <TrustedBy />    
       <FeatureShowcase />
       <FeatureCards />
       <LiveInfrastructure />
