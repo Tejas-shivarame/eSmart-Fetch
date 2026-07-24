@@ -114,6 +114,16 @@ export const HERO_STATS: StatItem[] = [
   { label: "Throughput", value: "PB/s" },
 ];
 
+export const TRUSTED_COMPANIES = [
+  "ISS",
+  "Oculus Design Studio",
+  "Aditya Birla Group",
+  "Hitachi",
+  "ABB",
+  "Bosch",
+  "Siemens",
+  "Honeywell",
+];
 export const FEATURE_CARDS: FeatureCardData[] = [
   {
     icon: Zap,
@@ -177,6 +187,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   { icon: Instagram, label: "Instagram", href: "https://instagram.com" },
   { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
 ];
+
 
 export const FOOTER_LINKS: FooterLinkGroup[] = [
   {
