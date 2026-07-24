@@ -5,11 +5,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X} from "lucide-react";
-import { Button } from "@/components/ui/Button";
 import { NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { useScrollProgress } from "@/hooks/useScrollProgress";
 import Image from "next/image";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 export function Navbar() {
   const { scrolled } = useScrollProgress();
@@ -19,7 +19,7 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
+        "fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-300",
         scrolled
           ? "border-b border-white/[0.06] bg-base/80 backdrop-blur-xl"
           : "border-b border-transparent bg-transparent"
@@ -63,16 +63,8 @@ export function Navbar() {
           })}
         </ul>
 
-        <div className="hidden items-center gap-6 lg:flex">
-          <Link
-            href="#login"
-            className="text-sm font-medium text-white/90 transition-colors hover:text-accent-white"
-          >
-            Login
-          </Link>
-          <Button variant="primary" className="px-5 py-2.5 text-xs">
-            Deploy Now
-          </Button>
+        <div className="hidden items-center lg:flex">
+          <ThemeToggle />
         </div>
 
         <button
@@ -113,13 +105,8 @@ export function Navbar() {
                   </li>
                 );
               })}
-              <li className="mt-3 flex flex-col gap-3">
-                <Link href="#login" className="text-sm font-medium text-white/90">
-                  Login
-                </Link>
-                <Button variant="primary" className="w-full">
-                  Deploy Now
-                </Button>
+              <li className="mt-4 flex justify-center">
+                <ThemeToggle />
               </li>
             </ul>
           </motion.div>
