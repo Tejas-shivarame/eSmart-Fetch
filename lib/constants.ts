@@ -135,7 +135,7 @@ export const TRUSTED_COMPANIES = [
 export const QUALITY_PILLARS: QualityPillar[] = [
   { title: "Engineering", tagline: "A touch of genius", image: "/images/Engineerings.png" },
   { title: "Sound", tagline: "Flat-out fun", image: "/images/Sound-engineering.png" },
-  { title: "Quality", tagline: "International standards", image: "/images/quaility.png" },
+  { title: "Quality", tagline: "International standards", image: "/images/quality.png" },
   { title: "Innovation", tagline: "Leading since inception", image: "/images/Innovation-labs.png" },
 ];
 
