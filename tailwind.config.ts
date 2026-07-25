@@ -72,13 +72,14 @@ const config: Config = {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        
       },
       animation: {
         "pulse-slow": "pulse-slow 2.5s ease-in-out infinite",
         float: "float 6s ease-in-out infinite",
         "gradient-x": "gradient-x 6s ease infinite",
         "border-glow": "border-glow 2.5s ease-in-out infinite",
-        marquee: "marquee 30s linear infinite",
+        marquee: "marquee 38s linear infinite",
       },
     },
   },
