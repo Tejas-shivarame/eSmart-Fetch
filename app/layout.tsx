@@ -6,8 +6,8 @@ import { Footer } from "@/sections/Footer";
 import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
 
 export const metadata: Metadata = {
-  title: "Smart Fetch",
-  description: "Smart Fetch",
+  title: "eSmart Fetch | Infrastructure & Technology Solutions",
+  description: "eSmart Fetch-integrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
 };
 
 export default function RootLayout({
@@ -25,9 +25,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-
           {children}
-
           <Footer />
           <WhatsAppWidget />
         </ThemeProvider>
