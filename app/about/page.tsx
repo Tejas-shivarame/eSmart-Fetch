@@ -10,11 +10,11 @@ import { AboutCTA } from "@/sections/about/AboutCTA";
 export const metadata: Metadata = {
   title: "About — Smart Fetch",
   description:
-    "Smart Fetch integrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
+    "eSmart Fetchintegrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
   openGraph: {
     title: "About — Smart Fetch",
     description:
-      "Smart Fetch integrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
+      "eSmart Fetchintegrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
     url: "https://smart-fetch.com/about",
     siteName: "Smart Fetch",
     type: "website",
