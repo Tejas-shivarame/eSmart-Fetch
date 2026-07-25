@@ -76,13 +76,6 @@ export function AboutHero() {
               <ArrowRight className="h-4 w-4" />
             </Button>
           </Link>
-
-          <Link href="/contact">
-            <Button variant="secondary">
-              <PhoneCall className="h-4 w-4" />
-              Talk to Our Team
-            </Button>
-          </Link>
         </motion.div>
       </div>
     </section>
