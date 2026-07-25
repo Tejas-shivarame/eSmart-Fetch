@@ -1,6 +1,4 @@
 import { Hero } from "@/sections/Hero";
-// import { FeatureShowcase } from "@/sections/FeatureShowcase";
-import { LiveInfrastructure } from "@/sections/LiveInfrastructure";
 import { CTASection } from "@/sections/CTASection";
 import { TrustedBy } from "@/sections/TrustedBy";
 import { TRUSTED_COMPANIES } from "@/lib/constants";
@@ -14,8 +12,6 @@ export default function Home() {
       <TrustedBy logos={TRUSTED_COMPANIES} />  
       <QualityDrive /> 
       <PremiumServices /> 
-      {/* <FeatureShowcase /> */}
-      <LiveInfrastructure />
       <CTASection />
     </main>
   );
