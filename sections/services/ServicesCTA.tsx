@@ -3,11 +3,14 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { GlowBlob } from "@/components/ui/GlowBlob";
+
 
 export function ServicesCTA() {
   return (
     <section className="relative px-6 pb-section">
       <div className="mx-auto max-w-container">
+      <GlowBlob color="blue" className="left-1/2 top-0 h-[380px] w-[380px] -translate-x-1/2" />
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
