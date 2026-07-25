@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, FileText } from "lucide-react";
+import Link from "next/link";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { GlowBlob } from "@/components/ui/GlowBlob";
@@ -77,7 +78,7 @@ export function Hero() {
           custom={2}
           className="mt-6 max-w-2xl text-base text-white sm:text-lg"
         >
-Best-in-Class Technology Solutions in Professional Audio, Concert Audio, Audio-Video Integration & Security Systems
+          Best-in-Class Technology Solutions in Professional Audio, Concert Audio, Audio-Video Integration & Security Systems
         </motion.p>
 
         <motion.div
@@ -87,16 +88,16 @@ Best-in-Class Technology Solutions in Professional Audio, Concert Audio, Audio-V
           custom={3}
           className="mt-10 flex flex-col gap-4 sm:flex-row"
         >
-          <Button variant="primary">
+          <Button variant="primary" href="/contact">
             Establish Connection
             <ArrowRight className="h-4 w-4" />
           </Button>
+
           <Button variant="secondary">
             <FileText className="h-4 w-4" />
             View Documentation
           </Button>
         </motion.div>
-
       </div>
     </section>
   );
