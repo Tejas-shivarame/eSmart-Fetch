@@ -12,14 +12,23 @@
   }
 
   ::selection {
-    @apply bg-accent-purple/40 text-white;
+    background-color: rgba(155, 92, 255, 0.4);
+    color: #ffffff;
   }
 
   :focus-visible {
     @apply outline outline-2 outline-offset-2 outline-accent-purple;
   }
 }
+@keyframes border-spin {
+  0% {
+    transform: rotate(0deg);
+  }
 
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
