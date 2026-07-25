@@ -27,11 +27,13 @@ import {
   Users,
   Video,
   Zap,
+  Brush,
 } from "lucide-react";
 
 import type {
   NavLink,
   StatItem,
+  QualityPillar,
   FeatureCardData,
   RegionNode,
   FooterLinkGroup,
@@ -40,6 +42,7 @@ import type {
   CompanyInfo,
   SocialLink,
 } from "@/types";
+
 
 
 export const NAV_LINKS: NavLink[] = [
@@ -129,29 +132,57 @@ export const TRUSTED_COMPANIES = [
   { name: "Honeywell", image: "/companies/honeywell.png" },
 ];
 
+export const QUALITY_PILLARS: QualityPillar[] = [
+  { title: "Engineering", tagline: "A touch of genius", image: "/images/Engineerings.png" },
+  { title: "Sound", tagline: "Flat-out fun", image: "/images/Sound-engineering.png" },
+  { title: "Quality", tagline: "International standards", image: "/images/quaility.png" },
+  { title: "Innovation", tagline: "Leading since inception", image: "/images/Innovation-labs.png" },
+];
 
-export const FEATURE_CARDS: FeatureCardData[] = [
+export const PREMIUM_SERVICES : FeatureCardData[] = [
   {
     icon: Zap,
-    title: "Elastic Scaling",
+    title: "Fire Protection Systems",
     description:
-      "Automatically expand your infrastructure as demand peaks, ensuring no packet is ever dropped.",
+      "Comprehensive fire detection, alarm, and suppression solutions designed to ensure maximum safety and regulatory compliance.",
     accent: "blue",
   },
   {
     icon: ShieldCheck,
-    title: "Quantum Guard",
+    title: "Security & Surveillance",
     description:
-      "Zero-trust architecture built on post-quantum cryptographic standards for total security.",
+      "Advanced surveillance, access control, and integrated security systems for continuous protection of people and assets.",
     accent: "purple",
   },
   {
     icon: Code2,
-    title: "API First",
+    title: "Interior & Fit-Out Solutions",
     description:
-      "Designed by developers, for developers. Robust documentation and SDKs across 12 languages.",
+      "End-to-end interior design and fit-out services that deliver functional, modern, and aesthetically refined spaces.",
     accent: "blue",
   },
+  {
+    icon: Video,
+    title: "Audio-Visual Solutions",
+    description:
+      "State-of-the-art audio and video systems that enhance communication, collaboration, and multimedia experiences.",
+    accent: "purple",
+  },
+  {
+    icon: Package,
+    title: "Consumables & Materials",
+    description:
+      "Reliable sourcing and supply of high-quality consumables, equipment, and construction materials for diverse project requirements.",
+    accent: "blue",
+  },
+  {
+  icon: Brush,
+  title: "Painting & Printing Services",
+  description:
+    "Professional painting and printing solutions that deliver exceptional finishes, durable results, and customized branding for commercial and residential projects.",
+  accent: "purple",
+  },
+  
 ];
 
 export const REGION_NODES: RegionNode[] = [
