@@ -38,7 +38,7 @@ export function TrustedBy({
                 alt={company.name}
                 width={140}
                 height={60}
-                className="object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100 rounded-xl"
+                className="object-contain opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100 rounded-xl"
               />
             </div>
           ))}
