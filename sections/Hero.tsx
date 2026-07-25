@@ -10,7 +10,6 @@ import { ParticleField } from "@/components/ui/ParticleField";
 import { AnimatedGrid } from "@/components/ui/AnimatedGrid";
 
 import { StatBlock } from "@/components/ui/StatBlock";
-import { HERO_STATS } from "@/lib/constants";
 import { useMousePosition } from "@/hooks/useMousePosition";
 
 const fadeUp = {
@@ -78,9 +77,7 @@ export function Hero() {
           custom={2}
           className="mt-6 max-w-2xl text-base text-white sm:text-lg"
         >
-          Modern enterprise infrastructure powered by AI. Delivering
-          ultra-fast, secure, scalable data pipelines for businesses
-          worldwide.
+Best-in-Class Technology Solutions in Professional Audio, Concert Audio, Audio-Video Integration & Security Systems
         </motion.p>
 
         <motion.div
@@ -100,17 +97,6 @@ export function Hero() {
           </Button>
         </motion.div>
 
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          animate="show"
-          custom={4}
-          className="mt-20 grid grid-cols-2 gap-x-10 gap-y-8 sm:grid-cols-4"
-        >
-          {HERO_STATS.map((stat) => (
-            <StatBlock key={stat.label} {...stat} />
-          ))}
-        </motion.div>
       </div>
     </section>
   );
