@@ -19,8 +19,10 @@ export function ServicesHero() {
   return (
     <section className="relative overflow-hidden px-6 pb-20 pt-40">
       <div className="absolute inset-0 -z-10">
-        <AnimatedGrid className="opacity-30" />
-        <GlowBlob color="blue" className="left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2" />
+        <AnimatedGrid/>
+        <ParticleField />
+        <GlowBlob color="purple" className="left-1/4 top-1/3 h-96 w-96" />
+        <GlowBlob color="blue" className="right-1/4 top-1/2 h-96 w-96" />
       </div>
 
       <div className="mx-auto max-w-container text-center">
