@@ -61,3 +61,9 @@ export interface SocialLink {
   label: string;
   href: string;
 }
+
+export interface QualityPillar {
+  title: string;
+  tagline: string;
+  image: string;
+}
