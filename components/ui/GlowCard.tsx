@@ -10,11 +10,6 @@ interface GlowCardProps {
   tilt?: boolean;
 }
 
-/**
- * Card shell shared by feature tiles across the page. Tracks the pointer
- * to drive a soft radial glow and an optional subtle tilt, and keeps a
- * static gradient-border fallback for reduced-motion / keyboard users.
- */
 export function GlowCard({
   children,
   className,
@@ -27,7 +22,9 @@ export function GlowCard({
   function handleMouseMove(event: MouseEvent<HTMLDivElement>) {
     const node = ref.current;
     if (!node) return;
+
     const rect = node.getBoundingClientRect();
+
     const x = ((event.clientX - rect.left) / rect.width) * 100;
     const y = ((event.clientY - rect.top) / rect.height) * 100;
 
@@ -35,43 +32,46 @@ export function GlowCard({
     const rotateY = tilt ? (x / 100 - 0.5) * 6 : 0;
 
     setStyle({
-      "--glow-x": `${x}%`,
-      "--glow-y": `${y}%`,
       transform: tilt
-        ? `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`
+        ? `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`
         : undefined,
-    } as React.CSSProperties);
+    });
   }
 
   function handleMouseLeave() {
     setStyle({
-      transform: "perspective(800px) rotateX(0deg) rotateY(0deg) translateY(0px)",
+      transform:
+        "perspective(900px) rotateX(0deg) rotateY(0deg) translateY(0px)",
     });
   }
 
-  return (
-    <div
-      ref={ref}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      style={style}
-      className={cn(
-        "group relative rounded-card border border-white/[0.08] bg-white/[0.02] p-8 shadow-card backdrop-blur-md transition-[transform,border-color] duration-300 ease-out will-change-transform",
-        "hover:border-transparent motion-reduce:!transform-none",
-        className
-      )}
-    >
+return (
+  <div
+    ref={ref}
+    onMouseMove={handleMouseMove}
+    onMouseLeave={handleMouseLeave}
+    style={style}
+    className={cn(
+      "group relative overflow-hidden rounded-card p-[1px] transition-transform duration-300",
+      className
+    )}
+  >
+    {/* Animated Border */}
+    <div className="absolute inset-0 rounded-card overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
       <div
-        aria-hidden
         className={cn(
-          "pointer-events-none absolute inset-0 rounded-card opacity-0 transition-opacity duration-300 group-hover:opacity-100",
-          "before:absolute before:inset-0 before:rounded-card before:p-px before:content-['']",
+          "absolute -inset-[200%] animate-[border-spin_4s_linear_infinite]",
           accent === "purple"
-            ? "before:bg-[radial-gradient(240px_circle_at_var(--glow-x)_var(--glow-y),rgba(155,92,255,0.55),transparent_70%)]"
-            : "before:bg-[radial-gradient(240px_circle_at_var(--glow-x)_var(--glow-y),rgba(34,211,238,0.55),transparent_70%)]"
+            ? "bg-[conic-gradient(from_0deg,#9B5CFF,transparent_20%,#22D3EE,transparent_40%,#9B5CFF)]"
+            : "bg-[conic-gradient(from_0deg,#22D3EE,transparent_20%,#9B5CFF,transparent_40%,#22D3EE)]"
         )}
       />
-      <div className="relative z-10">{children}</div>
     </div>
-  );
+
+    {/* Card */}
+    <div className="relative h-full rounded-card bg-base-card border border-white/10 p-8 backdrop-blur-md">
+      {children}
+    </div>
+  </div>
+);
 }
