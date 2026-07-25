@@ -112,12 +112,7 @@ export const WHY_CARDS: ValuePillarData[] = [
 export const FOUNDATIONAL_STATS: StatItem[] = TRACK_RECORD;
 export const VALUE_PILLARS: ValuePillarData[] = WHY_CARDS;
 
-export const HERO_STATS: StatItem[] = [
-  { label: "Latency", value: "<2ms" },
-  { label: "Uptime", value: "99.99%" },
-  { label: "Nodes", value: "14.2k" },
-  { label: "Throughput", value: "PB/s" },
-];
+
 
 export const TRUSTED_COMPANIES = [
 
