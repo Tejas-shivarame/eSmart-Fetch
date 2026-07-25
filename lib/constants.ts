@@ -40,6 +40,8 @@ import type {
   CompanyInfo,
   SocialLink,
 } from "@/types";
+
+
 export const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
@@ -115,15 +117,19 @@ export const HERO_STATS: StatItem[] = [
 ];
 
 export const TRUSTED_COMPANIES = [
-  "ISS",
-  "Oculus Design Studio",
-  "Aditya Birla Group",
-  "Hitachi",
-  "ABB",
-  "Bosch",
-  "Siemens",
-  "Honeywell",
+
+
+  { name: "ISS", image: "/companies/iss.png" },
+  { name: "Oculus Design Studio", image: "/companies/oculus-design-studio.png" },
+  { name: "Aditya Birla Group", image: "/companies/aditya-birla.png" },
+  { name: "Hitachi", image: "/companies/hitachi.png" },
+  { name: "ABB", image: "/companies/abb.png" },
+  { name: "Bosch", image: "/companies/bosch.png" },
+  { name: "Siemens", image: "/companies/siemens.png" },
+  { name: "Honeywell", image: "/companies/honeywell.png" },
 ];
+
+
 export const FEATURE_CARDS: FeatureCardData[] = [
   {
     icon: Zap,
