@@ -21,7 +21,6 @@ export default function WhatsAppWidget() {
         setIsOpen(false);
       }
     }
-Refactor WhatsAppWidget for improved state handling
     if (isOpen) {
       document.addEventListener("mousedown", handleOutsideClick);
     }
