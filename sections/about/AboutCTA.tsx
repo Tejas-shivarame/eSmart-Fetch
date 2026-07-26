@@ -8,7 +8,7 @@ import { COMPANY } from "@/lib/constants";
 
 export function AboutCTA() {
   return (
-    <section id="contact" className="relative overflow-hidden px-6 py-section">
+    <section id="contact" className="relative overflow-hidden px-6 py-16">
       <div aria-hidden className="absolute inset-0 bg-gradient-radial-glow" />
       <GlowBlob color="blue" className="left-1/2 top-0 h-[380px] w-[380px] -translate-x-1/2" />
 
