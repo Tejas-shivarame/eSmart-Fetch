@@ -25,7 +25,7 @@ export function VisionQuote() {
 
           <p className="relative mx-auto mt-8 max-w-3xl font-display text-xl italic leading-relaxed text-accent-white/90 sm:text-2xl">
             &ldquo;We are transitioning from a world of manual configuration
-            to one of autonomous orchestration. Smart Fetch is the catalyst
+            to one of autonomous orchestration. eSmart Fetchis the catalyst
             for this evolution, providing the intelligence layers that allow
             infrastructure to think, heal, and scale itself.&rdquo;
           </p>
