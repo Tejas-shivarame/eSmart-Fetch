@@ -100,7 +100,7 @@ export function ServicesTabs() {
   const [tab, setTab] = useState<Tab>("engineering");
 
   return (
-    <section className="relative px-6 pb-section">
+    <section className="relative px-6 pb-section pt-16">
       <div className="mx-auto max-w-container">
         <div className="flex justify-center">
           <div className="inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/[0.03] p-1.5">
