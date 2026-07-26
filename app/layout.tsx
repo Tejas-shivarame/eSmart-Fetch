@@ -9,6 +9,9 @@ import { Assistant } from "@/components/AIAssistant/Assistant";
 export const metadata: Metadata = {
   title: "eSmart Fetch | Infrastructure & Technology Solutions",
   description: "eSmart Fetch-integrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
+  icons:{
+    icon: "/images/eSmart-Fetch-logo-Favi-icon.png",
+  }
 };
 
 export default function RootLayout({
