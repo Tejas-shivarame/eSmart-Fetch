@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/sections/Navbar";
 import { Footer } from "@/sections/Footer";
-import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
+import { Assistant } from "@/components/AIAssistant/Assistant";
+// import { ChatWidget } from "@/components/AIAssistant/ChatWidget";
 
 export const metadata: Metadata = {
   title: "eSmart Fetch | Infrastructure & Technology Solutions",
@@ -27,7 +28,8 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
-          <WhatsAppWidget />
+           <Assistant />  
+          {/* <ChatWidget />  */}
         </ThemeProvider>
       </body>
     </html>
