@@ -7,7 +7,7 @@ import { SERVICES } from "@/lib/constants";
 
 export function ServicesOverview() {
   return (
-    <section className="relative px-6 py-section">
+    <section className="relative px-6 py-16">
       <div className="mx-auto max-w-container">
         <SectionHeading
           eyebrow="What We Do"
