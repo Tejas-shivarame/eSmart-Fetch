@@ -45,33 +45,33 @@ export function GlowCard({
     });
   }
 
-return (
-  <div
-    ref={ref}
-    onMouseMove={handleMouseMove}
-    onMouseLeave={handleMouseLeave}
-    style={style}
-    className={cn(
-      "group relative overflow-hidden rounded-card p-[1px] transition-transform duration-300",
-      className
-    )}
-  >
-    {/* Animated Border */}
-    <div className="absolute inset-0 rounded-card overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-      <div
-        className={cn(
-          "absolute -inset-[200%] animate-[border-spin_4s_linear_infinite]",
-          accent === "purple"
-            ? "bg-[conic-gradient(from_0deg,#9B5CFF,transparent_20%,#22D3EE,transparent_40%,#9B5CFF)]"
-            : "bg-[conic-gradient(from_0deg,#22D3EE,transparent_20%,#9B5CFF,transparent_40%,#22D3EE)]"
-        )}
-      />
-    </div>
+  return (
+    <div
+      ref={ref}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={style}
+      className={cn(
+        "group relative overflow-hidden rounded-card p-[1px] transition-transform duration-300",
+        className
+      )}
+    >
+      {/* Animated Border */}
+      <div className="absolute inset-0 rounded-card overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <div
+          className={cn(
+            "absolute -inset-[200%] animate-[border-spin_4s_linear_infinite]",
+            accent === "purple"
+              ? "bg-[conic-gradient(from_0deg,#9B5CFF,transparent_20%,#22D3EE,transparent_40%,#9B5CFF)]"
+              : "bg-[conic-gradient(from_0deg,#22D3EE,transparent_20%,#9B5CFF,transparent_40%,#22D3EE)]"
+          )}
+        />
+      </div>
 
-    {/* Card */}
-    <div className="relative h-full rounded-card bg-base-card border border-white/10 p-8 backdrop-blur-md">
-      {children}
+      {/* Card */}
+      <div className="relative h-full rounded-card border border-border bg-base-card p-8 backdrop-blur-md">
+        {children}
+      </div>
     </div>
-  </div>
-);
+  );
 }
