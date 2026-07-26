@@ -7,7 +7,7 @@ import { VALUE_PILLARS } from "@/lib/constants";
 
 export function ValuePillars() {
   return (
-    <section className="relative overflow-hidden bg-base-raised px-6 py-section">
+    <section className="relative overflow-hidden bg-base-raised px-6 py-16">
       <div className="mx-auto max-w-container">
         <SectionHeading
           eyebrow="Why Smart Fetch"
