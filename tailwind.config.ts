@@ -37,7 +37,7 @@ const config: Config = {
         container: "1280px",
       },
       spacing: {
-        section: "120px",
+        section: "64px",
       },
       boxShadow: {
         glow: "0 0 40px -10px rgba(155,92,255,0.35)",

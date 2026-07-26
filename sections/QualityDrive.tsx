@@ -21,7 +21,7 @@ function PillarVisual({ image, title }: { image: string; title: string }) {
 
 export function QualityDrive() {
   return (
-    <section className="relative px-6 py-section">
+    <section className="relative px-6 py-16">
       <div className="mx-auto max-w-container text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

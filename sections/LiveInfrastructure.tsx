@@ -30,7 +30,7 @@ export function LiveInfrastructure() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden px-6 py-section">
+    <section className="relative overflow-hidden px-6 py-16">
       <div className="mx-auto max-w-container">
         <SectionHeading
           eyebrow="Telemetry"

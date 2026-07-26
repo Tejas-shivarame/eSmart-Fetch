@@ -14,11 +14,11 @@ export function Footer() {
  <Link
   href="/"
   className="flex items-center gap-3"
-  aria-label="Smart Fetch home"
+  aria-label="eSmart Fetchhome"
 >
   <Image
     src="/images/eSmart-Fetch-logo-Footer.png"
-    alt="eSmart Fetch Logo"
+    alt="eeSmart FetchLogo"
     width={320} 
     height={90}
     priority
@@ -58,7 +58,7 @@ export function Footer() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-sm text-white/90 transition-colors hover:text-accent-white"
+                className="text-sm text-white/90 transition-colors hover:text-accent-blue"
               >
                 {link.label}
               </Link>
@@ -100,7 +100,7 @@ export function Footer() {
 
       <div className="mx-auto mt-12 max-w-container border-t border-white/[0.06] pt-6">
         <p className="text-center text-xs text-white/90">
-          &copy; {year} Smart Fetch Infra. All rights reserved.
+          &copy; {year} eSmart Fetch. All rights reserved.
         </p>
       </div>
     </footer>

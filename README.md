@@ -1,4 +1,4 @@
-# Smart Fetch — Landing Page
+# eSmart Fetch— Landing Page
 
 Dark, futuristic SaaS landing page for Smart Fetch, built with Next.js 15 (App Router), TypeScript, Tailwind CSS, and Framer Motion.
 
@@ -24,18 +24,18 @@ types/          Shared TypeScript interfaces
 
 ## Design tokens
 
-| Token | Value |
-| --- | --- |
-| Background | `#070812` |
-| Accent Purple | `#9B5CFF` |
-| Accent Blue | `#22D3EE` |
-| Accent White | `#F5F5F5` |
-| Accent Gray | `#8B8B99` |
-| Display font | Space Grotesk |
-| Body font | Inter |
-| Radius | 16px |
-| Section spacing | 120px |
-| Container | 1280px |
+| Token           | Value         |
+| --------------- | ------------- |
+| Background      | `#070812`     |
+| Accent Purple   | `#9B5CFF`     |
+| Accent Blue     | `#22D3EE`     |
+| Accent White    | `#F5F5F5`     |
+| Accent Gray     | `#8B8B99`     |
+| Display font    | Space Grotesk |
+| Body font       | Inter         |
+| Radius          | 16px          |
+| Section spacing | 120px         |
+| Container       | 1280px        |
 
 All tokens live in `tailwind.config.ts` — update colors, fonts, radius, and spacing there.
 
