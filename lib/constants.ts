@@ -95,16 +95,17 @@ export const WHY_CARDS: ValuePillarData[] = [
     description: "Solutions engineered to standards that compare with the best in the world.",
     accent: "purple",
   },
+
   {
     icon: Target,
     title: "Client Focused",
     description: "Serving everyone from small businesses to large enterprises, on their terms.",
     accent: "blue",
-  },
+  }, 
   {
     icon: Rocket,
     title: "Future Ready",
-    description: "Built to adapt as technology and economic conditions evolve.",
+    description: "Future-ready solutions designed to adapt to evolving technology and industry needs.",
     accent: "purple",
   },
 ];
@@ -174,7 +175,7 @@ export const PREMIUM_SERVICES : FeatureCardData[] = [
   icon: Brush,
   title: "Painting & Printing Services",
   description:
-    "Professional painting and printing solutions that deliver exceptional finishes, durable results, and customized branding for commercial and residential projects.",
+    "Professional painting and printing solutions that deliver exceptional finishes and durable resultsfor commercial and residential projects.",
   accent: "purple",
   },
   
