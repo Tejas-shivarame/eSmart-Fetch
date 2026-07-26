@@ -21,7 +21,7 @@ export function ServicesCTA() {
           <h2 className="font-display text-3xl font-bold text-white sm:text-4xl">
             Elevate Your Infrastructure
           </h2>
-          <a href="#contact">
+          <a href="/contact"> Update contact link in ServicesCTA component
             <Button
               variant="secondary"
               className="mt-8 border-transparent bg-white text-base-raised hover:bg-white/90"
