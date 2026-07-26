@@ -39,7 +39,7 @@ function MissionVisual() {
 
 export function OurMission() {
   return (
-    <section className="relative px-6 pb-section">
+    <section className="relative px-4 sm:px-6 lg:px-10 py-12 lg:py-20">
       <div className="mx-auto grid max-w-container items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <motion.div
           initial={{ opacity: 0, x: -24 }}
