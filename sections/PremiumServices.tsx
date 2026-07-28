@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlowCard } from "@/components/ui/GlowCard";
@@ -26,6 +28,7 @@ export function PremiumServices() {
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
               >
+                <Link href={service.href} className="block h-full">
                 <GlowCard accent={service.accent} className="h-full">
                   <span
                     className={
@@ -43,6 +46,7 @@ export function PremiumServices() {
                     {service.description}
                   </p>
                 </GlowCard>
+                </Link>
               </motion.div>
             );
           })}
