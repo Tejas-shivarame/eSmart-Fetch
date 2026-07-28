@@ -59,7 +59,7 @@ export function ServiceCTA({ service }: ServiceCTAProps) {
 
           <div className="relative z-10">
             <span className="rounded-full border border-accent-purple/30 bg-accent-purple/10 px-4 py-2 text-sm font-medium text-accent-purple">
-              Let's Get Started
+              Let&apos;s Get Started
             </span>
 
             <h2 className="mt-8 font-display text-4xl font-bold md:text-5xl">
