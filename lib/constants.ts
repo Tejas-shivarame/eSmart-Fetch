@@ -44,7 +44,6 @@ import type {
 } from "@/types";
 
 
-
 export const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
@@ -142,6 +141,7 @@ export const PREMIUM_SERVICES : FeatureCardData[] = [
     description:
       "Comprehensive fire detection, alarm, and suppression solutions designed to ensure maximum safety and regulatory compliance.",
     accent: "blue",
+    href: "/services/fire-protection",
   },
   {
     icon: ShieldCheck,
@@ -149,6 +149,7 @@ export const PREMIUM_SERVICES : FeatureCardData[] = [
     description:
       "Advanced surveillance, access control, and integrated security systems for continuous protection of people and assets.",
     accent: "purple",
+     href: "/services/security-surveillance",
   },
   {
     icon: Code2,
@@ -156,6 +157,7 @@ export const PREMIUM_SERVICES : FeatureCardData[] = [
     description:
       "End-to-end interior design and fit-out services that deliver functional, modern, and aesthetically refined spaces.",
     accent: "blue",
+     href: "/services/interior-fit-out",
   },
   {
     icon: Video,
@@ -163,6 +165,7 @@ export const PREMIUM_SERVICES : FeatureCardData[] = [
     description:
       "State-of-the-art audio and video systems that enhance communication, collaboration, and multimedia experiences.",
     accent: "purple",
+     href: "/services/audio-visual",
   },
   {
     icon: Package,
@@ -170,6 +173,7 @@ export const PREMIUM_SERVICES : FeatureCardData[] = [
     description:
       "Reliable sourcing and supply of high-quality consumables, equipment, and construction materials for diverse project requirements.",
     accent: "blue",
+     href: "/services/consumables-materials",
   },
   {
   icon: Brush,
@@ -177,6 +181,7 @@ export const PREMIUM_SERVICES : FeatureCardData[] = [
   description:
     "Professional painting and printing solutions that deliver exceptional finishes and durable resultsfor commercial and residential projects.",
   accent: "purple",
+   href: "/services/painting-printing",
   },
   
 ];
@@ -193,24 +198,32 @@ export const SERVICES: FeatureCardData[] = [
     title: "Audio Video Solutions",
     description: "Boardroom AV, conferencing, and public-address systems built for enterprise scale.",
     accent: "blue",
+    href: "/services/fire-protection",
+
   },
   {
     icon: ShieldCheck,
     title: "Security Surveillance",
     description: "CCTV, access control, and perimeter monitoring with real-time alerting.",
     accent: "purple",
+    href: "/services/fire-protection",
+
   },
   {
     icon: Flame,
     title: "Fire Safety Systems",
     description: "Detection, suppression, and compliance-ready fire safety engineering.",
     accent: "blue",
+    href: "/services/fire-protection",
+
   },
   {
     icon: Server,
     title: "IT Infrastructure",
     description: "Structured cabling, networking, and server rooms built to last.",
     accent: "purple",
+    href: "/services/fire-protection",
+
   },
 ];
 
