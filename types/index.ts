@@ -16,6 +16,7 @@ export interface FeatureCardData {
   title: string;
   description: string;
   accent: "purple" | "blue";
+  href: string;
 }
 
 export interface RegionNode {
