@@ -41,7 +41,7 @@ export function ServiceBenefits({ service }: ServiceBenefitsProps) {
           </span>
 
           <h2 className="mt-6 font-display text-4xl font-bold md:text-5xl">
-            Benefits You'll Receive
+            Benefits You&apos;ll Receive
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-accent-gray">
