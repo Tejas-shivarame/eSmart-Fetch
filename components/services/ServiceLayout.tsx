@@ -40,8 +40,17 @@ import { ServiceFeatures } from "./ServiceFeatures";
 import { ServiceBenefits } from "./ServiceBenefits";
 import { ServiceIndustries } from "./ServiceIndustries";
 import { ServiceProcess } from "./ServiceProcess";
+import {ServiceBrands} from "./ServiceBrands";
 import { ServiceCTA } from "./ServiceCTA";
 
+export interface Brand {
+  name: string;
+  logo: string;
+  image: string;
+  description: string;
+  price: string;
+  website?: string;
+}
 export interface ServiceData {
   badge: string;
   title: string;
@@ -54,6 +63,7 @@ export interface ServiceData {
   benefits: string[];
   industries: string[];
   process: string[];
+   brands?: Brand[];
 
   ctaTitle: string;
   ctaDescription: string;
@@ -67,19 +77,21 @@ interface Props {
 export function ServiceLayout({ service }: Props) {
   return (
     <main className="relative overflow-hidden bg-base text-accent-white">
-     <ServiceHero service={service} />
+<ServiceHero service={service} />
 
-      <ServiceOverview service={service} />
+<ServiceOverview service={service} />
 
-      <ServiceFeatures service={service} />
+<ServiceFeatures service={service} />
 
-      <ServiceBenefits service={service} />
+<ServiceBrands service={service} />
 
-      <ServiceIndustries service={service} />
+<ServiceProcess service={service} />
 
-      <ServiceProcess service={service} />
+<ServiceBenefits service={service} />
 
-      <ServiceCTA service={service} />
+<ServiceIndustries service={service} />
+
+<ServiceCTA service={service} />
 
       {/* Background Effects */}
       <AnimatedGrid />

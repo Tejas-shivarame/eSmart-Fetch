@@ -120,7 +120,8 @@ export function ServiceHero({ service }: ServiceHeroProps) {
           initial="hidden"
           animate="show"
           custom={1}
-          className="mt-10"
+          className="mt-10 flex justify-center"
+
         >
           <Badge pulse>
             {service.badge}
@@ -134,7 +135,7 @@ export function ServiceHero({ service }: ServiceHeroProps) {
           initial="hidden"
           animate="show"
           custom={2}
-          className="mx-auto mt-10 max-w-5xl font-display text-5xl font-bold leading-[1.05] text-white sm:text-6xl lg:text-7xl"
+          className="mx-auto mt-10 max-w-5xl font-display text-center text-5xl font-bold leading-[1.05] text-white sm:text-6xl lg:text-7xl"
         >
           {service.title}
 
