@@ -40,7 +40,6 @@ import { ServiceFeatures } from "./ServiceFeatures";
 import { ServiceBenefits } from "./ServiceBenefits";
 import { ServiceIndustries } from "./ServiceIndustries";
 import { ServiceProcess } from "./ServiceProcess";
-import {ServiceBrands} from "./ServiceBrands";
 import { ServiceCTA } from "./ServiceCTA";
 
 export interface Brand {
@@ -82,8 +81,6 @@ export function ServiceLayout({ service }: Props) {
 <ServiceOverview service={service} />
 
 <ServiceFeatures service={service} />
-
-<ServiceBrands service={service} />
 
 <ServiceProcess service={service} />
 
