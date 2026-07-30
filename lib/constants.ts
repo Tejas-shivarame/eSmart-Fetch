@@ -205,14 +205,14 @@ export const SERVICES: FeatureCardData[] = [
     title: "Security Surveillance",
     description: "CCTV, access control, and perimeter monitoring with real-time alerting.",
     accent: "purple",
-    href: "/services/fire-protection",
+    href: "/services/security-surveillance",
   },
   {
     icon: Video,
     title: "Audio Video Solutions",
     description: "Boardroom AV, conferencing, and public-address systems built for enterprise scale.",
     accent: "blue",
-    href: "/services/fire-protection",
+    href: "/services/audio-visual",
   },
   {
     icon: Server,
