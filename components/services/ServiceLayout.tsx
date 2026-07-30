@@ -41,15 +41,9 @@ import { ServiceBenefits } from "./ServiceBenefits";
 import { ServiceIndustries } from "./ServiceIndustries";
 import { ServiceProcess } from "./ServiceProcess";
 import { ServiceCTA } from "./ServiceCTA";
+import  ProductsSection  from "./ProductsSection";
 
-export interface Brand {
-  name: string;
-  logo: string;
-  image: string;
-  description: string;
-  price: string;
-  website?: string;
-}
+
 export interface ServiceData {
   badge: string;
   title: string;
@@ -62,7 +56,6 @@ export interface ServiceData {
   benefits: string[];
   industries: string[];
   process: string[];
-   brands?: Brand[];
 
   ctaTitle: string;
   ctaDescription: string;
@@ -82,14 +75,15 @@ export function ServiceLayout({ service }: Props) {
 
 <ServiceFeatures service={service} />
 
-<ServiceProcess service={service} />
-
 <ServiceBenefits service={service} />
+
+<ProductsSection />
 
 <ServiceIndustries service={service} />
 
-<ServiceCTA service={service} />
+<ServiceProcess service={service} />
 
+<ServiceCTA service={service} />
       {/* Background Effects */}
       <AnimatedGrid />
       <ParticleField />
