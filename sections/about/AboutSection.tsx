@@ -50,46 +50,47 @@ export function AboutSection() {
         </motion.div>
 
         {/* Content */}
-<motion.div
-  initial={{ opacity: 0, x: 30 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
->
-  <span className="inline-block mb-4 text-sm font-medium uppercase tracking-wide text-[#22D3EE]">
-    About Us
-  </span>
+        <motion.div
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+        >
+        <span className="inline-block mb-4 text-sm font-medium uppercase tracking-wide text-[#22D3EE]">
+            About Us
+        </span>
 
-  <h2 className="mb-6 text-4xl font-semibold leading-tight text-white md:text-5xl">
-    Building Solutions{" "}
-    <span className="bg-gradient-to-r from-[#9B5CFF] to-[#22D3EE] bg-clip-text text-transparent">
-      Powering Progress
-    </span>
-  </h2>
+        <h2 className="mb-6 text-4xl font-semibold leading-tight text-white md:text-5xl">
+            Building Solutions{" "}
+            <span className="bg-gradient-to-r from-[#9B5CFF] to-[#22D3EE] bg-clip-text text-transparent">
+            Powering Progress
+            </span>
+        </h2>
 
-  <p className="max-w-md text-lg leading-relaxed text-[#8B8B99]">
-    eSmart Fetch delivers intelligent security, fire safety, and IT
-    infrastructure solutions for enterprises, healthcare facilities, and
-    institutions. We design, implement, and maintain resilient systems that
-    protect people, secure critical assets, and ensure uninterrupted business
-    operations.
-  </p>
+        <p className="max-w-md text-lg leading-relaxed text-[#8B8B99]">
+            eSmart Fetch delivers intelligent security, fire safety, and IT
+            infrastructure solutions for enterprises, healthcare facilities, and
+            institutions. We design, implement, and maintain resilient systems that
+            protect people, secure critical assets, and ensure uninterrupted business
+            operations.
+        </p>
 
-  <motion.div
-    variants={fadeUp}
-    initial="hidden"
-    animate="show"
-    custom={3}
-    className="mt-8"
-  >
-    <Link href="/about">
-      <Button variant="primary" className="flex items-center gap-2">
-        View More
-        <ArrowRight className="h-4 w-4" />
-      </Button>
-    </Link>
-  </motion.div>
-</motion.div>
+        <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            animate="show"
+            custom={3}
+            className="mt-8"
+        >
+            <Link href="/about">
+            <Button variant="primary" className="flex items-center gap-2">
+                View More
+                <ArrowRight className="h-4 w-4" />
+            </Button>
+            </Link>
+        </motion.div>
+        </motion.div>
+        
       </div>
     </section>
   );
