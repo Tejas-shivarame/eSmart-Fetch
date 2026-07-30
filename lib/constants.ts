@@ -194,12 +194,11 @@ export const REGION_NODES: RegionNode[] = [
 
 export const SERVICES: FeatureCardData[] = [
   {
-    icon: Video,
-    title: "Audio Video Solutions",
-    description: "Boardroom AV, conferencing, and public-address systems built for enterprise scale.",
+    icon: Flame,
+    title: "Fire Safety Systems",
+    description: "Detection, suppression, and compliance-ready fire safety engineering.",
     accent: "blue",
     href: "/services/fire-protection",
-
   },
   {
     icon: ShieldCheck,
@@ -207,15 +206,13 @@ export const SERVICES: FeatureCardData[] = [
     description: "CCTV, access control, and perimeter monitoring with real-time alerting.",
     accent: "purple",
     href: "/services/fire-protection",
-
   },
   {
-    icon: Flame,
-    title: "Fire Safety Systems",
-    description: "Detection, suppression, and compliance-ready fire safety engineering.",
+    icon: Video,
+    title: "Audio Video Solutions",
+    description: "Boardroom AV, conferencing, and public-address systems built for enterprise scale.",
     accent: "blue",
     href: "/services/fire-protection",
-
   },
   {
     icon: Server,
@@ -223,7 +220,6 @@ export const SERVICES: FeatureCardData[] = [
     description: "Structured cabling, networking, and server rooms built to last.",
     accent: "purple",
     href: "/services/fire-protection",
-
   },
 ];
 
@@ -248,9 +244,9 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
   {
     title: "Our Services",
     links: [
-      { label: "Audio Video Solutions", href: "/services" },
-      { label: "Security Surveillance", href: "/services" },
-      { label: "Fire Safety Systems", href: "/services" },
+      { label: "Fire Safety Systems", href: "/services/fire-protection" },
+      { label: "Security Surveillance", href: "/services/security-surveillance" },
+      { label: "Audio Video Solutions", href: "/services/audio-visual" },
       { label: "IT Infrastructure", href: "/services" },
     ],
   },
