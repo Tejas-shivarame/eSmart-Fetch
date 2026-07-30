@@ -4,35 +4,27 @@ import { motion } from "framer-motion";
 import { ArrowRight, ShieldCheck } from "lucide-react";
 import { GlowBlob } from "@/components/ui/GlowBlob";
 import { MISSION_POINTS } from "@/lib/constants";
-
+import Image from "next/image";
 /** Abstract "systems at work" visual standing in for an office photograph. */
 function MissionVisual() {
-  const bars = [62, 40, 78, 52, 30, 68, 45];
   return (
-    <div className="relative flex h-full min-h-[100px] w-full items-end overflow-hidden rounded-card border border-white/[0.08] bg-base-raised p-8 align-center">
-      <GlowBlob color="blue" className="right-0 top-0 h-56 w-56" />
-      <div className="relative z-10 flex h-40 w-full items-end gap-3">
-        {bars.map((h, i) => (
-          <motion.span
-            key={i}
-            initial={{ height: 0 }}
-            whileInView={{ height: `${h}%` }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: i * 0.06, ease: "easeOut" }}
-            className="flex-1 rounded-t-md"
-            style={{
-              background:
-                i % 3 === 0
-                  ? "linear-gradient(180deg, #9B5CFF, transparent)"
-                  : "linear-gradient(180deg, #22D3EE, transparent)",
-              opacity: 0.85,
-            }}
-          />
-        ))}
-      </div>
-      <span className="absolute left-8 top-8 z-10 flex h-11 w-11 items-center justify-center rounded-xl bg-accent-blue/10 text-accent-blue">
-        <ShieldCheck className="h-5 w-5" />
-      </span>
+    <div className="relative h-full min-h-[450px] w-full overflow-hidden rounded-card border border-white/[0.08] bg-base-raised">
+      <Image
+        src="/images/mission.png" // Your mission image
+        alt="Our Mission"
+        fill
+        className="object-cover transition-transform duration-700 hover:scale-105"
+        priority
+      />
+
+      {/* Optional overlay for better text harmony */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10" />
+
+      {/* Optional glow */}
+      <GlowBlob
+        color="blue"
+        className="pointer-events-none absolute -top-20 -right-20 h-64 w-64 opacity-40"
+      />
     </div>
   );
 }
