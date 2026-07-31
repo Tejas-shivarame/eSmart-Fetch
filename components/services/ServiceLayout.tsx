@@ -14,6 +14,7 @@ import { GlowBlob } from "@/components/ui/GlowBlob";
 import { GlowCard } from "@/components/ui/GlowCard";
 import { ParticleField } from "@/components/ui/ParticleField";
 import { AnimatedGrid } from "@/components/ui/AnimatedGrid";
+import { fireProtectionBrands } from "@/components/data/fireProtection";
 
 export interface ServiceData {
   badge: string;
@@ -42,6 +43,7 @@ import { ServiceIndustries } from "./ServiceIndustries";
 import { ServiceProcess } from "./ServiceProcess";
 import { ServiceCTA } from "./ServiceCTA";
 import  ProductsSection  from "./ProductsSection";
+import  TrustedBrandsSection  from "./TrustedBrandsSection"
 
 
 export interface ServiceData {
@@ -76,6 +78,8 @@ export function ServiceLayout({ service }: Props) {
 <ServiceFeatures service={service} />
 
 <ServiceBenefits service={service} />
+
+<TrustedBrandsSection brands={fireProtectionBrands} />
 
 <ProductsSection />
 
