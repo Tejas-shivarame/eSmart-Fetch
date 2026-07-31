@@ -48,7 +48,7 @@ export const fireProtection: ServiceData = {
     "Commissioning",
     "Maintenance",
   ],
-
+  
   ctaTitle: "Need a Fire Protection Solution?",
 
   ctaDescription:
@@ -187,8 +187,6 @@ export const audioVisualSolutions: ServiceData = {
     "Smart Classroom Solutions",
   ],
   
- 
-
   industries: [
     "Corporate",
     "Education",
@@ -252,8 +250,6 @@ export const consumablesMaterials: ServiceData = {
     "Hotels",
     "Warehouses",
   ],
-  
-
 
   benefits: [
     "Quality Products",
