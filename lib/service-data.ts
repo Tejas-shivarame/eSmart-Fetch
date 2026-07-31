@@ -40,6 +40,25 @@ export const fireProtection: ServiceData = {
     "Fast Project Delivery",
   ],
 
+  brands: [
+  {
+    name: "Honeywell",
+    logo: "/images/honeywell.png",
+  },
+  {
+    name: "Siemens",
+    logo: "/images/siemens.png",
+  },
+  {
+    name: "Simplex",
+    logo: "/images/simplex.png",
+  },
+  {
+    name:"JohnsonControls",
+    logo:"/images/JohnsonControls.png",
+  }
+],
+
   process: [
     "Site Inspection",
     "System Design",
