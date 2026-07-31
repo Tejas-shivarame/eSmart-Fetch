@@ -63,10 +63,6 @@ export interface ServiceData {
   ctaDescription: string;
 }
 
-interface Props {
-  service: ServiceData;
-}
-
 
 export function ServiceLayout({ service }: Props) {
   return (
