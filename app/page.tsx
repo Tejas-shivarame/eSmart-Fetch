@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <main className="relative overflow-hidden">
       <Hero />
-      <TrustedBy logos={TRUSTED_COMPANIES} /> 
       <AboutSection /> 
       <QualityDrive />       
       <PremiumServices /> 
+      <TrustedBy logos={TRUSTED_COMPANIES} /> 
     </main>
   );
 }
