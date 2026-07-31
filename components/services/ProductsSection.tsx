@@ -28,18 +28,18 @@ const products = [
     description:
       "Automatic sprinkler systems that suppress fires quickly while minimizing damage to facilities and assets.",
   },
-  {
-    title: "Gas Suppression System",
-    image: "/images/gas-suppression.jpg",
-    description:
-      "Clean-agent fire suppression systems designed for data centers, electrical rooms, and mission-critical infrastructure.",
-  },
-  {
-    title: "Fire Hydrant System",
-    image: "/images/fire-hydrant.jpg",
-    description:
-      "Complete hydrant systems including pumps, valves, hose reels, and piping for commercial fire protection.",
-  },
+  // {
+  //   title: "Gas Suppression System",
+  //   image: "/images/gas-suppression.jpg",
+  //   description:
+  //     "Clean-agent fire suppression systems designed for data centers, electrical rooms, and mission-critical infrastructure.",
+  // },
+  // {
+  //   title: "Fire Hydrant System",
+  //   image: "/images/fire-hydrant.jpg",
+  //   description:
+  //     "Complete hydrant systems including pumps, valves, hose reels, and piping for commercial fire protection.",
+  // },
   {
     title: "Emergency Exit Lighting",
     image: "/images/emergency-light.png",
