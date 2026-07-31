@@ -14,14 +14,8 @@ import { GlowBlob } from "@/components/ui/GlowBlob";
 import { GlowCard } from "@/components/ui/GlowCard";
 import { ParticleField } from "@/components/ui/ParticleField";
 import { AnimatedGrid } from "@/components/ui/AnimatedGrid";
-import {
-  fireProtectionBrands,
-  // securityBrands,
-  // audioVisualBrands,
-  // consumableBrands,
-  // paintingBrands,
-  // interiorBrands,
-} from "@/components/data/fireProtection";
+import TrustedBrands from "@/components/services/TrustedBrands";
+
 
 export interface ServiceData {
   badge: string;
@@ -50,9 +44,9 @@ import { ServiceIndustries } from "./ServiceIndustries";
 import { ServiceProcess } from "./ServiceProcess";
 import { ServiceCTA } from "./ServiceCTA";
 import  ProductsSection  from "./ProductsSection";
-import  TrustedBrandsSection  from "./TrustedBrandsSection"
 
-export interface ServiceBrand {
+
+export interface Brand {
   name: string;
   logo: string;
 }
@@ -62,41 +56,42 @@ export interface ServiceData {
   title: string;
   highlight: string;
   description: string;
-
   overview: string;
 
   features: string[];
-  benefits: string[];
   industries: string[];
+  benefits: string[];
+
+  // 👇 Add this
+  brands?: Brand[];
+
   process: string[];
-  brands?: ServiceBrand[];
+
   ctaTitle: string;
   ctaDescription: string;
 }
 
-
 export function ServiceLayout({ service }: Props) {
   return (
     <main className="relative overflow-hidden bg-base text-accent-white">
-<ServiceHero service={service} />
 
-<ServiceOverview service={service} />
+    <ServiceHero service={service} />
 
-<ServiceFeatures service={service} />
+    <ServiceOverview service={service} />
 
-<ServiceBenefits service={service} />
+    <ServiceFeatures service={service} />
 
-{service.brands && (
-  <TrustedBrandsSection brands={service.brands} />
-)}
+    <ServiceBenefits service={service} />
 
-<ProductsSection />
+    <TrustedBrands brands={service.brands} />
 
-<ServiceIndustries service={service} />
+    <ProductsSection />
 
-<ServiceProcess service={service} />
+    <ServiceIndustries service={service} />
 
-<ServiceCTA service={service} />
+    <ServiceProcess service={service} />
+
+    <ServiceCTA service={service} />
       {/* Background Effects */}
       <AnimatedGrid />
       <ParticleField />
