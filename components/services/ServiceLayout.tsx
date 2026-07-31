@@ -14,7 +14,14 @@ import { GlowBlob } from "@/components/ui/GlowBlob";
 import { GlowCard } from "@/components/ui/GlowCard";
 import { ParticleField } from "@/components/ui/ParticleField";
 import { AnimatedGrid } from "@/components/ui/AnimatedGrid";
-import { fireProtectionBrands } from "@/components/data/fireProtection";
+import {
+  fireProtectionBrands,
+  // securityBrands,
+  // audioVisualBrands,
+  // consumableBrands,
+  // paintingBrands,
+  // interiorBrands,
+} from "@/components/data/fireProtection";
 
 export interface ServiceData {
   badge: string;
@@ -45,6 +52,10 @@ import { ServiceCTA } from "./ServiceCTA";
 import  ProductsSection  from "./ProductsSection";
 import  TrustedBrandsSection  from "./TrustedBrandsSection"
 
+export interface ServiceBrand {
+  name: string;
+  logo: string;
+}
 
 export interface ServiceData {
   badge: string;
@@ -58,7 +69,7 @@ export interface ServiceData {
   benefits: string[];
   industries: string[];
   process: string[];
-
+  brands?: ServiceBrand[];
   ctaTitle: string;
   ctaDescription: string;
 }
@@ -75,7 +86,9 @@ export function ServiceLayout({ service }: Props) {
 
 <ServiceBenefits service={service} />
 
-<TrustedBrandsSection brands={fireProtectionBrands} />
+{service.brands && (
+  <TrustedBrandsSection brands={service.brands} />
+)}
 
 <ProductsSection />
 
