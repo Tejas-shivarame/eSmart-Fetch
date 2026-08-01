@@ -347,7 +347,6 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
         items: [
           "Fire Alarm Systems",
           "Sprinkler Systems",
-          "Hydrant Systems",
           "Smoke Detectors",
           "Fire Doors",
           "Fire-Rated Cables",

@@ -13,14 +13,28 @@ export const fireProtection: ServiceData = {
   overview:
     "Our fire protection solutions safeguard people, assets and infrastructure through advanced detection, suppression and monitoring systems. Every installation complies with industry safety standards and is supported by professional maintenance services.",
 
-  features: [
-    "Fire Alarm Systems",
-    "Automatic Sprinkler Systems",
-    "Fire Hydrant Systems",
-    "Gas Suppression Systems",
-    "Emergency Exit Lighting",
-    "Annual Maintenance Contracts",
-  ],
+features: [
+  {
+    title: "Fire Alarm Systems",
+    description:
+      "Intelligent fire alarm systems with early smoke and heat detection for rapid emergency response.",
+  },
+  {
+    title: "Automatic Sprinkler Systems",
+    description:
+      "Automatic water-based suppression systems designed to control and extinguish fires quickly.",
+  },
+  {
+    title: "Emergency Exit Lighting",
+    description:
+      "Emergency lighting systems ensuring safe evacuation during power failures and fire incidents.",
+  },
+  {
+    title: "Annual Maintenance Contracts",
+    description:
+      "Preventive maintenance, inspections, and testing to keep fire protection systems compliant.",
+  },
+],
 
   industries: [
     "Commercial Buildings",
@@ -87,14 +101,38 @@ export const securitySurveillance: ServiceData = {
   overview:
     "Our security systems help organizations monitor, protect and manage their facilities using modern surveillance technologies and centralized monitoring.",
 
-  features: [
-    "IP CCTV Systems",
-    "Biometric Access Control",
-    "Video Door Phones",
-    "Intrusion Alarm Systems",
-    "Remote Monitoring",
-    "Annual Maintenance Contracts",
-  ],
+features: [
+  {
+    title: "IP CCTV Systems",
+    description:
+      "High-definition IP surveillance systems with centralized monitoring, remote access, and intelligent video analytics.",
+  },
+  {
+    title: "Biometric Access Control",
+    description:
+      "Advanced fingerprint, facial recognition, and RFID-based access control solutions for secure entry management.",
+  },
+  {
+    title: "Video Door Phones",
+    description:
+      "Smart audio and video intercom systems that enable secure visitor verification and controlled access.",
+  },
+  {
+    title: "Intrusion Alarm Systems",
+    description:
+      "Reliable intrusion detection systems with motion sensors, door contacts, and instant alert notifications.",
+  },
+  {
+    title: "Remote Monitoring",
+    description:
+      "Monitor your security infrastructure anytime, anywhere with cloud-based remote access and real-time notifications.",
+  },
+  {
+    title: "Annual Maintenance Contracts",
+    description:
+      "Comprehensive preventive maintenance, health checks, firmware updates, and 24/7 technical support for uninterrupted operation.",
+  },
+],
 
   industries: [
     "Corporate Offices",
@@ -142,14 +180,38 @@ export const interiorFitOut: ServiceData = {
   overview:
     "We design and execute modern interior environments focused on functionality, aesthetics and operational efficiency.",
 
-  features: [
-    "Office Interiors",
-    "False Ceiling",
-    "Glass Partitions",
-    "Flooring",
-    "Furniture Installation",
-    "Space Planning",
-  ],
+features: [
+  {
+    title: "Office Interiors",
+    description:
+      "Complete turnkey office interior solutions designed to create modern, functional, and productive workspaces.",
+  },
+  {
+    title: "False Ceiling",
+    description:
+      "Premium gypsum, mineral fiber, and metal ceiling systems that enhance aesthetics, acoustics, and energy efficiency.",
+  },
+  {
+    title: "Glass Partitions",
+    description:
+      "Elegant frameless and modular glass partition systems that maximize natural light while maintaining privacy.",
+  },
+  {
+    title: "Flooring",
+    description:
+      "High-quality flooring solutions including vinyl, laminate, carpet, wooden, and raised access flooring for commercial spaces.",
+  },
+  {
+    title: "Furniture Installation",
+    description:
+      "Professional installation of ergonomic office furniture, modular workstations, executive cabins, and storage systems.",
+  },
+  {
+    title: "Space Planning",
+    description:
+      "Strategic space planning and layout optimization to improve workflow, collaboration, and efficient space utilization.",
+  },
+],
 
   industries: [
     "Corporate Offices",
@@ -197,14 +259,38 @@ export const audioVisualSolutions: ServiceData = {
   overview:
     "We deliver integrated AV systems that improve communication, collaboration and user experience.",
 
-  features: [
-    "Conference Room AV",
-    "LED Video Walls",
-    "Projectors",
-    "Digital Signage",
-    "Sound Systems",
-    "Smart Classroom Solutions",
-  ],
+features: [
+  {
+    title: "Conference Room AV",
+    description:
+      "Integrated audio-visual solutions for meeting rooms with displays, cameras, microphones, and seamless collaboration tools.",
+  },
+  {
+    title: "LED Video Walls",
+    description:
+      "High-resolution indoor and outdoor LED video walls designed for control rooms, auditoriums, lobbies, and digital experiences.",
+  },
+  {
+    title: "Projectors",
+    description:
+      "Professional laser and multimedia projector solutions for boardrooms, classrooms, auditoriums, and presentation spaces.",
+  },
+  {
+    title: "Digital Signage",
+    description:
+      "Dynamic digital signage systems for advertising, wayfinding, corporate communication, and real-time content management.",
+  },
+  {
+    title: "Sound Systems",
+    description:
+      "Premium PA systems, background music, conferencing audio, and professional sound reinforcement for every environment.",
+  },
+  {
+    title: "Smart Classroom Solutions",
+    description:
+      "Interactive displays, lecture capture, wireless presentation, and AV technologies that enhance modern teaching and learning.",
+  },
+],
   
   industries: [
     "Corporate",
@@ -251,15 +337,38 @@ export const consumablesMaterials: ServiceData = {
 
   overview:
     "We supply premium consumables and engineering materials that ensure uninterrupted business operations.",
-
-  features: [
-    "Electrical Materials",
-    "Safety Equipment",
-    "Industrial Consumables",
-    "Office Supplies",
-    "Maintenance Materials",
-    "Cleaning Supplies",
-  ],
+features: [
+  {
+    title: "Electrical Materials",
+    description:
+      "Reliable supply of electrical cables, switches, conduits, panels, and accessories from trusted manufacturers.",
+  },
+  {
+    title: "Safety Equipment",
+    description:
+      "Certified personal protective equipment (PPE), safety signage, and workplace safety products for industrial and commercial environments.",
+  },
+  {
+    title: "Industrial Consumables",
+    description:
+      "High-quality industrial consumables including adhesives, fasteners, abrasives, lubricants, and essential maintenance supplies.",
+  },
+  {
+    title: "Office Supplies",
+    description:
+      "Comprehensive range of office stationery, printing materials, storage solutions, and workplace essentials for daily operations.",
+  },
+  {
+    title: "Maintenance Materials",
+    description:
+      "Dependable maintenance materials and MRO supplies to support preventive maintenance and uninterrupted facility operations.",
+  },
+  {
+    title: "Cleaning Supplies",
+    description:
+      "Professional cleaning chemicals, janitorial equipment, hygiene products, and facility care solutions for commercial spaces.",
+  },
+],
 
   industries: [
     "Manufacturing",
@@ -307,14 +416,38 @@ export const paintingPrinting: ServiceData = {
   overview:
     "From interior painting to branding materials, we deliver premium finishes with attention to detail.",
 
-  features: [
-    "Interior Painting",
-    "Exterior Painting",
-    "Commercial Printing",
-    "Sign Boards",
-    "Wall Graphics",
-    "Branding Materials",
-  ],
+features: [
+  {
+    title: "Interior Painting",
+    description:
+      "Premium interior painting services using high-quality paints and finishes to create elegant, durable, and visually appealing spaces.",
+  },
+  {
+    title: "Exterior Painting",
+    description:
+      "Weather-resistant exterior painting solutions that protect buildings while enhancing their appearance and long-term durability.",
+  },
+  {
+    title: "Commercial Printing",
+    description:
+      "High-quality commercial printing services for brochures, business cards, catalogs, marketing materials, and corporate stationery.",
+  },
+  {
+    title: "Sign Boards",
+    description:
+      "Custom indoor and outdoor sign boards, illuminated signage, acrylic displays, and branding solutions for businesses.",
+  },
+  {
+    title: "Wall Graphics",
+    description:
+      "Creative wall graphics, vinyl decals, murals, and decorative branding solutions that transform commercial and office environments.",
+  },
+  {
+    title: "Branding Materials",
+    description:
+      "End-to-end branding materials including banners, standees, promotional displays, vehicle graphics, and corporate identity solutions.",
+  },
+],
 
   industries: [
     "Corporate",
