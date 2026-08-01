@@ -16,6 +16,10 @@ import { ParticleField } from "@/components/ui/ParticleField";
 import { AnimatedGrid } from "@/components/ui/AnimatedGrid";
 import TrustedBrands from "@/components/services/TrustedBrands";
 
+export interface Feature {
+  title: string;
+  description: string;
+}
 
 export interface ServiceData {
   badge: string;
@@ -24,7 +28,7 @@ export interface ServiceData {
   description: string;
   overview: string;
 
-  features: string[];
+  features: Feature[];
   industries: string[];
   benefits: string[];
   process: string[];
@@ -58,7 +62,7 @@ export interface ServiceData {
   description: string;
   overview: string;
 
-  features: string[];
+  features: Feature[];
   industries: string[];
   benefits: string[];
 
@@ -246,7 +250,7 @@ export function ServiceLayout({ service }: Props) {
             {service.features.map((feature, index) => (
 
               <motion.div
-                key={feature}
+                key={feature.title}
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -264,7 +268,7 @@ export function ServiceLayout({ service }: Props) {
                   <CheckCircle2 className="h-8 w-8 text-accent-blue" />
 
                   <h3 className="mt-5 font-display text-xl font-semibold">
-                    {feature}
+                    {feature.title}
                   </h3>
 
                   <p className="mt-3 text-sm leading-7 text-accent-gray">
