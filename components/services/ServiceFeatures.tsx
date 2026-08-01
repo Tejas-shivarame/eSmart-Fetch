@@ -20,11 +20,14 @@ import {
   Zap,
   LucideIcon,
 } from "lucide-react";
+import { ServiceData } from "./ServiceLayout";
 
 interface ServiceFeaturesProps {
-  service: {
-    features: string[];
-  };
+  service: ServiceData;
+}
+export interface Feature {
+  title: string;
+  description: string;
 }
 
 const featureIcons: Record<string, LucideIcon> = {
@@ -32,32 +35,37 @@ const featureIcons: Record<string, LucideIcon> = {
   "Office Interiors": Building2,
   "False Ceiling": Square,
   "Glass Partitions": LayoutGrid,
-  "Flooring": LayoutGrid,
+ "Flooring": LayoutGrid,
   "Furniture Installation": Armchair,
   "Space Planning": Ruler,
 
   // Fire Protection
   "Fire Alarm Systems": Flame,
-  "Fire Suppression": ShieldCheck,
-  "Smoke Detection": ShieldCheck,
-  "Emergency Lighting": Zap,
-  "Hydrant Systems": Wrench,
+  "Automatic Sprinkler Systems": ShieldCheck,
+  "Fire Hydrant Systems": Wrench,
+  "Gas Suppression Systems": ShieldCheck,
+  "Emergency Exit Lighting": Zap,
 
-  // CCTV & Security
-  "CCTV Surveillance": Camera,
-  "Access Control": Lock,
-  "Biometric Systems": ShieldCheck,
+  // Security
+  "IP CCTV Systems": Camera,
+  "Biometric Access Control": Lock,
+  "Video Door Phones": Camera,
+  "Intrusion Alarm Systems": ShieldCheck,
+  "Remote Monitoring": Cpu,
+
+  // AV
+  "Conference Room AV": Cpu,
+  "LED Video Walls": LayoutGrid,
+  "Projectors": LayoutGrid,
+  "Digital Signage": LayoutGrid,
+  "Sound Systems": Wifi,
+  "Smart Classroom Solutions": Cpu,
 
   // Networking
   "Structured Cabling": Network,
   "Network Infrastructure": Network,
   "WiFi Solutions": Wifi,
   "Server Installation": Server,
-
-  // IoT
-  "IoT Integration": Cpu,
-  "Smart Automation": Cpu,
-  "Remote Monitoring": Cpu,
 };
 
 export function ServiceFeatures({ service }: ServiceFeaturesProps) {
@@ -86,13 +94,13 @@ export function ServiceFeatures({ service }: ServiceFeaturesProps) {
         </motion.div>
 
         {/* Features */}
-        <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2">
           {service.features.map((feature, index) => {
-          const Icon = featureIcons[feature] ?? CheckCircle2;
+          const Icon = featureIcons[feature.title] ?? CheckCircle2;
 
             return (
               <motion.div
-                key={feature}
+                key={`${feature.title}-${index}`}
                 initial={{ opacity: 0, y: 35 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -104,12 +112,11 @@ export function ServiceFeatures({ service }: ServiceFeaturesProps) {
                 </div>
 
                 <h3 className="mt-6 text-xl font-semibold">
-                  {feature}
+                  {feature.title}
                 </h3>
 
                 <p className="mt-4 leading-7 text-accent-gray">
-                  We deliver this capability using modern engineering standards,
-                  certified professionals, and enterprise-grade implementation.
+                    {feature.description}
                 </p>
               </motion.div>
             );
