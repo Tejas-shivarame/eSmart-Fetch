@@ -12,7 +12,17 @@ import {
 
 interface ServiceIndustriesProps {
   service: {
-    industries: string[];
+    industriesSection: {
+      industriesbadge: string;
+      industriestitle: string;
+      industriesdescription: string;
+      industriescardDescription: string;
+    };
+
+    industries: {
+      subtitles: string;
+      descriptions: string;
+    }[];
   };
 }
 
@@ -27,6 +37,7 @@ const icons = [
 
 export function ServiceIndustries({
   service,
+  
 }: ServiceIndustriesProps) {
   return (
     <section className="px-6 py-24">
@@ -40,16 +51,15 @@ export function ServiceIndustries({
           className="mx-auto max-w-3xl text-center"
         >
           <span className="rounded-full border border-accent-blue/30 bg-accent-blue/10 px-4 py-2 text-sm font-medium text-accent-blue">
-            Industries We Serve
+            {service.industriesSection.industriesbadge}
           </span>
 
           <h2 className="mt-6 font-display text-4xl font-bold md:text-5xl">
-            Trusted Across Multiple Industries
+            {service.industriesSection.industriestitle}
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-accent-gray">
-            We provide reliable engineering solutions tailored for businesses
-            across diverse sectors.
+            {service.industriesSection.industriesdescription}
           </p>
         </motion.div>
 
@@ -60,7 +70,7 @@ export function ServiceIndustries({
 
             return (
               <motion.div
-                key={industry}
+                key={industry.subtitles}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.08 }}
@@ -84,12 +94,11 @@ export function ServiceIndustries({
                 </div>
 
                 <h3 className="mt-6 text-2xl font-semibold">
-                  {industry}
+                  {industry.subtitles}
                 </h3>
 
                 <p className="mt-4 leading-7 text-accent-gray">
-                  Delivering industry-specific solutions with compliance,
-                  innovation, and long-term operational excellence.
+                 {industry.descriptions}
                 </p>
               </motion.div>
             );
