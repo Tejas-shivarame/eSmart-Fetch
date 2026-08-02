@@ -61,7 +61,7 @@ export function AboutSection() {
         </span>
 
         <h2 className="mb-6 text-4xl font-semibold leading-tight text-white md:text-5xl">
-            Building Solutions{" "}
+            Building Solutions,{" "}
             <span className="bg-gradient-to-r from-[#9B5CFF] to-[#22D3EE] bg-clip-text text-transparent">
             Powering Progress
             </span>

@@ -62,13 +62,16 @@ export function Hero() {
           initial="hidden"
           animate="show"
           custom={1}
-          className="mt-8 font-display text-4xl font-medium leading-[1.1] text-accent-white sm:text-6xl lg:text-7xl"
+          className="mt-8 font-display text-3xl font-medium leading-[1.1] text-accent-white sm:text-6xl lg:text-6xl"
         >
-          Initializing{" "}
+          Enterprise{" "}
           <span className="bg-gradient-purple-blue bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-x">
-            Critical Infrastructure
+            Security, Fire Safety
           </span>{" "}
-          for the Next Era
+          & AV Solutions Built for{" "}
+          <span className="bg-gradient-purple-blue bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-x">
+            Mission-Critical Operations
+          </span>
         </motion.h1>
 
         <motion.p
