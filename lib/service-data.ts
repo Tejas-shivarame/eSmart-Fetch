@@ -22,23 +22,23 @@ export const fireProtection: ServiceData = {
 
   features: [
     {
-      title: "Fire Alarm Systems",
-      description:
+      featurestitle: "Fire Alarm Systems",
+      featuresdescription:
         "Intelligent fire alarm systems with early smoke and heat detection for rapid emergency response.",
     },
     {
-      title: "Automatic Sprinkler Systems",
-      description:
+      featurestitle: "Automatic Sprinkler Systems",
+      featuresdescription:
         "Automatic water-based suppression systems designed to control and extinguish fires quickly.",
     },
     {
-      title: "Emergency Exit Lighting",
-      description:
+      featurestitle: "Emergency Exit Lighting",
+      featuresdescription:
         "Emergency lighting systems ensuring safe evacuation during power failures and fire incidents.",
     },
     {
-      title: "Annual Maintenance Contracts",
-      description:
+      featurestitle: "Annual Maintenance Contracts",
+      featuresdescription:
         "Preventive maintenance, inspections, and testing to keep fire protection systems compliant.",
     },
   ],
@@ -95,38 +95,38 @@ export const fireProtection: ServiceData = {
     },
   ],
 
-  benefits: [
+ benefits: [
   {
-    subtitle: "24/7 Monitoring",
+    subtitle: "Early Fire Detection",
     description:
-      "Continuous monitoring with real-time alerts and rapid response to keep your systems secure around the clock.",
+      "Advanced smoke, heat, and flame detection systems provide rapid identification of fire hazards before they escalate.",
   },
   {
-    subtitle: "Remote Access",
+    subtitle: "Life Safety",
     description:
-      "Securely monitor and manage your systems from anywhere with encrypted remote connectivity.",
+      "Protect occupants with intelligent fire alarms, emergency lighting, and safe evacuation systems.",
   },
   {
-    subtitle: "Scalable Solutions",
+    subtitle: "Regulatory Compliance",
     description:
-      "Future-ready solutions that expand as your business grows without compromising performance.",
+      "Fire protection systems are designed and installed in accordance with applicable national and international safety standards.",
+  },
+  {
+    subtitle: "Rapid Fire Suppression",
+    description:
+      "Automatic sprinkler and suppression systems quickly control fire incidents to minimize damage and downtime.",
   },
   {
     subtitle: "Professional Installation",
     description:
-      "Expert installation by certified engineers to ensure reliable and compliant system deployment.",
-  },
-  {
-    subtitle: "Centralized Management",
-    description:
-      "Manage all your systems and locations from a single dashboard for complete operational visibility.",
+      "Certified engineers ensure every fire protection system is properly designed, installed, tested, and commissioned.",
   },
   {
     subtitle: "Preventive Maintenance",
     description:
-      "Routine inspections and proactive servicing maximize uptime and extend the life of your equipment.",
+      "Routine inspections, testing, and servicing maximize system reliability and ensure ongoing compliance.",
   },
-  ],
+],
 
   brands: [
   { name: "Honeywell", logo: "/images/honeywell.png" },
@@ -204,13 +204,44 @@ export const fireProtection: ServiceData = {
     }
   ],
 
+  processSection: {
+    processbadge: "Our Process",
+    processtitle: "Fire Protection Implementation Process",
+    processdescription:
+      "We follow a structured approach to design, install, test, and maintain fire protection systems that meet industry safety standards.",
+  },
+
   process: [
-    "Site Inspection",
-    "System Design",
-    "Installation",
-    "Testing",
-    "Commissioning",
-    "Maintenance",
+    {
+      processtitles: "Site Inspection",
+      processdescriptions:
+        "Assess the facility, identify fire risks, and understand safety requirements.",
+    },
+    {
+      processtitles: "Fire System Design",
+      processdescriptions:
+        "Develop compliant fire alarm, detection, and suppression system layouts.",
+    },
+    {
+      processtitles: "Installation",
+      processdescriptions:
+        "Install fire protection equipment using certified engineering practices.",
+    },
+    {
+      processtitles: "Testing & Commissioning",
+      processdescriptions:
+        "Verify every component to ensure reliable fire detection and suppression.",
+    },
+    {
+      processtitles: "Training & Handover",
+      processdescriptions:
+        "Train users and hand over the fully operational fire protection system.",
+    },
+    {
+      processtitles: "Preventive Maintenance",
+      processdescriptions:
+        "Perform routine inspections and maintenance for long-term compliance.",
+    },
   ],
   
   ctaTitle: "Need a Fire Protection Solution?",
@@ -241,87 +272,90 @@ export const securitySurveillance: ServiceData = {
 
   features: [
     {
-      title: "IP CCTV Systems",
-      description:
+      featurestitle: "IP CCTV Systems",
+      featuresdescription:
         "High-definition IP surveillance systems with centralized monitoring, remote access, and intelligent video analytics.",
     },
     {
-      title: "Biometric Access Control",
-      description:
+      featurestitle: "Biometric Access Control",
+      featuresdescription:
         "Advanced fingerprint, facial recognition, and RFID-based access control solutions for secure entry management.",
     },
     {
-      title: "Video Door Phones",
-      description:
+      featurestitle: "Video Door Phones",
+      featuresdescription:
         "Smart audio and video intercom systems that enable secure visitor verification and controlled access.",
     },
     {
-      title: "Intrusion Alarm Systems",
-      description:
+      featurestitle: "Intrusion Alarm Systems",
+      featuresdescription:
         "Reliable intrusion detection systems with motion sensors, door contacts, and instant alert notifications.",
     },
     {
-      title: "Remote Monitoring",
-      description:
+      featurestitle: "Remote Monitoring",
+      featuresdescription:
         "Monitor your security infrastructure anytime, anywhere with cloud-based remote access and real-time notifications.",
     },
     {
-      title: "Annual Maintenance Contracts",
-      description:
+      featurestitle: "Annual Maintenance Contracts",
+      featuresdescription:
         "Comprehensive preventive maintenance, health checks, firmware updates, and 24/7 technical support for uninterrupted operation.",
     },
   ],
 
   industriesSection: {
     industriesbadge: "Industries We Protect",
-    industriestitle: "Fire Protection Solutions Across Every Industry",
+
+    industriestitle: "Security & Surveillance Solutions Across Every Industry",
+
     industriesdescription:
-       "We provide intelligent fire detection, alarm, suppression, and life safety solutions designed to protect people, property, and business continuity across diverse industries.",
+      "We deliver intelligent CCTV surveillance, biometric access control, intrusion detection, visitor management, and integrated security solutions that protect people, assets, and business operations across diverse industries.",
+
     industriescardDescription:
-        "Certified fire protection systems engineered to meet safety regulations, reduce risks, and ensure reliable emergency response.",
-},
+      "Enterprise-grade security systems engineered for continuous monitoring, controlled access, proactive threat detection, and operational safety.",
+  },
   
   industries: [
-    {
-      subtitles: "Corporate Offices",
-      descriptions:
-        "Protect office buildings with intelligent fire alarm systems, emergency lighting, evacuation solutions, and automatic suppression systems.",
-    },
-    {
-      subtitles: "Educational Institutions",
-      descriptions:
-        "Ensure the safety of students, faculty, and campus facilities through compliant fire detection, alarm, and evacuation systems.",
-    },
-    {
-      subtitles: "Government Facilities",
-      descriptions:
-        "Provide mission-critical fire protection solutions for government buildings, public infrastructure, and administrative offices.",
-    },
-    {
-      subtitles: "Healthcare",
-      descriptions:
-        "Safeguard hospitals, clinics, and healthcare facilities with advanced fire detection, suppression, and life safety systems.",
-    },
-    {
-      subtitles: "Hotels & Hospitality",
-      descriptions:
-        "Protect guests and staff with integrated fire alarm, emergency lighting, sprinkler, and evacuation systems for hospitality environments.",
-    },
-    {
-      subtitles: "Retail & Commercial",
-      descriptions:
-        "Secure shopping malls, retail stores, and commercial complexes with reliable fire protection and emergency response solutions.",
-    },
-    {
-      subtitles: "Industrial Facilities",
-      descriptions:
-        "Reduce fire risks in factories, warehouses, and manufacturing plants with industrial-grade fire detection and suppression systems.",
-    },
-    {
-      subtitles: "Data Centers",
-      descriptions:
-        "Protect mission-critical IT infrastructure using early fire detection, clean agent suppression, and continuous fire monitoring systems.",
-    },
+  {
+    subtitles: "Corporate Offices",
+    descriptions:
+      "Secure office buildings with AI-powered CCTV surveillance, biometric access control, visitor management, and centralized monitoring systems.",
+  },
+  {
+    subtitles: "Educational Institutions",
+    descriptions:
+      "Protect students, faculty, and campus facilities with intelligent surveillance, access control, emergency alerts, and visitor management solutions.",
+  },
+  {
+    subtitles: "Government Facilities",
+    descriptions:
+      "Deploy mission-critical surveillance, biometric authentication, perimeter security, and centralized monitoring for government buildings and public infrastructure.",
+  },
+  {
+    subtitles: "Healthcare",
+    descriptions:
+      "Enhance patient and staff safety using CCTV surveillance, restricted access control, visitor monitoring, and emergency security systems.",
+  },
+  {
+    subtitles: "Hotels & Hospitality",
+    descriptions:
+      "Provide guests and staff with a secure environment through intelligent CCTV, access control, video intercoms, and centralized security management.",
+  },
+  {
+    subtitles: "Retail & Commercial",
+    descriptions:
+      "Reduce theft and improve customer safety with AI surveillance, electronic access control, intrusion alarms, and remote monitoring solutions.",
+  },
+  {
+    subtitles: "Industrial Facilities",
+    descriptions:
+      "Protect manufacturing plants, warehouses, and production facilities with perimeter surveillance, biometric access, intrusion detection, and real-time monitoring.",
+  },
+  {
+    subtitles: "Data Centers",
+    descriptions:
+      "Secure mission-critical IT infrastructure using high-security access control, AI surveillance, environmental monitoring, and continuous remote security management.",
+  },
   ],
 
   benefits: [
@@ -488,13 +522,44 @@ export const securitySurveillance: ServiceData = {
     }
   ],
 
+  processSection: {
+    processbadge: "Our Process",
+    processtitle: "Security System Deployment Process",
+    processdescription:
+      "From security assessment to system commissioning, we deliver reliable surveillance solutions with professional implementation.",
+  },
+
   process: [
-    "Security Assessment",
-    "Planning",
-    "Installation",
-    "Configuration",
-    "Testing",
-    "Maintenance",
+    {
+      processtitles: "Security Assessment",
+      processdescriptions:
+        "Evaluate security risks and determine surveillance requirements.",
+    },
+    {
+      processtitles: "System Design",
+      processdescriptions:
+        "Design CCTV, access control, and surveillance layouts for maximum coverage.",
+    },
+    {
+      processtitles: "Installation",
+      processdescriptions:
+        "Install cameras, controllers, networking, and monitoring equipment.",
+    },
+    {
+      processtitles: "Configuration",
+      processdescriptions:
+        "Configure recording, analytics, remote access, and user permissions.",
+    },
+    {
+      processtitles: "Testing",
+      processdescriptions:
+        "Verify system performance and ensure complete operational readiness.",
+    },
+    {
+      processtitles: "Maintenance",
+      processdescriptions:
+        "Provide preventive maintenance, firmware updates, and technical support.",
+    },
   ],
 
   ctaTitle: "Secure Your Business",
@@ -525,33 +590,33 @@ export const interiorFitOut: ServiceData = {
 
   features: [
     {
-      title: "Corporate Office Interiors",
-      description:
+      featurestitle: "Corporate Office Interiors",
+      featuresdescription:
         "Modern office interiors designed to improve productivity, collaboration, employee comfort, and brand identity.",
     },
     {
-      title: "False Ceiling Systems",
-      description:
+      featurestitle: "False Ceiling Systems",
+      featuresdescription:
         "Premium gypsum, mineral fiber, metal, and acoustic ceiling solutions offering superior aesthetics, lighting integration, and sound control.",
     },
     {
-      title: "Glass Partition Systems",
-      description:
+      featurestitle: "Glass Partition Systems",
+      featuresdescription:
         "Frameless, modular, and acoustic glass partitions that maximize openness while maintaining privacy and flexibility.",
     },
     {
-      title: "Commercial Flooring",
-      description:
+      featurestitle: "Commercial Flooring",
+      featuresdescription:
         "Vinyl, SPC, laminate, carpet tiles, wooden flooring, and raised access flooring for modern commercial environments.",
     },
     {
-      title: "Modular Furniture",
-      description:
+      featurestitle: "Modular Furniture",
+      featuresdescription:
         "Ergonomic workstations, executive cabins, conference furniture, reception counters, storage units, and collaborative seating solutions.",
     },
     {
-      title: "Space Planning & Design",
-      description:
+      featurestitle: "Space Planning & Design",
+      featuresdescription:
         "Intelligent space planning with optimized layouts that improve workflow, employee interaction, and efficient utilization of available space.",
     },
   ],
@@ -724,15 +789,44 @@ export const interiorFitOut: ServiceData = {
     },
   ],
 
+  processSection: {
+    processbadge: "Our Process",
+    processtitle: "Interior Fit-Out Execution Process",
+    processdescription:
+      "We transform commercial spaces through meticulous planning, premium materials, and flawless execution.",
+  },
+
   process: [
-    "Site Survey",
-    "Requirement Analysis",
-    "Concept & 3D Design",
-    "Material Selection",
-    "Project Execution",
-    "Quality Inspection",
-    "Final Handover",
-    "Post-Installation Support",
+    {
+      processtitles: "Site Survey",
+      processdescriptions:
+        "Evaluate the space and understand client requirements.",
+    },
+    {
+      processtitles: "Concept & Design",
+      processdescriptions:
+        "Prepare layouts, 3D designs, and space planning concepts.",
+    },
+    {
+      processtitles: "Material Selection",
+      processdescriptions:
+        "Select premium finishes, flooring, furniture, and partitions.",
+    },
+    {
+      processtitles: "Project Execution",
+      processdescriptions:
+        "Execute civil, electrical, furniture, and interior installation works.",
+    },
+    {
+      processtitles: "Quality Inspection",
+      processdescriptions:
+        "Inspect workmanship and ensure premium finishing standards.",
+    },
+    {
+      processtitles: "Final Handover",
+      processdescriptions:
+        "Deliver a ready-to-use interior space with complete client satisfaction.",
+    },
   ],
 
   ctaTitle: "Create Inspiring Workspaces",
@@ -763,33 +857,33 @@ export const audioVisualSolutions: ServiceData = {
 
   features: [
     {
-      title: "Conference Room AV",
-      description:
+      featurestitle: "Conference Room AV",
+      featuresdescription:
         "Integrated meeting room solutions with displays, cameras, microphones, speakers, and wireless collaboration.",
     },
     {
-      title: "LED Video Walls",
-      description:
+      featurestitle: "LED Video Walls",
+      featuresdescription:
         "High-resolution indoor and outdoor LED display solutions for command centers, auditoriums, lobbies, and digital experiences.",
     },
     {
-      title: "Projectors",
-      description:
+      featurestitle: "Projectors",
+      featuresdescription:
         "Professional laser projectors designed for classrooms, boardrooms, auditoriums, and presentation environments.",
     },
     {
-      title: "Digital Signage",
-      description:
+      featurestitle: "Digital Signage",
+      featuresdescription:
         "Interactive digital signage platforms for advertising, information display, wayfinding, and corporate communication.",
     },
     {
-      title: "Professional Audio",
-      description:
+      featurestitle: "Professional Audio",
+      featuresdescription:
         "Premium PA systems, conferencing audio, ceiling speakers, amplifiers, and sound reinforcement solutions.",
     },
     {
-      title: "Smart Classroom Solutions",
-      description:
+      featurestitle: "Smart Classroom Solutions",
+      featuresdescription:
         "Interactive displays, lecture capture systems, wireless presentation, and collaborative learning technologies.",
     },
   ],
@@ -975,13 +1069,44 @@ export const audioVisualSolutions: ServiceData = {
   },
   ],
 
+  processSection: {
+    processbadge: "Our Process",
+    processtitle: "Audio Visual Integration Process",
+    processdescription:
+      "We design and integrate professional AV systems that enhance communication, collaboration, and digital experiences.",
+  },
+
   process: [
-    "Requirement Analysis",
-    "AV System Design",
-    "Equipment Selection",
-    "Installation",
-    "System Integration",
-    "Testing & Training",
+    {
+      processtitles: "Requirement Analysis",
+      processdescriptions:
+        "Understand collaboration, presentation, and communication needs.",
+    },
+    {
+      processtitles: "AV System Design",
+      processdescriptions:
+        "Design customized audio visual layouts and equipment selection.",
+    },
+    {
+      processtitles: "Equipment Installation",
+      processdescriptions:
+        "Install displays, projectors, conferencing systems, and AV devices.",
+    },
+    {
+      processtitles: "System Integration",
+      processdescriptions:
+        "Integrate AV equipment with networking, automation, and collaboration platforms.",
+    },
+    {
+      processtitles: "Testing & Training",
+      processdescriptions:
+        "Test every component and provide user training for seamless operation.",
+    },
+    {
+      processtitles: "Support & Maintenance",
+      processdescriptions:
+        "Deliver software updates, preventive maintenance, and technical assistance.",
+    },
   ],
 
   ctaTitle: "Upgrade Your Audio Visual Experience",
@@ -1012,33 +1137,33 @@ export const consumablesMaterials: ServiceData = {
 
   features: [
     {
-      title: "Electrical Materials",
-      description:
+      featurestitle: "Electrical Materials",
+      featuresdescription:
         "Cables, conduits, switches, sockets, MCCBs, DBs, cable trays, panels, and electrical accessories.",
     },
     {
-      title: "Industrial Safety",
-      description:
+      featurestitle: "Industrial Safety",
+      featuresdescription:
         "Certified PPE including helmets, gloves, safety shoes, reflective jackets, eye protection, and safety signage.",
     },
     {
-      title: "MRO Supplies",
-      description:
+      featurestitle: "MRO Supplies",
+      featuresdescription:
         "Maintenance, repair, and operations materials including lubricants, adhesives, abrasives, fasteners, and tools.",
     },
     {
-      title: "Office Supplies",
-      description:
+      featurestitle: "Office Supplies",
+      featuresdescription:
         "Office stationery, printers, paper products, storage accessories, and workplace essentials.",
     },
     {
-      title: "Facility Maintenance",
-      description:
+      featurestitle: "Facility Maintenance",
+      featuresdescription:
         "General maintenance materials, plumbing supplies, hardware, and building maintenance products.",
     },
     {
-      title: "Cleaning & Hygiene",
-      description:
+      featurestitle: "Cleaning & Hygiene",
+      featuresdescription:
         "Cleaning chemicals, janitorial equipment, tissue products, sanitizers, dispensers, and housekeeping supplies.",
     },
   ],
@@ -1224,13 +1349,44 @@ export const consumablesMaterials: ServiceData = {
     },
   ],
 
+  processSection: {
+    processbadge: "Our Process",
+    processtitle: "Procurement & Supply Process",
+    processdescription:
+      "Our streamlined procurement process ensures timely sourcing, quality assurance, and dependable delivery.",
+  },
+
   process: [
-    "Requirement Analysis",
-    "Product Sourcing",
-    "Quotation",
-    "Quality Inspection",
-    "Delivery",
-    "After-Sales Support",
+    {
+      processtitles: "Requirement Analysis",
+      processdescriptions:
+        "Understand product specifications and procurement requirements.",
+    },
+    {
+      processtitles: "Product Sourcing",
+      processdescriptions:
+        "Source certified products from trusted global manufacturers.",
+    },
+    {
+      processtitles: "Quotation",
+      processdescriptions:
+        "Provide competitive pricing and procurement options.",
+    },
+    {
+      processtitles: "Quality Inspection",
+      processdescriptions:
+        "Verify products before dispatch to ensure quality standards.",
+    },
+    {
+      processtitles: "Delivery",
+      processdescriptions:
+        "Deliver products safely and on schedule.",
+    },
+    {
+      processtitles: "After-Sales Support",
+      processdescriptions:
+        "Provide continuous support for procurement and product assistance.",
+    },
   ],
 
   ctaTitle: "Looking for Reliable Industrial Supplies?",
@@ -1261,33 +1417,33 @@ export const paintingPrinting: ServiceData = {
 
   features: [
     {
-      title: "Interior Painting",
-      description:
+      featurestitle: "Interior Painting",
+      featuresdescription:
         "Premium interior painting with smooth finishes, decorative textures, and durable coatings for commercial and residential spaces.",
     },
     {
-      title: "Exterior Painting",
-      description:
+      featurestitle: "Exterior Painting",
+      featuresdescription:
         "Weather-resistant exterior coatings that protect buildings while delivering long-lasting aesthetics.",
     },
     {
-      title: "Commercial Printing",
-      description:
+      featurestitle: "Commercial Printing",
+      featuresdescription:
         "High-quality printing services for brochures, catalogs, business cards, corporate stationery, and promotional materials.",
     },
     {
-      title: "Sign Boards",
-      description:
+      featurestitle: "Sign Boards",
+      featuresdescription:
         "Indoor and outdoor signboards, illuminated signage, ACP signs, acrylic displays, and directional signage.",
     },
     {
-      title: "Wall Graphics",
-      description:
+      featurestitle: "Wall Graphics",
+      featuresdescription:
         "Custom wall murals, vinyl graphics, office branding, decorative films, and environmental graphics.",
     },
     {
-      title: "Corporate Branding",
-      description:
+      featurestitle: "Corporate Branding",
+      featuresdescription:
         "Complete branding solutions including banners, standees, exhibition displays, vehicle graphics, and promotional materials.",
     },
   ],
@@ -1470,13 +1626,45 @@ export const paintingPrinting: ServiceData = {
     },
   ],
 
+  processSection: {
+    processbadge: "Our Process",
+    processtitle: "Painting & Branding Workflow",
+    processdescription:
+      "From concept development to flawless execution, we deliver premium painting, printing, and branding solutions.",
+
+  },
+
   process: [
-    "Site Assessment",
-    "Design & Color Selection",
-    "Surface Preparation",
-    "Execution",
-    "Quality Inspection",
-    "Project Handover",
+    {
+      processtitles: "Site Assessment",
+      processdescriptions:
+        "Evaluate surfaces, branding needs, and project scope.",
+    },
+    {
+      processtitles: "Design & Planning",
+      processdescriptions:
+        "Develop color schemes, branding concepts, and artwork.",
+    },
+    {
+      processtitles: "Material Selection",
+      processdescriptions:
+        "Select premium paints, vinyl, signage, and printing materials.",
+    },
+    {
+      processtitles: "Execution",
+      processdescriptions:
+        "Complete painting, printing, signage, and branding installations.",
+    },
+    {
+      processtitles: "Quality Inspection",
+      processdescriptions:
+        "Inspect finishes, colors, print quality, and installation accuracy.",
+    },
+    {
+      processtitles: "Project Handover",
+      processdescriptions:
+        "Deliver professionally finished projects that strengthen your brand image.",
+    },
   ],
 
   ctaTitle: "Transform Your Space with Professional Finishes",

@@ -1,16 +1,11 @@
 import {
   Award,
-  Brain,
   Building2,
-  Cable,
-  Cloud,
   Code2,
   Cpu,
-  Database,
   Facebook,
   Fan,
   Flame,
-  Globe,
   HardDrive,
   Instagram,
   Linkedin,
@@ -21,7 +16,6 @@ import {
   Router,
   Server,
   ShieldCheck,
-  Smartphone,
   Target,
   Twitter,
   Users,
@@ -35,7 +29,6 @@ import type {
   StatItem,
   QualityPillar,
   FeatureCardData,
-  RegionNode,
   FooterLinkGroup,
   ValuePillarData,
   MissionPoint,
@@ -186,11 +179,6 @@ export const PREMIUM_SERVICES : FeatureCardData[] = [
   
 ];
 
-export const REGION_NODES: RegionNode[] = [
-  { id: "us-east-1", label: "US-East-1", status: "active", x: 22, y: 38 },
-  { id: "eu-west-2", label: "EU-West-2", status: "syncing", x: 48, y: 28 },
-  { id: "ap-south-1", label: "Asia-Pacific", status: "active", x: 78, y: 48 },
-];
 
 export const SERVICES: FeatureCardData[] = [
   {
