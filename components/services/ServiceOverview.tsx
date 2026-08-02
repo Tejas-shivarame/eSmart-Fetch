@@ -2,11 +2,12 @@
 
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
+import type { ServiceData } from "./ServiceLayout";
 
 interface ServiceOverviewProps {
   service: {
     overview: string;
-    benefits: string[];
+    benefits: ServiceData['benefits'];
   };
 }
 
@@ -61,7 +62,7 @@ export function ServiceOverview({ service }: ServiceOverviewProps) {
                 </div>
 
                 <p className="leading-7 text-accent-gray">
-                  {benefit}
+                  {benefit.description}
                 </p>
               </div>
             ))}
