@@ -43,13 +43,56 @@ export const fireProtection: ServiceData = {
     },
   ],
 
+  industriesSection: {
+    industriesbadge: "Industries We Protect",
+    industriestitle: "Fire Protection Solutions Across Every Industry",
+    industriesdescription:
+      "We deliver intelligent fire detection, suppression, and life safety solutions designed to protect people, property, and business continuity across diverse industries.",
+    industriescardDescription:
+       "Reliable fire protection systems engineered to meet industry regulations, ensure safety compliance, and minimize operational risks.",
+  },
+
   industries: [
-    "Commercial Buildings",
-    "Hospitals",
-    "Hotels",
-    "Factories",
-    "Warehouses",
-    "Educational Institutions",
+    {
+      subtitles: "Corporate Offices",
+      descriptions:
+        "Protect office buildings with intelligent fire alarm systems, emergency lighting, evacuation solutions, and automatic suppression systems.",
+    },
+    {
+      subtitles: "Educational Institutions",
+      descriptions:
+        "Ensure the safety of students, faculty, and campus facilities through compliant fire detection, alarm, and evacuation systems.",
+    },
+    {
+      subtitles: "Government Facilities",
+      descriptions:
+        "Provide mission-critical fire protection solutions for government buildings, public infrastructure, and administrative offices.",
+    },
+    {
+      subtitles: "Healthcare",
+      descriptions:
+        "Safeguard hospitals, clinics, and healthcare facilities with advanced fire detection, suppression, and life safety systems.",
+    },
+      {
+      subtitles: "Hotels & Hospitality",
+      descriptions:
+        "Protect guests and staff with integrated fire alarm, emergency lighting, sprinkler, and evacuation systems for hospitality environments.",
+    },
+    {
+      subtitles: "Retail & Commercial",
+      descriptions:
+        "Secure shopping malls, retail stores, and commercial complexes with reliable fire protection and emergency response solutions.",
+    },
+    {
+      subtitles: "Industrial Facilities",
+      descriptions:
+        "Reduce fire risks in factories, warehouses, and manufacturing plants with industrial-grade fire detection and suppression systems.",
+    },
+    {
+      subtitles: "Data Centers",
+      descriptions:
+        "Protect mission-critical IT infrastructure using early fire detection, clean agent suppression, and continuous fire monitoring systems.",
+    },
   ],
 
   benefits: [
@@ -229,13 +272,56 @@ export const securitySurveillance: ServiceData = {
     },
   ],
 
+  industriesSection: {
+    industriesbadge: "Industries We Protect",
+    industriestitle: "Fire Protection Solutions Across Every Industry",
+    industriesdescription:
+       "We provide intelligent fire detection, alarm, suppression, and life safety solutions designed to protect people, property, and business continuity across diverse industries.",
+    industriescardDescription:
+        "Certified fire protection systems engineered to meet safety regulations, reduce risks, and ensure reliable emergency response.",
+},
+  
   industries: [
-    "Corporate Offices",
-    "Hospitals",
-    "Hotels",
-    "Manufacturing",
-    "Retail",
-    "Educational Institutions",
+    {
+      subtitles: "Corporate Offices",
+      descriptions:
+        "Protect office buildings with intelligent fire alarm systems, emergency lighting, evacuation solutions, and automatic suppression systems.",
+    },
+    {
+      subtitles: "Educational Institutions",
+      descriptions:
+        "Ensure the safety of students, faculty, and campus facilities through compliant fire detection, alarm, and evacuation systems.",
+    },
+    {
+      subtitles: "Government Facilities",
+      descriptions:
+        "Provide mission-critical fire protection solutions for government buildings, public infrastructure, and administrative offices.",
+    },
+    {
+      subtitles: "Healthcare",
+      descriptions:
+        "Safeguard hospitals, clinics, and healthcare facilities with advanced fire detection, suppression, and life safety systems.",
+    },
+    {
+      subtitles: "Hotels & Hospitality",
+      descriptions:
+        "Protect guests and staff with integrated fire alarm, emergency lighting, sprinkler, and evacuation systems for hospitality environments.",
+    },
+    {
+      subtitles: "Retail & Commercial",
+      descriptions:
+        "Secure shopping malls, retail stores, and commercial complexes with reliable fire protection and emergency response solutions.",
+    },
+    {
+      subtitles: "Industrial Facilities",
+      descriptions:
+        "Reduce fire risks in factories, warehouses, and manufacturing plants with industrial-grade fire detection and suppression systems.",
+    },
+    {
+      subtitles: "Data Centers",
+      descriptions:
+        "Protect mission-critical IT infrastructure using early fire detection, clean agent suppression, and continuous fire monitoring systems.",
+    },
   ],
 
   benefits: [
@@ -479,7 +565,7 @@ export const interiorFitOut: ServiceData = {
     { name: "Merino", logo: "/images/merino.png" },
   ],
 
-    products: [
+  products: [
   {
     title: "Office Workstations",
     image: "/images/office-workstation.jpg",
@@ -546,49 +632,93 @@ export const interiorFitOut: ServiceData = {
   }
   ],
 
+  industriesSection: {
+    industriesbadge: "Industries We Transform",
+
+    industriestitle: "Interior Fit-Out Solutions for Every Industry",
+
+    industriesdescription:
+      "We design and deliver modern, functional, and aesthetically appealing interior environments tailored to the operational needs of diverse industries.",
+
+    industriescardDescription:
+      "Premium turnkey interior solutions that combine innovative design, quality materials, and exceptional craftsmanship.",
+  },
+
   industries: [
-    "Corporate Offices",
-    "IT Parks",
-    "Commercial Buildings",
-    "Retail Stores",
-    "Hospitals",
-    "Hotels",
-    "Educational Institutions",
-    "Co-working Spaces",
+    {
+      subtitles: "Corporate Offices",
+      descriptions:
+        "Modern office interiors, executive cabins, collaborative workspaces, conference rooms, and reception areas designed to enhance productivity and brand identity.",
+    },
+    {
+      subtitles: "Healthcare",
+      descriptions:
+        "Functional healthcare interiors with hygienic finishes, patient-friendly environments, modular partitions, and efficient clinical workspaces.",
+    },
+    {
+      subtitles: "Hospitality",
+      descriptions:
+        "Elegant hotel interiors, guest rooms, restaurants, banquet halls, and lounge spaces designed to deliver exceptional customer experiences.",
+    },
+    {
+      subtitles: "Retail",
+      descriptions:
+        "Contemporary retail interiors featuring premium displays, customer engagement spaces, optimized layouts, and attractive store environments.",
+    },
+    {
+      subtitles: "Educational Institutions",
+      descriptions:
+        "Innovative classrooms, training centers, libraries, faculty offices, and collaborative learning environments that support modern education.",
+    },
+    {
+      subtitles: "Commercial Buildings",
+      descriptions:
+        "Complete interior fit-out solutions for commercial complexes, business centers, shared workspaces, and mixed-use developments.",
+    },
+    {
+      subtitles: "Government Facilities",
+      descriptions:
+        "Professional interior solutions for government offices, administrative buildings, meeting halls, and public service facilities.",
+    },
+    {
+      subtitles: "Industrial Facilities",
+      descriptions:
+        "Durable office interiors, control rooms, training centers, and administrative spaces designed for manufacturing and industrial environments.",
+    },
   ],
 
-benefits: [
-  {
-    subtitle: "Custom Interior Design",
-    description:
-      "Tailor-made interior solutions designed to reflect your brand identity while maximizing functionality, comfort, and visual appeal.",
-  },
-  {
-    subtitle: "Space Optimization",
-    description:
-      "Intelligent space planning and ergonomic layouts that improve workflow, collaboration, and efficient utilization of every square foot.",
-  },
-  {
-    subtitle: "Premium Quality Materials",
-    description:
-      "High-quality finishes, durable materials, and trusted brands ensure long-lasting performance with a premium look and feel.",
-  },
-  {
-    subtitle: "Professional Execution",
-    description:
-      "Experienced project teams deliver precise installation, superior craftsmanship, and timely project completion with minimal disruption.",
-  },
-  {
-    subtitle: "Turnkey Project Delivery",
-    description:
-      "Complete end-to-end fit-out services, from concept and design to procurement, execution, and final handover under one roof.",
-  },
-  {
-    subtitle: "Post-Installation Support",
-    description:
-      "Ongoing maintenance, inspections, and dedicated support ensure your interior spaces remain functional, modern, and well-maintained.",
-  },
-],
+  benefits: [
+    {
+      subtitle: "Custom Interior Design",
+      description:
+        "Tailor-made interior solutions designed to reflect your brand identity while maximizing functionality, comfort, and visual appeal.",
+    },
+    {
+      subtitle: "Space Optimization",
+      description:
+        "Intelligent space planning and ergonomic layouts that improve workflow, collaboration, and efficient utilization of every square foot.",
+    },
+    {
+      subtitle: "Premium Quality Materials",
+      description:
+        "High-quality finishes, durable materials, and trusted brands ensure long-lasting performance with a premium look and feel.",
+    },
+    {
+      subtitle: "Professional Execution",
+      description:
+        "Experienced project teams deliver precise installation, superior craftsmanship, and timely project completion with minimal disruption.",
+    },
+    {
+      subtitle: "Turnkey Project Delivery",
+      description:
+        "Complete end-to-end fit-out services, from concept and design to procurement, execution, and final handover under one roof.",
+    },
+    {
+      subtitle: "Post-Installation Support",
+      description:
+        "Ongoing maintenance, inspections, and dedicated support ensure your interior spaces remain functional, modern, and well-maintained.",
+    },
+  ],
 
   process: [
     "Site Survey",
@@ -753,18 +883,62 @@ export const audioVisualSolutions: ServiceData = {
     }
   ],
 
+  industriesSection: {
+    industriesbadge: "Industries We Connect",
+
+    industriestitle: "Professional Audio Visual Solutions for Every Industry",
+
+    industriesdescription:
+      "We deliver integrated audio visual technologies that enhance communication, collaboration, presentations, and digital experiences across diverse commercial and institutional environments.",
+
+    industriescardDescription:
+      "Enterprise-grade AV systems engineered for seamless collaboration, immersive presentations, and intelligent communication.",
+  },
+
   industries: [
-    "Corporate Offices",
-    "Education",
-    "Government",
-    "Healthcare",
-    "Hotels",
-    "Retail",
-    "Auditoriums",
-    "Command Centers",
+    {
+      subtitles: "Corporate Offices",
+      descriptions:
+        "Integrated meeting rooms, boardrooms, and collaboration spaces equipped with professional conferencing, displays, and wireless presentation systems.",
+    },
+    {
+      subtitles: "Educational Institutions",
+      descriptions:
+        "Interactive classrooms, lecture halls, training centers, and smart learning environments powered by advanced AV technologies.",
+    },
+    {
+      subtitles: "Government Facilities",
+      descriptions:
+        "Reliable audio visual systems for command centers, briefing rooms, control rooms, and public sector communication facilities.",
+    },
+    {
+      subtitles: "Healthcare",
+      descriptions:
+        "Medical training rooms, telemedicine solutions, conference facilities, and digital information displays for healthcare environments.",
+    },
+    {
+      subtitles: "Hotels & Hospitality",
+      descriptions:
+        "Premium AV solutions for banquet halls, conference rooms, auditoriums, event venues, and guest entertainment spaces.",
+    },
+    {
+      subtitles: "Retail",
+      descriptions:
+        "Digital signage, interactive kiosks, LED displays, and customer engagement solutions that enhance the retail experience.",
+    },
+    {
+      subtitles: "Auditoriums",
+      descriptions:
+        "Professional projection systems, LED video walls, stage audio, and presentation technologies for large-scale venues.",
+    },
+    {
+      subtitles: "Command Centers",
+      descriptions:
+        "Mission-critical video walls, centralized monitoring, real-time collaboration, and visualization systems for operational control centers.",
+    },
   ],
 
- benefits: [
+  benefits: [
   {
     subtitle: "Seamless Collaboration",
     description:
@@ -795,7 +969,7 @@ export const audioVisualSolutions: ServiceData = {
     description:
       "Preventive maintenance, software updates, and dedicated technical support ensure reliable performance and maximum system uptime.",
   },
-],
+  ],
 
   process: [
     "Requirement Analysis",
@@ -865,20 +1039,20 @@ export const consumablesMaterials: ServiceData = {
     },
   ],
 
-brands: [
-  { name: "3M", logo: "/images/consumablesMaterials/3m.png" },
-  { name: "Honeywell", logo: "/images/consumablesMaterials/honeywell.png" },
-  { name: "Schneider Electric", logo: "/images/consumablesMaterials/schneider.png" },
-  { name: "ABB", logo: "/images/consumablesMaterials/abb.png" },
-  { name: "Legrand", logo: "/images/consumablesMaterials/legrand.png" },
-  { name: "Bosch", logo: "/images/consumablesMaterials/bosch.png" },
-  { name: "Stanley", logo: "/images/consumablesMaterials/stanley.png" },
-  { name: "Makita", logo: "/images/consumablesMaterials/makita.png" },
-  { name: "CRC Industries", logo: "/images/consumablesMaterials/crc.png" },
-  { name: "Kimberly-Clark Professional", logo: "/images/consumablesMaterials/kimberly-clark.png" },
-],
+  brands: [
+    { name: "3M", logo: "/images/consumablesMaterials/3m.png" },
+    { name: "Honeywell", logo: "/images/consumablesMaterials/honeywell.png" },
+    { name: "Schneider Electric", logo: "/images/consumablesMaterials/schneider.png" },
+    { name: "ABB", logo: "/images/consumablesMaterials/abb.png" },
+    { name: "Legrand", logo: "/images/consumablesMaterials/legrand.png" },
+    { name: "Bosch", logo: "/images/consumablesMaterials/bosch.png" },
+    { name: "Stanley", logo: "/images/consumablesMaterials/stanley.png" },
+    { name: "Makita", logo: "/images/consumablesMaterials/makita.png" },
+    { name: "CRC Industries", logo: "/images/consumablesMaterials/crc.png" },
+    { name: "Kimberly-Clark Professional", logo: "/images/consumablesMaterials/kimberly-clark.png" },
+  ],
 
-    products: [
+  products: [
       {
         title: "Safety PPE Kit",
         image: "/images/consumablesMaterials/ppe-kit.png",
@@ -958,48 +1132,93 @@ brands: [
       }
   ],
 
+  industriesSection: {
+    industriesbadge: "Industries We Support",
+
+    industriestitle: "Industrial Consumables for Every Industry",
+
+    industriesdescription:
+      "We supply high-quality industrial consumables, engineering materials, PPE, electrical products, tools, and maintenance essentials that keep businesses operating efficiently and safely.",
+
+    industriescardDescription:
+      "Reliable procurement solutions delivering certified products, trusted brands, and consistent supply for every industry.",
+  },
+
   industries: [
-    "Manufacturing",
-    "Corporate Offices",
-    "Healthcare",
-    "Hospitality",
-    "Retail",
-    "Warehouses",
-    "Educational Institutions",
-    "Industrial Plants",
+    {
+      subtitles: "Manufacturing",
+      descriptions:
+        "Reliable supply of industrial tools, PPE, electrical materials, lubricants, fasteners, and maintenance products that support continuous manufacturing operations.",
+    },
+    {
+      subtitles: "Corporate Offices",
+      descriptions:
+        "Complete workplace solutions including office supplies, electrical accessories, cleaning products, safety equipment, and facility maintenance materials.",
+    },
+    {
+      subtitles: "Healthcare",
+      descriptions:
+        "Supply of hygiene products, PPE, facility maintenance materials, electrical accessories, and safety essentials for healthcare environments.",
+    },
+    {
+      subtitles: "Hospitality",
+      descriptions:
+        "Cleaning supplies, hygiene products, maintenance materials, electrical accessories, and operational consumables for hotels and hospitality facilities.",
+    },
+    {
+      subtitles: "Retail",
+      descriptions:
+        "Industrial consumables, electrical materials, cleaning products, safety equipment, and maintenance supplies that support retail operations.",
+    },
+    {
+      subtitles: "Warehouses",
+      descriptions:
+        "Safety PPE, industrial tools, lubricants, electrical products, fasteners, and maintenance materials for warehouse and logistics operations.",
+    },
+    {
+      subtitles: "Educational Institutions",
+      descriptions:
+        "Reliable supply of electrical accessories, maintenance products, office supplies, cleaning materials, and workplace safety equipment for educational campuses.",
+    },
+    {
+      subtitles: "Industrial Plants",
+      descriptions:
+        "Comprehensive procurement of engineering materials, industrial lubricants, PPE, electrical accessories, hardware, and MRO supplies for plant operations.",
+    },
   ],
-benefits: [
-  {
-    subtitle: "Extensive Product Range",
-    description:
-      "Access a comprehensive portfolio of industrial consumables, engineering materials, safety equipment, and facility maintenance products from trusted global brands.",
-  },
-  {
-    subtitle: "Reliable Supply Chain",
-    description:
-      "Ensure uninterrupted operations with dependable sourcing, inventory management, and on-time delivery for all your procurement requirements.",
-  },
-  {
-    subtitle: "Premium Quality Products",
-    description:
-      "We supply certified, industry-compliant products from leading manufacturers to ensure safety, durability, and long-term performance.",
-  },
-  {
-    subtitle: "Competitive Pricing",
-    description:
-      "Cost-effective procurement solutions with transparent pricing, bulk purchasing advantages, and exceptional value for businesses of every size.",
-  },
-  {
-    subtitle: "Fast & Timely Delivery",
-    description:
-      "Efficient logistics and streamlined order processing ensure your materials are delivered quickly to keep projects and operations on schedule.",
-  },
-  {
-    subtitle: "Dedicated Customer Support",
-    description:
-      "Our procurement specialists provide expert product recommendations, responsive assistance, and reliable after-sales support for every order.",
-  },
-],
+
+  benefits: [
+    {
+      subtitle: "Extensive Product Range",
+      description:
+        "Access a comprehensive portfolio of industrial consumables, engineering materials, safety equipment, and facility maintenance products from trusted global brands.",
+    },
+    {
+      subtitle: "Reliable Supply Chain",
+      description:
+        "Ensure uninterrupted operations with dependable sourcing, inventory management, and on-time delivery for all your procurement requirements.",
+    },
+    {
+      subtitle: "Premium Quality Products",
+      description:
+        "We supply certified, industry-compliant products from leading manufacturers to ensure safety, durability, and long-term performance.",
+    },
+    {
+      subtitle: "Competitive Pricing",
+      description:
+        "Cost-effective procurement solutions with transparent pricing, bulk purchasing advantages, and exceptional value for businesses of every size.",
+    },
+    {
+      subtitle: "Fast & Timely Delivery",
+      description:
+        "Efficient logistics and streamlined order processing ensure your materials are delivered quickly to keep projects and operations on schedule.",
+    },
+    {
+      subtitle: "Dedicated Customer Support",
+      description:
+        "Our procurement specialists provide expert product recommendations, responsive assistance, and reliable after-sales support for every order.",
+    },
+  ],
 
   process: [
     "Requirement Analysis",
@@ -1159,13 +1378,59 @@ export const paintingPrinting: ServiceData = {
     },
   ],
 
+  industriesSection: {
+    industriesbadge: "Industries We Enhance",
+
+    industriestitle: "Painting & Branding Solutions for Every Industry",
+
+    industriesdescription:
+      "We deliver premium painting, commercial printing, signage, and corporate branding solutions that transform spaces, strengthen brand identity, and create lasting visual impact.",
+
+    industriescardDescription:
+      "Professional painting, printing, and branding services engineered for exceptional quality, durability, and visual excellence.",
+  },
+
   industries: [
-    "Corporate Offices",
-    "Retail",
-    "Healthcare",
-    "Hospitality",
-    "Educational Institutions",
-    "Commercial Buildings",
+    {
+      subtitles: "Corporate Offices",
+      descriptions:
+        "Professional interior painting, office branding, wall graphics, directional signage, and corporate printing solutions that create inspiring workspaces.",
+    },
+    {
+      subtitles: "Retail",
+      descriptions:
+        "Eye-catching storefront signage, promotional graphics, window branding, display solutions, and premium painting that enhance customer engagement.",
+    },
+    {
+      subtitles: "Healthcare",
+      descriptions:
+        "Durable interior coatings, hygiene-compliant finishes, safety signage, wayfinding systems, and branded communication materials for healthcare facilities.",
+    },
+    {
+      subtitles: "Educational Institutions",
+      descriptions:
+        "Campus signage, classroom graphics, educational displays, interior painting, and printed communication materials for schools and universities.",
+    },
+    {
+      subtitles: "Hotels & Hospitality",
+      descriptions:
+        "Luxury decorative finishes, feature walls, custom signage, branding elements, and elegant printing solutions that elevate guest experiences.",
+    },
+    {
+      subtitles: "Commercial Buildings",
+      descriptions:
+        "Complete painting, exterior coatings, wayfinding signage, lobby branding, and visual communication solutions for commercial properties.",
+    },
+    {
+      subtitles: "Industrial Facilities",
+      descriptions:
+        "Industrial-grade protective coatings, safety markings, identification signage, hazard labels, and durable printing solutions for manufacturing environments.",
+    },
+    {
+      subtitles: "Government Facilities",
+      descriptions:
+        "Professional painting, official signage, public information displays, directional systems, and branded communication materials for government buildings.",
+    },
   ],
 
   benefits: [
