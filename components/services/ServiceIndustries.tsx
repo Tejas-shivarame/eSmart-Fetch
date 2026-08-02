@@ -50,10 +50,11 @@ export function ServiceIndustries({
           viewport={{ once: true }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="rounded-full border border-accent-blue/30 bg-accent-blue/10 px-4 py-2 text-sm font-medium text-accent-blue">
-            {service.industriesSection.industriesbadge}
-          </span>
-
+          <div className="flex justify-center">
+            <span className="rounded-full border border-accent-blue/30 bg-accent-blue/10 px-4 py-2 text-sm font-medium text-accent-blue">
+              {service.industriesSection.industriesbadge}
+            </span>
+          </div>
           <h2 className="mt-6 font-display text-4xl font-bold md:text-5xl">
             {service.industriesSection.industriestitle}
           </h2>

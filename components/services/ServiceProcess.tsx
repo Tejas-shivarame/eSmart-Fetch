@@ -18,24 +18,51 @@ import {
 
 interface ServiceProcessProps {
   service: {
-    process: string[];
+    processSection: {
+      processbadge: string;
+      processtitle: string;
+      processdescription: string;
+    };
+    process: {
+      processtitles: string;
+      processdescriptions: string;
+    }[];
   };
 }
 
+
 const processIcons: Record<string, LucideIcon> = {
+  "Site Inspection": ClipboardList,
+  "Requirement Analysis": ClipboardList,
   Consultation: ClipboardList,
+
+  "System Design": PencilRuler,
+  "Concept & 3D Design": PencilRuler,
   Design: PencilRuler,
+
   "Material Selection": PackageSearch,
-  Execution: Hammer,
-  Inspection: ShieldCheck,
-  Handover: Handshake,
+  "Equipment Selection": PackageSearch,
+  "Product Sourcing": PackageSearch,
 
   Installation: Wrench,
+  Execution: Hammer,
+  "Project Execution": Hammer,
+
   Testing: ShieldCheck,
+  "Quality Inspection": ShieldCheck,
+  Inspection: ShieldCheck,
+
   Commissioning: Flame,
+
   Networking: Network,
   Configuration: Cpu,
   Monitoring: Camera,
+
+  Handover: Handshake,
+  "Final Handover": Handshake,
+
+  Maintenance: Wrench,
+  "After-Sales Support": Handshake,
 };
 
 export function ServiceProcess({ service }: ServiceProcessProps) {
@@ -46,26 +73,25 @@ export function ServiceProcess({ service }: ServiceProcessProps) {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mx-auto max-w-3xl text-center">
           
           <span className="rounded-full border border-accent-blue/30 bg-accent-blue/10 px-4 py-2 text-sm font-medium text-accent-blue">
-            Our Process
+            {service.processSection.processbadge}
           </span>
 
           <h2 className="mt-6 font-display text-4xl font-bold md:text-5xl">
-            How We Work
+            {service.processSection.processtitle}
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-accent-gray">
-            From consultation to completion, we ensure every stage is handled
-            with precision and professionalism.
+            {service.processSection.processdescription}
           </p>
         </motion.div>
 
         <div className="relative mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {service.process.map((step, index) => {
-            const Icon = processIcons[step] ?? ClipboardList;
+            const Icon = processIcons[step.processtitles] ?? ClipboardList;
 
             return (
               <motion.div
-                key={step}
+                key={step.processtitles}
                 initial={{ opacity: 0, y: 35 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -89,13 +115,11 @@ export function ServiceProcess({ service }: ServiceProcessProps) {
                 </div>
 
                 <h3 className="mt-8 text-2xl font-semibold">
-                  {step}
+                  {step.processtitles}
                 </h3>
 
                 <p className="mt-4 leading-7 text-accent-gray">
-                  Every phase is carefully planned and executed to ensure
-                  quality, compliance, timely delivery, and complete customer
-                  satisfaction.
+                 {step.processdescriptions}
                 </p>
               </motion.div>
             );

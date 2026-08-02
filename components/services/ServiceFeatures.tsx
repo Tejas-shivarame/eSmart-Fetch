@@ -26,42 +26,56 @@ interface ServiceFeaturesProps {
   service: ServiceData;
 }
 export interface Feature {
-  title: string;
-  description: string;
+  featurestitle: string;
+  featuresdescription: string;
 }
-
 const featureIcons: Record<string, LucideIcon> = {
-  // Interior Fit-Out
-  "Office Interiors": Building2,
-  "False Ceiling": Square,
-  "Glass Partitions": LayoutGrid,
- "Flooring": LayoutGrid,
-  "Furniture Installation": Armchair,
-  "Space Planning": Ruler,
+  // Interior & Fit-Out
+  "Corporate Office Interiors": Building2,
+  "False Ceiling Systems": Square,
+  "Glass Partition Systems": LayoutGrid,
+  "Commercial Flooring": LayoutGrid,
+  "Modular Furniture": Armchair,
+  "Space Planning & Design": Ruler,
 
   // Fire Protection
   "Fire Alarm Systems": Flame,
   "Automatic Sprinkler Systems": ShieldCheck,
-  "Fire Hydrant Systems": Wrench,
-  "Gas Suppression Systems": ShieldCheck,
   "Emergency Exit Lighting": Zap,
+  "Annual Maintenance Contracts": Wrench,
 
-  // Security
+  // Security & Surveillance
   "IP CCTV Systems": Camera,
   "Biometric Access Control": Lock,
   "Video Door Phones": Camera,
   "Intrusion Alarm Systems": ShieldCheck,
   "Remote Monitoring": Cpu,
 
-  // AV
+  // Audio Visual
   "Conference Room AV": Cpu,
   "LED Video Walls": LayoutGrid,
   "Projectors": LayoutGrid,
   "Digital Signage": LayoutGrid,
-  "Sound Systems": Wifi,
+  "Professional Audio": Wifi,
   "Smart Classroom Solutions": Cpu,
 
-  // Networking
+  // Consumables & Materials
+  "Electrical Materials": Zap,
+  "Industrial Safety": ShieldCheck,
+  "MRO Supplies": Wrench,
+  "Office Supplies": Building2,
+  "Facility Maintenance": Wrench,
+  "Cleaning & Hygiene": CheckCircle2,
+
+  // Painting & Printing
+  "Interior Painting": Building2,
+  "Exterior Painting": Building2,
+  "Commercial Printing": LayoutGrid,
+  "Sign Boards": Square,
+  "Wall Graphics": LayoutGrid,
+  "Corporate Branding": CheckCircle2,
+
+  // Networking (if you use it later)
   "Structured Cabling": Network,
   "Network Infrastructure": Network,
   "WiFi Solutions": Wifi,
@@ -96,11 +110,11 @@ export function ServiceFeatures({ service }: ServiceFeaturesProps) {
         {/* Features */}
         <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2">
           {service.features.map((feature, index) => {
-          const Icon = featureIcons[feature.title] ?? CheckCircle2;
+          const Icon = featureIcons[feature.featurestitle] ?? CheckCircle2;
 
             return (
               <motion.div
-                key={`${feature.title}-${index}`}
+                key={`${feature.featurestitle}-${index}`}
                 initial={{ opacity: 0, y: 35 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -112,11 +126,11 @@ export function ServiceFeatures({ service }: ServiceFeaturesProps) {
                 </div>
 
                 <h3 className="mt-6 text-xl font-semibold">
-                  {feature.title}
+                  {feature.featurestitle}
                 </h3>
 
                 <p className="mt-4 leading-7 text-accent-gray">
-                    {feature.description}
+                    {feature.featuresdescription}
                 </p>
               </motion.div>
             );
