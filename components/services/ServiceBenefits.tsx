@@ -12,9 +12,13 @@ import {
 
 interface ServiceBenefitsProps {
   service: {
-    benefits: string[];
+    benefits: {
+      subtitle: string;
+      description: string;
+    }[];
   };
 }
+
 
 const icons = [
   ShieldCheck,
@@ -24,6 +28,8 @@ const icons = [
   BadgeCheck,
   Clock3,
 ];
+
+
 
 export function ServiceBenefits({ service }: ServiceBenefitsProps) {
   return (
@@ -56,7 +62,7 @@ export function ServiceBenefits({ service }: ServiceBenefitsProps) {
 
             return (
               <motion.div
-                key={benefit}
+                key={benefit.subtitle}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -80,13 +86,11 @@ export function ServiceBenefits({ service }: ServiceBenefitsProps) {
                 </div>
 
                 <h3 className="mt-6 text-xl font-semibold">
-                  {benefit}
+                  {benefit.subtitle}
                 </h3>
 
                 <p className="mt-4 leading-7 text-accent-gray">
-                  Designed to deliver measurable value with certified
-                  professionals, modern engineering practices, and dependable
-                  support.
+                  {benefit.description}
                 </p>
               </motion.div>
             );
