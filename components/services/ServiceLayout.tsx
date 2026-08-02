@@ -16,6 +16,31 @@ import { ParticleField } from "@/components/ui/ParticleField";
 import { AnimatedGrid } from "@/components/ui/AnimatedGrid";
 import TrustedBrands from "@/components/services/TrustedBrands";
 
+import { ServiceHero } from "./ServiceHero";
+import { ServiceOverview } from "./ServiceOverview";
+import { ServiceFeatures } from "./ServiceFeatures";
+import { ServiceBenefits } from "./ServiceBenefits";
+import { ServiceIndustries } from "./ServiceIndustries";
+import { ServiceProcess } from "./ServiceProcess";
+import { ServiceCTA } from "./ServiceCTA";
+import ProductsSection from "./ProductsSection";
+
+interface Props {
+  service: ServiceData;
+}
+
+export interface Brand {
+  name: string;
+  logo: string;
+}
+
+export interface Product {
+  title: string;
+  image: string;
+  description: string;
+  features: string[];
+}
+
 export interface Feature {
   title: string;
   description: string;
@@ -30,44 +55,18 @@ export interface ServiceData {
 
   features: Feature[];
   industries: string[];
-  benefits: string[];
-  process: string[];
+  benefits: {
+    subtitle: string;
+    description: string;
+  }[];
 
-  ctaTitle: string;
-  ctaDescription: string;
-}
-
-interface Props {
-  service: ServiceData;
-}
-import { ServiceHero } from "./ServiceHero";
-import { ServiceOverview } from "./ServiceOverview";
-import { ServiceFeatures } from "./ServiceFeatures";
-import { ServiceBenefits } from "./ServiceBenefits";
-import { ServiceIndustries } from "./ServiceIndustries";
-import { ServiceProcess } from "./ServiceProcess";
-import { ServiceCTA } from "./ServiceCTA";
-import  ProductsSection  from "./ProductsSection";
-
-
-export interface Brand {
-  name: string;
-  logo: string;
-}
-
-export interface ServiceData {
-  badge: string;
-  title: string;
-  highlight: string;
-  description: string;
-  overview: string;
-
-  features: Feature[];
-  industries: string[];
-  benefits: string[];
-
-  // 👇 Add this
   brands?: Brand[];
+
+  productBadge?: string;
+  productTitle?: string;
+  productDescription?: string;
+  products?: Product[];
+
 
   process: string[];
 
@@ -89,7 +88,14 @@ export function ServiceLayout({ service }: Props) {
 
     <TrustedBrands brands={service.brands} />
 
-    <ProductsSection />
+    {service.products?.length ? (
+      <ProductsSection
+        badge={service.productBadge ?? "Our Products"}
+        title={service.productTitle ?? "Our Products"}
+        description={service.productDescription ?? ""}
+        products={service.products}
+      />
+    ) : null}
 
     <ServiceIndustries service={service} />
 
@@ -320,7 +326,7 @@ export function ServiceLayout({ service }: Props) {
             {service.benefits.map((benefit, index) => (
 
               <motion.div
-                key={benefit}
+                key={benefit.subtitle}
                 initial={{ opacity: 0, scale: .95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -345,19 +351,14 @@ export function ServiceLayout({ service }: Props) {
 
                     <h3 className="font-display text-xl font-semibold">
 
-                      {benefit}
+                      {benefit.subtitle}
 
                     </h3>
 
                   </div>
 
                   <p className="mt-5 text-sm leading-7 text-accent-gray">
-
-                    Every project is executed with precision,
-                    safety,
-                    quality assurance,
-                    and dedicated post-installation support.
-
+                    {benefit.description}
                   </p>
 
                 </GlowCard>
