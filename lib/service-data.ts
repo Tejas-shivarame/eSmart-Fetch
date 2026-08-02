@@ -866,16 +866,16 @@ export const consumablesMaterials: ServiceData = {
   ],
 
 brands: [
-  { name: "3M", logo: "/images/consumablesconsumablesMaterials/3m.png" },
-  { name: "Honeywell", logo: "/images/consumablesconsumablesMaterials/honeywell.png" },
-  { name: "Schneider Electric", logo: "/images/consumablesconsumablesMaterials/schneider.png" },
-  { name: "ABB", logo: "/images/consumablesconsumablesMaterials/abb.png" },
-  { name: "Legrand", logo: "/images/consumablesconsumablesMaterials/legrand.png" },
-  { name: "Bosch", logo: "/images/consumablesconsumablesMaterials/bosch.png" },
-  { name: "Stanley", logo: "/images/consumablesconsumablesMaterials/stanley.png" },
-  { name: "Makita", logo: "/images/consumablesconsumablesMaterials/makita.png" },
-  { name: "CRC Industries", logo: "/images/consumablesconsumablesMaterials/crc.png" },
-  { name: "Kimberly-Clark Professional", logo: "/images/consumablesconsumablesMaterials/kimberly-clark.png" },
+  { name: "3M", logo: "/images/consumablesMaterials/3m.png" },
+  { name: "Honeywell", logo: "/images/consumablesMaterials/honeywell.png" },
+  { name: "Schneider Electric", logo: "/images/consumablesMaterials/schneider.png" },
+  { name: "ABB", logo: "/images/consumablesMaterials/abb.png" },
+  { name: "Legrand", logo: "/images/consumablesMaterials/legrand.png" },
+  { name: "Bosch", logo: "/images/consumablesMaterials/bosch.png" },
+  { name: "Stanley", logo: "/images/consumablesMaterials/stanley.png" },
+  { name: "Makita", logo: "/images/consumablesMaterials/makita.png" },
+  { name: "CRC Industries", logo: "/images/consumablesMaterials/crc.png" },
+  { name: "Kimberly-Clark Professional", logo: "/images/consumablesMaterials/kimberly-clark.png" },
 ],
 
     products: [
