@@ -54,7 +54,17 @@ export interface ServiceData {
   overview: string;
 
   features: Feature[];
-  industries: string[];
+    industriesSection: {
+    industriesbadge: string;
+    industriestitle: string;
+    industriesdescription: string;
+    industriescardDescription: string;
+  };
+
+  industries: {
+    subtitles: string;
+    descriptions: string;
+  }[];
   benefits: {
     subtitle: string;
     description: string;
@@ -383,13 +393,16 @@ export function ServiceLayout({ service }: Props) {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
+          <span className="rounded-full border border-accent-blue/30 bg-accent-blue/10 px-4 py-2 text-sm font-medium text-accent-blue">
+              {service.industriesSection.industriesbadge}
+          </span>
+          
             <h2 className="text-center font-display text-4xl font-bold">
-              Industries We Serve
+              {service.industriesSection.industriestitle}
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-center text-lg text-accent-gray">
-              Trusted by organizations across diverse industries with
-              reliable engineering and infrastructure solutions.
+              {service.industriesSection.industriesdescription}
             </p>
           </motion.div>
 
@@ -398,7 +411,7 @@ export function ServiceLayout({ service }: Props) {
             {service.industries.map((industry, index) => (
 
               <motion.div
-                key={industry}
+                key={industry.subtitles}
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -416,13 +429,11 @@ export function ServiceLayout({ service }: Props) {
                   <Building2 className="h-10 w-10 text-accent-purple" />
 
                   <h3 className="mt-5 font-display text-xl font-semibold">
-                    {industry}
+                    {industry.subtitles}
                   </h3>
 
                   <p className="mt-3 text-sm leading-7 text-accent-gray">
-                    Customized engineering and infrastructure solutions
-                    tailored to the operational requirements of the
-                    {` ${industry.toLowerCase()}`} sector.
+                    {industry.descriptions}
                   </p>
 
                 </GlowCard>
