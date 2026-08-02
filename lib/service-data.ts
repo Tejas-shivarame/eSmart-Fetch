@@ -557,18 +557,22 @@ export const interiorFitOut: ServiceData = {
   ],
 
   brands: [
-    { name: "Godrej Interio", logo: "/images/godrej-interio.png" },
-    { name: "Greenlam", logo: "/images/greenlam.png" },
-    { name: "Saint-Gobain", logo: "/images/saint-gobain.png" },
-    { name: "Armstrong", logo: "/images/armstrong.png" },
-    { name: "Interface", logo: "/images/interface.png" },
-    { name: "Merino", logo: "/images/merino.png" },
+    { name: "Godrej Interio", logo: "/images/interiorFitOut/godrej-interio.png" },
+    { name: "CERA", logo: "/images/interiorFitOut/cera.png" },
+    { name: "Hindware", logo: "/images/interiorFitOut/hindware.png" },
+    { name: "Greenlam", logo: "/images/interiorFitOut/greenlam.png" },
+    { name: "Saint-Gobain", logo: "/images/interiorFitOut/saint-gobain.png" },
+    { name: "Armstrong", logo: "/images/interiorFitOut/armstrong.png" },
+    { name: "Interface", logo: "/images/interiorFitOut/interface.png" },
+    { name: "Merino", logo: "/images/interiorFitOut/merino.png"},
+    { name: "Jaquar", logo: "/images/interiorFitOut/jaquar.png"},
+
   ],
 
   products: [
   {
     title: "Office Workstations",
-    image: "/images/office-workstation.jpg",
+    image: "/images/interiorFitOut/office-workstation.png",
     description:
       "Ergonomically designed modular office workstations that maximize productivity, optimize workspace utilization, and provide superior comfort for modern collaborative work environments.",
     features: [
@@ -581,7 +585,7 @@ export const interiorFitOut: ServiceData = {
 
   {
     title: "Glass Partition",
-    image: "/images/glass-partition.jpg",
+    image: "/images/interiorFitOut/glass-partition.png",
     description:
       "Modern frameless and modular glass partition systems delivering elegant aesthetics, enhanced privacy, acoustic performance, and flexible office layouts.",
     features: [
@@ -594,7 +598,7 @@ export const interiorFitOut: ServiceData = {
 
   {
     title: "False Ceiling",
-    image: "/images/false-ceiling.jpg",
+    image: "/images/interiorFitOut/false-ceiling.png",
     description:
       "Premium gypsum, mineral fiber, and metal ceiling systems designed to enhance aesthetics while providing superior acoustic control and seamless lighting integration.",
     features: [
@@ -607,7 +611,7 @@ export const interiorFitOut: ServiceData = {
 
   {
     title: "Commercial Flooring",
-    image: "/images/commercial-flooring.jpg",
+    image: "/images/interiorFitOut/commercial-flooring.png",
     description:
       "High-performance commercial flooring solutions including vinyl, SPC, laminate, carpet tiles, wooden flooring, and raised access floors for demanding environments.",
     features: [
@@ -620,7 +624,7 @@ export const interiorFitOut: ServiceData = {
 
   {
     title: "Executive Furniture",
-    image: "/images/executive-furniture.jpg",
+    image: "/images/interiorFitOut/executive-furniture.png",
     description:
       "Luxury executive furniture including workstations, conference tables, reception counters, storage units, and ergonomic seating crafted for modern corporate interiors.",
     features: [
