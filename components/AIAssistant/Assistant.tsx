@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Sparkles, X } from "lucide-react";
 import type { ChatMessage } from "./types";
@@ -11,6 +11,7 @@ import { InputBox } from "./InputBox";
 import { getBotResponse, generateId } from "./utils";
 import { COMPANY_NAME } from "./knowledge";
 
+
 const WELCOME: ChatMessage = {
   id: "welcome",
   role: "assistant",
@@ -18,11 +19,23 @@ const WELCOME: ChatMessage = {
   timestamp: Date.now(),
 };
 
+
+
 export function Assistant() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([WELCOME]);
   const [input, setInput] = useState("");
   const [typing, setTyping] = useState(false);
+
+  useEffect(() => {
+  const openAssistant = () => setIsOpen(true);
+
+  window.addEventListener("open-ai-assistant", openAssistant);
+
+  return () => {
+    window.removeEventListener("open-ai-assistant", openAssistant);
+  };
+}, []);
 
   function send(query: string) {
     const text = query.trim();
@@ -57,22 +70,7 @@ export function Assistant() {
 
   return (
     <>
-      <AnimatePresence>
-        {!isOpen && (
-          <motion.button
-            type="button"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            whileHover={{ scale: 1.03 }}
-            onClick={() => setIsOpen(true)}
-            className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full bg-gradient-purple-blue px-5 py-3.5 text-sm font-semibold text-white shadow-glow"
-          >
-            <Sparkles className="h-4 w-4" />
-            Ask {COMPANY_NAME} AI
-          </motion.button>
-        )}
-      </AnimatePresence>
+      <AnimatePresence />
 
       <AnimatePresence>
         {isOpen && (
