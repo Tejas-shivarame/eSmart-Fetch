@@ -3,14 +3,12 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, FileText } from "lucide-react";
-import Link from "next/link";
+
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { GlowBlob } from "@/components/ui/GlowBlob";
 import { ParticleField } from "@/components/ui/ParticleField";
 import { AnimatedGrid } from "@/components/ui/AnimatedGrid";
-
-import { StatBlock } from "@/components/ui/StatBlock";
 import { useMousePosition } from "@/hooks/useMousePosition";
 
 const fadeUp = {
@@ -18,11 +16,48 @@ const fadeUp = {
   show: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay: i * 0.1, ease: "easeOut" },
+    transition: {
+      duration: 0.6,
+      delay: i * 0.1,
+      ease: "easeOut",
+    },
   }),
 };
 
-export function Hero() {
+export interface HeroProps {
+  badge: string;
+
+  title: string;
+  highlightOne: string;
+  titleTwo: string;
+  highlightTwo: string;
+
+  description: string;
+
+  image: string;
+
+  primaryButton: {
+    text: string;
+    href: string;
+  };
+
+  secondaryButton: {
+    text: string;
+    href: string;
+  };
+}
+
+export function Hero({
+  badge,
+  title,
+  highlightOne,
+  titleTwo,
+  highlightTwo,
+  description,
+  image,
+  primaryButton,
+  secondaryButton,
+}: HeroProps) {
   const containerRef = useRef<HTMLDivElement>(null!);
   const { x, y } = useMousePosition(containerRef);
 
@@ -30,7 +65,15 @@ export function Hero() {
     <section
       ref={containerRef}
       className="relative flex min-h-[92vh] flex-col items-center justify-center overflow-hidden px-6 pt-32 pb-24"
+      style={{
+        backgroundImage: `url(${image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/55" />
+
       <AnimatedGrid />
       <ParticleField />
 
@@ -38,12 +81,13 @@ export function Hero() {
         color="purple"
         className="left-1/2 top-10 h-[420px] w-[420px] -translate-x-1/2"
       />
+
       <GlowBlob
         color="blue"
         className="bottom-0 right-1/4 h-[320px] w-[320px] translate-y-1/3"
       />
 
-      {/* Mouse-reactive aurora layer */}
+      {/* Mouse Glow */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-60 transition-[background] duration-300"
@@ -53,8 +97,13 @@ export function Hero() {
       />
 
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center text-center">
-        <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0}>
-          <Badge pulse>System Status: Optimal</Badge>
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          animate="show"
+          custom={0}
+        >
+          <Badge pulse>{badge}</Badge>
         </motion.div>
 
         <motion.h1
@@ -64,13 +113,13 @@ export function Hero() {
           custom={1}
           className="mt-8 font-display text-3xl font-medium leading-[1.1] text-accent-white sm:text-6xl lg:text-6xl"
         >
-          Enterprise{" "}
+          {title}{" "}
           <span className="bg-gradient-purple-blue bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-x">
-            Security, Fire Safety
+            {highlightOne}
           </span>{" "}
-          & AV Solutions Built for{" "}
+          {titleTwo}{" "}
           <span className="bg-gradient-purple-blue bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-x">
-            Mission-Critical Operations
+            {highlightTwo}
           </span>
         </motion.h1>
 
@@ -81,7 +130,7 @@ export function Hero() {
           custom={2}
           className="mt-6 max-w-2xl text-base text-white sm:text-lg"
         >
-          Best-in-Class Technology Solutions in Professional Audio, Concert Audio, Audio-Video Integration & Security Systems
+          {description}
         </motion.p>
 
         <motion.div
@@ -91,14 +140,20 @@ export function Hero() {
           custom={3}
           className="mt-10 flex flex-col gap-4 sm:flex-row"
         >
-          <Button variant="primary" href="/contact">
-            Establish Connection
+          <Button variant="primary" href={primaryButton.href}>
+            {primaryButton.text}
             <ArrowRight className="h-4 w-4" />
           </Button>
 
-          <Button variant="secondary">
+          <Button
+            variant="secondary"
+            href={secondaryButton.href}
+            target={
+              secondaryButton.href.endsWith(".pdf") ? "_blank" : undefined
+            }
+          >
             <FileText className="h-4 w-4" />
-            View Documentation
+            {secondaryButton.text}
           </Button>
         </motion.div>
       </div>
