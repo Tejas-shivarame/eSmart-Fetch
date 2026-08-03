@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/sections/Navbar";
 import { Footer } from "@/sections/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Assistant } from "@/components/AIAssistant/Assistant";
 
 export const metadata: Metadata = {
@@ -29,9 +30,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
+          <Assistant />
           {children}
           <Footer />
-          <Assistant />        
+          <WhatsAppButton/>  
         </ThemeProvider>
       </body>
     </html>
