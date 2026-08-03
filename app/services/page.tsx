@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { ServicesHero } from "@/sections/services/ServicesHero";
+
+import { Hero } from "@/sections/Hero";
+import { HERO_DATA } from "@/sections/hero-data";
+
 import { ServicesTabs } from "@/sections/services/ServicesTabs";
 import { ServicesCTA } from "@/sections/services/ServicesCTA";
-
 
 export const metadata: Metadata = {
   title: "Services — Smart Fetch",
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <main className="relative overflow-hidden">
-      <ServicesHero />
+      <Hero {...HERO_DATA.services} />
       <ServicesTabs />
       <ServicesCTA />
     </main>

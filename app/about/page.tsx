@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import { AboutHero } from "@/sections/about/AboutHero";
+
+import { Hero } from "@/sections/Hero";
+import { HERO_DATA } from "@/sections/hero-data";
+
 import { OurMission } from "@/sections/about/OurMission";
 import { OurVision } from "@/sections/about/OurVision";
 import { TrackRecord } from "@/sections/about/TrackRecord";
@@ -10,11 +13,11 @@ import { AboutCTA } from "@/sections/about/AboutCTA";
 export const metadata: Metadata = {
   title: "About — Smart Fetch",
   description:
-    "eSmart Fetchintegrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
+    "eSmart Fetch integrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
   openGraph: {
     title: "About — Smart Fetch",
     description:
-      "eSmart Fetchintegrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
+      "eSmart Fetch integrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
     url: "https://smart-fetch.com/about",
     siteName: "Smart Fetch",
     type: "website",
@@ -24,7 +27,8 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="relative overflow-hidden">
-      <AboutHero />
+      <Hero {...HERO_DATA.about} />
+
       <OurMission />
       <OurVision />
       <TrackRecord />
