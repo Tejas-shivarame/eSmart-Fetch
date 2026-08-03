@@ -1,6 +1,6 @@
 "use client";
-
-import { useRef } from "react";
+import { useEffect, useState, useMemo, useRef} from "react";
+import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import { ArrowRight, FileText } from "lucide-react";
 
@@ -34,7 +34,10 @@ export interface HeroProps {
 
   description: string;
 
-  image: string;
+  image: {
+    dark: string;
+    light: string;
+  };
 
   primaryButton: {
     text: string;
@@ -58,22 +61,41 @@ export function Hero({
   primaryButton,
   secondaryButton,
 }: HeroProps) {
-  const containerRef = useRef<HTMLDivElement>(null!);
-  const { x, y } = useMousePosition(containerRef);
+const containerRef = useRef<HTMLDivElement>(null!);
+const { x, y } = useMousePosition(containerRef);
 
+const { resolvedTheme } = useTheme();
+
+const [mounted, setMounted] = useState(false);
+
+useEffect(() => {
+  setMounted(true);
+}, []);
+
+const isLight = mounted && resolvedTheme === "light";
+
+const heroImage = useMemo(
+  () => (isLight ? image.light : image.dark),
+  [isLight, image]
+);
   return (
-    <section
-      ref={containerRef}
-      className="relative flex min-h-[92vh] flex-col items-center justify-center overflow-hidden px-6 pt-32 pb-24"
-      style={{
-        backgroundImage: `url(${image})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+<section
+  ref={containerRef}
+  className="relative flex min-h-[92vh] flex-col items-center justify-center overflow-hidden px-6 pt-32 pb-24"
+  style={{
+    backgroundImage: `url(${heroImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/55" />
-
+<div
+  className={`absolute inset-0 transition-colors duration-500 ${
+    isLight
+      ? "bg-gradient-to-br from-white/20 via-white/10 to-transparent"
+      : "bg-gradient-to-br from-black/60 via-black/40 to-black/20"
+  }`}
+/>
       <AnimatedGrid />
       <ParticleField />
 
@@ -128,7 +150,11 @@ export function Hero({
           initial="hidden"
           animate="show"
           custom={2}
-          className="mt-6 max-w-2xl text-base text-white sm:text-lg"
+          className={`mt-6 max-w-2xl text-base sm:text-lg ${
+  resolvedTheme === "light"
+    ? "text-white"
+    : "text-white"
+}`}
         >
           {description}
         </motion.p>
