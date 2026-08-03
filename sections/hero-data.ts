@@ -13,7 +13,11 @@ export const HERO_DATA = {
     description:
       "Best-in-Class Technology Solutions in Professional Audio, Concert Audio, Audio-Video Integration & Security Systems.",
 
-    image: "/images/hero/home.webp",
+    image:{
+     dark:"/images/home_light.png",
+     light:"/images/home_dark.png"
+    },
+
 
     primaryButton: {
       text: "Establish Connection",
@@ -40,7 +44,10 @@ export const HERO_DATA = {
     description:
       "Delivering integrated security, fire protection, audiovisual, and IT infrastructure solutions across India with innovation, reliability, and engineering excellence.",
 
-    image: "/images/hero/about.webp",
+    image:{
+     dark:"/images/about_light.png",
+     light:"/images/about_dark.png"
+    },
 
     primaryButton: {
       text: "Our Story",
@@ -67,7 +74,10 @@ export const HERO_DATA = {
     description:
       "We design, supply, install, commission, and maintain security, fire protection, electrical, HVAC, audiovisual, and IT infrastructure solutions for enterprises, healthcare, education, and commercial facilities.",
 
-    image: "/images/hero/services.webp",
+    image:{
+     dark:"/images/service_light.png",
+     light:"/images/service_dark.png"
+    },
 
     primaryButton: {
       text: "Explore Services",
@@ -94,7 +104,10 @@ export const HERO_DATA = {
     description:
       "Whether you're planning a new project, upgrading existing systems, or seeking technical consultation, our specialists are ready to help you build secure, intelligent, and future-ready environments.",
 
-    image: "/images/hero/contact.webp",
+    image:{
+     dark:"/images/contact_light.png",
+     light:"/images/contact_dark.png"
+    },
 
     primaryButton: {
       text: "Send an Enquiry",
@@ -107,57 +120,4 @@ export const HERO_DATA = {
     },
   },
 
-  solutions: {
-    badge: "OUR SOLUTIONS",
-
-    title: "Complete",
-
-    highlightOne: "Technology Ecosystems",
-
-    titleTwo: "Designed for",
-
-    highlightTwo: "Business Continuity",
-
-    description:
-      "Integrated solutions combining security, fire safety, networking, professional AV, automation, and electrical infrastructure to deliver resilient and scalable environments.",
-
-    image: "/images/hero/solutions.webp",
-
-    primaryButton: {
-      text: "View Solutions",
-      href: "/solutions",
-    },
-
-    secondaryButton: {
-      text: "Talk to an Expert",
-      href: "/contact",
-    },
-  },
-
-  industries: {
-    badge: "INDUSTRIES WE SERVE",
-
-    title: "Empowering",
-
-    highlightOne: "Every Industry",
-
-    titleTwo: "With Intelligent",
-
-    highlightTwo: "Infrastructure",
-
-    description:
-      "From healthcare and education to commercial buildings, manufacturing, government, hospitality, and data centers, we deliver tailored infrastructure solutions for every sector.",
-
-    image: "/images/hero/industries.webp",
-
-    primaryButton: {
-      text: "Explore Industries",
-      href: "/industries",
-    },
-
-    secondaryButton: {
-      text: "Start Your Project",
-      href: "/contact",
-    },
-  },
 } as const;
