@@ -89,6 +89,7 @@ style={{
     typeof window !== "undefined" && window.innerWidth < 640
       ? "center top"
       : "center",
+  backgroundRepeat: "no-repeat",
 }}
 >
       {/* Dark Overlay */}
