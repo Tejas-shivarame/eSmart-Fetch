@@ -8,14 +8,34 @@ import { Button } from "@/components/ui/Button";
 import { COMPANY, SOCIAL_LINKS } from "@/lib/constants";
 import Image from "next/image";
 
-const SUBJECT_OPTIONS = [
-  "Professional & Concert Audio",
-  "Audio-Video Integration",
-  "Security & Surveillance",
-  "Access Control Systems",
-  "Fire Safety Systems",
-  "General Inquiry",
-];
+  const SUBJECT_OPTIONS = [
+    "Professional & Concert Audio",
+    "Audio-Video Integration",
+    "Security & Surveillance",
+    "Access Control Systems",
+    "Fire Safety Systems",
+    "General Inquiry",
+  ];
+
+  const CONTACT_CARDS = [
+  {
+    icon: Phone,
+    label: "Call Us",
+    value: `+91-${COMPANY.phoneDisplay}`,
+    href: `tel:${COMPANY.phone}`,
+  },
+  {
+    icon: Mail,
+    label: "Email Us",
+    value: COMPANY.email,
+    href: `mailto:${COMPANY.email}`,
+  },
+  {
+    icon: FileText,
+    label: "GSTIN",
+    value: COMPANY.gstin,
+  },
+  ];
 
 function Field({
   id,
@@ -113,9 +133,8 @@ function InfoCard({
     </>
   );
 
-  const wrapperClass =
-    "group flex items-start gap-3.5 rounded-card border border-white/[0.08] bg-white/[0.02] p-5 backdrop-blur-md transition-colors hover:border-accent-blue/30";
-
+const wrapperClass =
+  "group flex items-start gap-3.5 rounded-card border border-white/[0.08] bg-white/[0.02] p-5 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-accent-blue/30 hover:bg-white/[0.04] hover:shadow-[0_12px_40px_rgba(0,162,255,0.12)]";
   if (href) {
     return (
       <a href={href} className={wrapperClass}>
@@ -136,8 +155,8 @@ export function ContactForm() {
   }
 
   return (
-    <section className="relative px-6 pb-section">
-      <div className="mx-auto grid max-w-container gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+    <section className="relative px-6 pt-24 pb-section">
+      <div className="mx-auto max-w-container grid gap-10 xl:gap-14 lg:grid-cols-[1.2fr_0.8fr]">
         {/* Form panel */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -237,28 +256,42 @@ export function ContactForm() {
                   ongoing maintenance requests.
                 </p>
               </div>
-            </div>
+            </div>    
           </div>
 
-          <InfoCard
-            icon={Phone}
-            label="Call Us"
-            value={`+91-${COMPANY.phoneDisplay}`}
-            href={`tel:${COMPANY.phone}`}
-          />
-
-          <InfoCard
-            icon={Mail}
-            label="Email Us"
-            value={COMPANY.email}
-            href={`mailto:${COMPANY.email}`}
-          />
-
-          {COMPANY.locations.map((loc) => (
-            <InfoCard key={loc.label} icon={MapPin} label={loc.label} value={loc.address} />
+          {CONTACT_CARDS.map((card, index) => (
+              <motion.div
+                  key={card.label}
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                      duration: 0.4,
+                      delay: index * 0.1,
+                  }}
+              >
+                  <InfoCard {...card} />
+              </motion.div>
           ))}
 
-          <InfoCard icon={FileText} label="GSTIN" value={COMPANY.gstin} />
+          {COMPANY.locations.map((loc, index) => (
+              <motion.div
+                  key={loc.label}
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                      duration: 0.4,
+                      delay: 0.3 + index * 0.1,
+                  }}
+              >
+                  <InfoCard
+                      icon={MapPin}
+                      label={loc.label}
+                      value={loc.address}
+                  />
+              </motion.div>
+          ))}
 
           {/* Social links */}
             <div className="flex items-center gap-4 rounded-card border border-white/[0.08] bg-white/[0.02] p-5 backdrop-blur-md">
