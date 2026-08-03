@@ -55,7 +55,7 @@ export function Navbar() {
                   "relative pb-1 text-sm font-medium transition-colors duration-300",
                   isActive(link.href)
                     ? "text-accent-blue after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-accent-blue"
-                    : "text-accent-gray hover:text-accent-white"
+                    : "text-accent-white hover:text-accent-blue"
                 )}
               >
                 {link.label}
