@@ -4,19 +4,20 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
-import { SiWhatsapp } from "react-icons/si";
+import { Menu, X, Bot, Headset } from "lucide-react";
 
-import { NAV_LINKS, COMPANY } from "@/lib/constants";
+import { NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { useScrollProgress } from "@/hooks/useScrollProgress";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 export function Navbar() {
+  const pathname = usePathname();
   const { scrolled } = useScrollProgress();
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
     <header
@@ -28,9 +29,10 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex max-w-container items-center justify-between px-4 py-3 sm:px-6 lg:px-10 lg:py-4">
-
+        {/* ---------------------------------------------------------------- */}
         {/* Logo */}
-        <Link href="/" aria-label="eSmart Fetch home">
+        {/* ---------------------------------------------------------------- */}
+        <Link href="/" aria-label="eSmart Fetch Home">
           <Image
             src="/images/eSmart-Fetch-logo-Navabar.png"
             alt="eSmart Fetch Logo"
@@ -41,51 +43,53 @@ export function Navbar() {
           />
         </Link>
 
+        {/* ---------------------------------------------------------------- */}
         {/* Desktop Navigation */}
+        {/* ---------------------------------------------------------------- */}
         <ul className="hidden items-center gap-10 lg:flex">
-          {NAV_LINKS.map((link) => {
-            const active =
-              link.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(link.href);
-
-            return (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={cn(
-                    "relative pb-1 text-sm font-medium transition-colors",
-                    active
-                      ? "text-accent-blue after:absolute after:inset-x-0 after:-bottom-1 after:h-px after:bg-accent-blue"
-                      : "text-accent-gray hover:text-accent-white"
-                  )}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            );
-          })}
+          {NAV_LINKS.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className={cn(
+                  "relative pb-1 text-sm font-medium transition-colors duration-300",
+                  isActive(link.href)
+                    ? "text-accent-blue after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-accent-blue"
+                    : "text-accent-gray hover:text-accent-white"
+                )}
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
 
-        {/* Right Side */}
+        {/* ---------------------------------------------------------------- */}
+        {/* Right Actions */}
+        {/* ---------------------------------------------------------------- */}
         <div className="flex items-center gap-3">
+          {/* Desktop Buttons */}
+          <div className="hidden items-center gap-3 lg:flex">
+          <button
+            onClick={() =>
+              window.dispatchEvent(new Event("open-ai-assistant"))
+            }
+            className="flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-400 transition-all duration-300 hover:bg-blue-500 hover:text-white"
+          >
+            <Bot size={18} />
+          </button>
 
-          {/* Desktop */}
-          <div className="hidden lg:flex items-center gap-4">
-            <a
-              href={`https://wa.me/${COMPANY.phone.replace(/\D/g, "")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-2 rounded-full border border-[#25D366]/30 bg-[#25D366]/10 px-4 py-2 text-sm font-medium text-[#25D366] transition-all duration-300 hover:bg-[#25D366] hover:text-white hover:shadow-lg hover:shadow-[#25D366]/30"
+            <Link
+              href="/contact"
+              className="flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-sm font-medium text-orange-400 transition-all duration-300 hover:bg-orange-500 hover:text-white"
             >
-              <SiWhatsapp className="text-lg transition-transform duration-300 group-hover:scale-110" />
-              <span>WhatsApp Us</span>
-            </a>
+              <Headset size={18} />
+            </Link>
 
             <ThemeToggle />
           </div>
 
-          {/* Mobile Theme Toggle */}
+          {/* Mobile Theme */}
           <div className="lg:hidden">
             <ThemeToggle />
           </div>
@@ -93,9 +97,9 @@ export function Navbar() {
           {/* Hamburger */}
           <button
             type="button"
-            aria-label="Toggle navigation menu"
+            aria-label="Toggle navigation"
             aria-expanded={open}
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen((prev) => !prev)}
             className="text-accent-white lg:hidden"
           >
             {open ? (
@@ -107,60 +111,56 @@ export function Navbar() {
         </div>
       </nav>
 
+      {/* ---------------------------------------------------------------- */}
       {/* Mobile Menu */}
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25 }}
-            className="overflow-hidden border-t border-border bg-base/95 backdrop-blur-xl lg:hidden"
-          >
-            <ul className="flex flex-col gap-2 px-6 py-5">
-
-              {NAV_LINKS.map((link) => {
-                const active =
-                  link.href === "/"
-                    ? pathname === "/"
-                    : pathname.startsWith(link.href);
-
-                return (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      onClick={() => setOpen(false)}
-                      className={cn(
-                        "block py-2 text-sm font-medium",
-                        active
-                          ? "text-accent-blue"
-                          : "text-accent-gray hover:text-accent-white"
-                      )}
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                );
-              })}
-
-              {/* WhatsApp */}
-              <li className="mt-4">
-                <a
-                  href={`https://wa.me/${COMPANY.phone.replace(/\D/g, "")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setOpen(false)}
-                  className="flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 font-medium text-white transition hover:opacity-90"
-                >
-                  <SiWhatsapp className="text-xl" />
-                  WhatsApp Us
-                </a>
-              </li>
-
-            </ul>
-          </motion.div>
+      {/* ---------------------------------------------------------------- */}
+      <div
+        className={cn(
+          "overflow-hidden transition-all duration-300 lg:hidden",
+          open ? "max-h-screen border-t border-border" : "max-h-0"
         )}
-      </AnimatePresence>
+      >
+        <div className="bg-base/95 backdrop-blur-xl px-6 py-5">
+          <ul className="space-y-5">
+            {NAV_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className={cn(
+                    "block text-base font-medium transition-colors",
+                    isActive(link.href)
+                      ? "text-accent-blue"
+                      : "text-accent-gray hover:text-accent-white"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-6 flex flex-col gap-3">
+              <button
+                onClick={() => {
+                  setOpen(false);
+                  window.dispatchEvent(new Event("open-ai-assistant"));
+                }}
+                className="flex w-full items-center justify-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-3 text-sm font-medium text-blue-400 transition hover:bg-blue-500 hover:text-white"
+              >
+                <Bot size={18} />
+              </button>
+
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="flex items-center justify-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-3 text-sm font-medium text-orange-400 transition hover:bg-orange-500 hover:text-white"
+            >
+              <Headset size={18} />
+            </Link>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }
