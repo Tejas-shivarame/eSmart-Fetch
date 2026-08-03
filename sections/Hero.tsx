@@ -82,11 +82,14 @@ const heroImage = useMemo(
 <section
   ref={containerRef}
   className="relative flex min-h-[92vh] flex-col items-center justify-center overflow-hidden px-6 pt-32 pb-24"
-  style={{
-    backgroundImage: `url(${heroImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
+style={{
+  backgroundImage: `url(${heroImage})`,
+  backgroundSize: typeof window !== "undefined" && window.innerWidth < 640 ? "140%" : "cover",
+  backgroundPosition:
+    typeof window !== "undefined" && window.innerWidth < 640
+      ? "center top"
+      : "center",
+}}
 >
       {/* Dark Overlay */}
 <div
