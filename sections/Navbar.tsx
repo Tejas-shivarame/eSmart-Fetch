@@ -131,7 +131,7 @@ export function Navbar() {
                     "block text-base font-medium transition-colors",
                     isActive(link.href)
                       ? "text-accent-blue"
-                      : "text-accent-gray hover:text-accent-white"
+                      : "text-accent-white  hover:text-accent-blue"
                   )}
                 >
                   {link.label}
