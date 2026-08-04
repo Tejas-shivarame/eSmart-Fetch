@@ -18,7 +18,7 @@ export function Navbar() {
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
-
+  
   return (
     <header
       className={cn(
@@ -51,12 +51,12 @@ export function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={cn(
-                  "relative pb-1 text-sm font-medium transition-colors duration-300",
-                  isActive(link.href)
-                    ? "text-accent-blue after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-accent-blue"
-                    : "text-accent-white hover:text-accent-blue"
-                )}
+                  className={cn(
+                    "relative pb-1 text-sm font-medium transition-colors duration-300",
+isActive(link.href)
+  ? "text-cyan-400 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-cyan-400"
+  : "text-white/70 hover:text-white"
+                  )}
               >
                 {link.label}
               </Link>
@@ -111,16 +111,15 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* ---------------------------------------------------------------- */}
-      {/* Mobile Menu */}
-      {/* ---------------------------------------------------------------- */}
+
+        {/* Mobile Menu */}
       <div
         className={cn(
           "overflow-hidden transition-all duration-300 lg:hidden",
           open ? "max-h-screen border-t border-border" : "max-h-0"
         )}
       >
-        <div className="bg-base/95 backdrop-blur-xl px-6 py-5">
+        <div className="bg-zinc-950/95 backdrop-blur-xl px-6 py-5">
           <ul className="space-y-5">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
@@ -128,10 +127,10 @@ export function Navbar() {
                   href={link.href}
                   onClick={() => setOpen(false)}
                   className={cn(
-                    "block text-base font-medium transition-colors",
-                    isActive(link.href)
-                      ? "text-accent-blue"
-                      : "text-accent-white  hover:text-accent-blue"
+                    "block text-base font-medium transition-colors duration-300",
+isActive(link.href)
+  ? "text-cyan-400"
+  : "text-white hover:text-cyan-400"
                   )}
                 >
                   {link.label}
@@ -141,20 +140,20 @@ export function Navbar() {
           </ul>
 
           <div className="mt-6 flex flex-col gap-3">
-              <button
-                onClick={() => {
-                  setOpen(false);
-                  window.dispatchEvent(new Event("open-ai-assistant"));
-                }}
-                className="flex w-full items-center justify-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-3 text-sm font-medium text-blue-400 transition hover:bg-blue-500 hover:text-white"
-              >
-                <Bot size={18} />
-              </button>
+            <button
+              onClick={() => {
+                setOpen(false);
+                window.dispatchEvent(new Event("open-ai-assistant"));
+              }}
+              className="flex w-full items-center justify-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-3 text-sm font-medium text-blue-400 transition-all hover:bg-blue-500 hover:text-white"
+            >
+              <Bot size={18} />
+            </button>
 
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="flex items-center justify-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-3 text-sm font-medium text-orange-400 transition hover:bg-orange-500 hover:text-white"
+              className="flex items-center justify-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-3 text-sm font-medium text-orange-400 transition-all hover:bg-orange-500 hover:text-white"
             >
               <Headset size={18} />
             </Link>
