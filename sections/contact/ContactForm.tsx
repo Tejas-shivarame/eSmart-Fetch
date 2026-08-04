@@ -155,7 +155,7 @@ export function ContactForm() {
   }
 
   return (
-    <section className="relative px-6 pt-24 pb-section">
+    <section id="contact-form" className="relative px-6 pt-24 pb-section">
       <div className="mx-auto max-w-container grid gap-10 xl:gap-14 lg:grid-cols-[1.2fr_0.8fr]">
         {/* Form panel */}
         <motion.div
