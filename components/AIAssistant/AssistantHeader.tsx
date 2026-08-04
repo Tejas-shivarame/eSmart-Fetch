@@ -32,16 +32,14 @@ export function AssistantHeader({
           onClick={onClear}
           aria-label="Clear chat"
           className="flex h-8 w-8 items-center justify-center rounded-full text-accent-white transition-colors hover:bg-base-card hover:text-accent-white"
-        >
-          <Trash2 className="h-4 w-4" />
+        ><Trash2 className="h-4 w-4" />
         </button>
         <button
           type="button"
           onClick={onClose}
           aria-label="Close assistant"
           className="flex h-8 w-8 items-center justify-center rounded-full text-accent-white transition-colors hover:bg-base-card hover:text-accent-white"
-        >
-          <X className="h-4 w-4" />
+        ><X className="h-4 w-4" />
         </button>
       </div>
     </div>
