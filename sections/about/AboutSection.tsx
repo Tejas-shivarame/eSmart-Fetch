@@ -25,7 +25,7 @@ const fadeUp = {
 
 export function AboutSection() {
   return (
-    <section className="relative py-32 px-6 lg:px-20 bg-[#070812] overflow-hidden">
+    <section id="about-section" className="relative py-32 px-6 lg:px-20 bg-[#070812] overflow-hidden">
       {/* ambient glow */}
       <div className="absolute -left-40 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-[#9B5CFF]/10 blur-[120px]" />
       <div className="absolute -right-20 bottom-0 w-72 h-72 rounded-full bg-[#22D3EE]/10 blur-[100px]" />
