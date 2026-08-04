@@ -20,7 +20,7 @@ export function AssistantHeader({
           <p className="font-display text-sm font-semibold text-accent-white">
             {COMPANY_NAME} AI
           </p>
-          <p className="flex items-center gap-1.5 text-xs text-accent-gray">
+          <p className="flex items-center gap-1.5 text-xs text-accent-white">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
             Always here to help
           </p>
@@ -31,7 +31,7 @@ export function AssistantHeader({
           type="button"
           onClick={onClear}
           aria-label="Clear chat"
-          className="flex h-8 w-8 items-center justify-center rounded-full text-accent-gray transition-colors hover:bg-base-card hover:text-accent-white"
+          className="flex h-8 w-8 items-center justify-center rounded-full text-accent-white transition-colors hover:bg-base-card hover:text-accent-white"
         >
           <Trash2 className="h-4 w-4" />
         </button>
@@ -39,7 +39,7 @@ export function AssistantHeader({
           type="button"
           onClick={onClose}
           aria-label="Close assistant"
-          className="flex h-8 w-8 items-center justify-center rounded-full text-accent-gray transition-colors hover:bg-base-card hover:text-accent-white"
+          className="flex h-8 w-8 items-center justify-center rounded-full text-accent-white transition-colors hover:bg-base-card hover:text-accent-white"
         >
           <X className="h-4 w-4" />
         </button>
