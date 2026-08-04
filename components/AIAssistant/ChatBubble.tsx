@@ -25,7 +25,7 @@ export function ChatBubble({ message }: { message: ChatMessage }) {
       >
         {message.content}
       </div>
-      <span className="px-1 text-[10px] text-accent-gray/70">
+      <span className="px-1 text-[10px] text-accent-white/70">
         {formatTime(message.timestamp)}
       </span>
     </motion.div>
