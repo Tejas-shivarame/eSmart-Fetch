@@ -11,7 +11,7 @@ type Tab = "engineering" | "material";
 
 function EngineeringGrid() {
   return (
-    <div className="grid gap-6 sm:grid-cols-2">
+    <div id="services-section" className="grid gap-6 sm:grid-cols-2">
       {ENGINEERING_CATEGORIES.map((cat, i) => {
         const Icon = cat.icon;
         return (
