@@ -51,7 +51,7 @@ export const HERO_DATA = {
 
     primaryButton: {
       text: "Our Story",
-      href: "/about",
+      href: "#about-section",
     },
 
     secondaryButton: {
@@ -81,7 +81,7 @@ export const HERO_DATA = {
 
     primaryButton: {
       text: "Explore Services",
-      href: "#services",
+      href: "#services-section",
     },
 
     secondaryButton: {
