@@ -5,7 +5,6 @@ import { HERO_DATA } from "@/sections/hero-data";
 
 import { OurMission } from "@/sections/about/OurMission";
 import { OurVision } from "@/sections/about/OurVision";
-import { TrackRecord } from "@/sections/about/TrackRecord";
 import { ValuePillars } from "@/sections/about/ValuePillars";
 import { ServicesOverview } from "@/sections/about/ServicesOverview";
 import { AboutCTA } from "@/sections/about/AboutCTA";
@@ -15,11 +14,11 @@ export const metadata: Metadata = {
   description:
     "eSmart Fetch integrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
   openGraph: {
-    title: "About — Smart Fetch",
+    title: "About — eSmart Fetch",
     description:
       "eSmart Fetch integrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
     url: "https://smart-fetch.com/about",
-    siteName: "Smart Fetch",
+    siteName: "eSmart Fetch",
     type: "website",
   },
 };
@@ -31,7 +30,6 @@ export default function AboutPage() {
 
       <OurMission />
       <OurVision />
-      <TrackRecord />
       <ValuePillars />
       <ServicesOverview />
       <AboutCTA />
