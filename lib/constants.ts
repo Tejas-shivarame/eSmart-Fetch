@@ -66,7 +66,12 @@ export const MISSION_POINTS: MissionPoint[] = [
   { text: "Delivering true end-to-end, turnkey execution" },
   { text: "Backing every install with 24/7 responsive support" },
 ];
-
+export const VISION_POINTS: MissionPoint[] = [
+  { text: "Setting the global benchmark for enterprise security and integration" },
+  { text: "Building resilient, secure, and future-ready organizations" },
+  { text: "Advancing technology through continuous innovation and excellence" },
+  { text: "Empowering our people to grow, lead, and shape the future" },
+];
 
 
 export const WHY_CARDS: ValuePillarData[] = [
