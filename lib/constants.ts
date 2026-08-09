@@ -67,12 +67,7 @@ export const MISSION_POINTS: MissionPoint[] = [
   { text: "Backing every install with 24/7 responsive support" },
 ];
 
-export const TRACK_RECORD: StatItem[] = [
-  { label: "Enterprise Deployments", value: "120+", accent: "blue" },
-  { label: "Cities Served Nationwide", value: "18+", accent: "purple" },
-  { label: "Avg. Callout Response", value: "<4hrs" },
-  { label: "Client Retention", value: "94%" },
-];
+
 
 export const WHY_CARDS: ValuePillarData[] = [
   {
@@ -102,7 +97,7 @@ export const WHY_CARDS: ValuePillarData[] = [
   },
 ];
 
-export const FOUNDATIONAL_STATS: StatItem[] = TRACK_RECORD;
+// export const FOUNDATIONAL_STATS: StatItem[] = TRACK_RECORD;
 export const VALUE_PILLARS: ValuePillarData[] = WHY_CARDS;
 
 
@@ -115,9 +110,9 @@ export const TRUSTED_COMPANIES = [
   { name: "Aditya Birla Group", image: "/companies/aditya-birla.png" },
   { name: "Hitachi", image: "/companies/hitachi.png" },
   { name: "ABB", image: "/companies/abb.png" },
-  { name: "Bosch", image: "/companies/bosch.png" },
-  { name: "Siemens", image: "/companies/siemens.png" },
-  { name: "Honeywell", image: "/companies/honeywell.png" },
+  // { name: "Bosch", image: "/companies/bosch.png" },
+  // { name: "Siemens", image: "/companies/siemens.png" },
+  // { name: "Honeywell", image: "/companies/honeywell.png" },
 ];
 
 export const QUALITY_PILLARS: QualityPillar[] = [
