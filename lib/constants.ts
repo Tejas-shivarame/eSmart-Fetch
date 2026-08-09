@@ -35,7 +35,7 @@ import type {
   CompanyInfo,
   SocialLink,
 } from "@/types";
-
+import AboutPage from "@/app/about/page";
 
 export const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
@@ -49,85 +49,130 @@ export const COMPANY: CompanyInfo = {
   phoneDisplay: "9916172599",
   email: "sales@smart-fetch.com",
   since: "2025",
+
   locations: [
     {
       label: "Office",
       address:
         "No.10, Ground floor, Kalkere Main Road, Near Underpass, Anjanappa Layout, Horamavu, Bangalore - 560043",
     },
-    { label: "Godown", address: "R.M. Nagar, Bangalore" },
+    {
+      label: "Godown",
+      address: "R.M. Nagar, Bangalore",
+    },
   ],
-   gstin: "GST"
-};
 
+  gstin: "GST",
+};
+//===========
+//AboutPage
+//==========
 export const MISSION_POINTS: MissionPoint[] = [
   { text: "Integrating hardware, software, and human expertise" },
   { text: "Benchmarking against global security standards" },
   { text: "Delivering true end-to-end, turnkey execution" },
   { text: "Backing every install with 24/7 responsive support" },
 ];
-export const VISION_POINTS: MissionPoint[] = [
-  { text: "Setting the global benchmark for enterprise security and integration" },
-  { text: "Building resilient, secure, and future-ready organizations" },
-  { text: "Advancing technology through continuous innovation and excellence" },
-  { text: "Empowering our people to grow, lead, and shape the future" },
-];
 
+export const VISION_POINTS: MissionPoint[] = [
+  {
+    text: "Setting the global benchmark for enterprise security and integration",
+  },
+  {
+    text: "Building resilient, secure, and future-ready organizations",
+  },
+  {
+    text: "Advancing technology through continuous innovation and excellence",
+  },
+  {
+    text: "Empowering our people to grow, lead, and shape the future",
+  },
+];
 
 export const WHY_CARDS: ValuePillarData[] = [
   {
     icon: Users,
     title: "Employee Centric",
-    description: "A flexible, responsive team driving growth from the ground up.",
+    description:
+      "A flexible, responsive team driving growth from the ground up.",
     accent: "blue",
   },
   {
     icon: Award,
     title: "World Class Quality",
-    description: "Solutions engineered to standards that compare with the best in the world.",
+    description:
+      "Solutions engineered to standards that compare with the best in the world.",
     accent: "purple",
   },
-
   {
     icon: Target,
     title: "Client Focused",
-    description: "Serving everyone from small businesses to large enterprises, on their terms.",
+    description:
+      "Serving everyone from small businesses to large enterprises, on their terms.",
     accent: "blue",
-  }, 
+  },
   {
     icon: Rocket,
     title: "Future Ready",
-    description: "Future-ready solutions designed to adapt to evolving technology and industry needs.",
+    description:
+      "Future-ready solutions designed to adapt to evolving technology and industry needs.",
     accent: "purple",
   },
 ];
 
-// export const FOUNDATIONAL_STATS: StatItem[] = TRACK_RECORD;
 export const VALUE_PILLARS: ValuePillarData[] = WHY_CARDS;
 
 
+// ============================================================
+// TRUSTED COMPANIES
+// ============================================================
 
 export const TRUSTED_COMPANIES = [
-
-
   { name: "ISS", image: "/companies/iss.png" },
-  { name: "Oculus Design Studio", image: "/companies/oculus-design-studio.png" },
-  { name: "Aditya Birla Group", image: "/companies/aditya-birla.png" },
+  {name: "Oculus Design Studio",image: "/companies/oculus-design-studio.png",},
+  {name: "Aditya Birla Group",image: "/companies/aditya-birla.png",},
   { name: "Hitachi", image: "/companies/hitachi.png" },
   { name: "ABB", image: "/companies/abb.png" },
+
   // { name: "Bosch", image: "/companies/bosch.png" },
   // { name: "Siemens", image: "/companies/siemens.png" },
   // { name: "Honeywell", image: "/companies/honeywell.png" },
 ];
 
+
+// ============================================================
+// QUALITY PILLARS
+// ============================================================
+
 export const QUALITY_PILLARS: QualityPillar[] = [
-  { title: "Engineering", tagline: "A touch of genius", image: "/images/Engineerings.png" },
-  { title: "Sound", tagline: "Flat-out fun", image: "/images/Sound-engineering.png" },
-  { title: "Quality", tagline: "International standards", image: "/images/quality.png" },
-  { title: "Innovation", tagline: "Leading since inception", image: "/images/Innovation-labs.png" },
+  {
+    title: "Engineering",
+    tagline: "A touch of genius",
+    image: "/images/Engineerings.png",
+  },
+  {
+    title: "Sound",
+    tagline: "Flat-out fun",
+    image: "/images/Sound-engineering.png",
+  },
+  {
+    title: "Quality",
+    tagline: "International standards",
+    image: "/images/quality.png",
+  },
+  {
+    title: "Innovation",
+    tagline: "Leading since inception",
+    image: "/images/Innovation-labs.png",
+  },
 ];
 
-export const PREMIUM_SERVICES : FeatureCardData[] = [
+
+// ============================================================
+// SERVICES — PREMIUM
+// ============================================================
+
+export const PREMIUM_SERVICES: FeatureCardData[] = [
   {
     icon: Zap,
     title: "Fire Protection Systems",
@@ -142,7 +187,7 @@ export const PREMIUM_SERVICES : FeatureCardData[] = [
     description:
       "Advanced surveillance, access control, and integrated security systems for continuous protection of people and assets.",
     accent: "purple",
-     href: "/services/security-surveillance",
+    href: "/services/security-surveillance",
   },
   {
     icon: Code2,
@@ -150,7 +195,7 @@ export const PREMIUM_SERVICES : FeatureCardData[] = [
     description:
       "End-to-end interior design and fit-out services that deliver functional, modern, and aesthetically refined spaces.",
     accent: "blue",
-     href: "/services/interior-fit-out",
+    href: "/services/interior-fit-out",
   },
   {
     icon: Video,
@@ -158,7 +203,7 @@ export const PREMIUM_SERVICES : FeatureCardData[] = [
     description:
       "State-of-the-art audio and video systems that enhance communication, collaboration, and multimedia experiences.",
     accent: "purple",
-     href: "/services/audio-visual",
+    href: "/services/audio-visual",
   },
   {
     icon: Package,
@@ -166,58 +211,90 @@ export const PREMIUM_SERVICES : FeatureCardData[] = [
     description:
       "Reliable sourcing and supply of high-quality consumables, equipment, and construction materials for diverse project requirements.",
     accent: "blue",
-     href: "/services/consumables-materials",
+    href: "/services/consumables-materials",
   },
   {
-  icon: Brush,
-  title: "Painting & Printing Services",
-  description:
-    "Professional painting and printing solutions that deliver exceptional finishes and durable resultsfor commercial and residential projects.",
-  accent: "purple",
-   href: "/services/painting-printing",
+    icon: Brush,
+    title: "Painting & Printing Services",
+    description:
+      "Professional painting and printing solutions that deliver exceptional finishes and durable results for commercial and residential projects.",
+    accent: "purple",
+    href: "/services/painting-printing",
   },
-  
 ];
 
+
+// ============================================================
+// SERVICES — CORE
+// ============================================================
 
 export const SERVICES: FeatureCardData[] = [
   {
     icon: Flame,
     title: "Fire Safety Systems",
-    description: "Detection, suppression, and compliance-ready fire safety engineering.",
+    description:
+      "Detection, suppression, and compliance-ready fire safety engineering.",
     accent: "blue",
     href: "/services/fire-protection",
   },
   {
     icon: ShieldCheck,
     title: "Security Surveillance",
-    description: "CCTV, access control, and perimeter monitoring with real-time alerting.",
+    description:
+      "CCTV, access control, and perimeter monitoring with real-time alerting.",
     accent: "purple",
     href: "/services/security-surveillance",
   },
   {
     icon: Video,
     title: "Audio Video Solutions",
-    description: "Boardroom AV, conferencing, and public-address systems built for enterprise scale.",
+    description:
+      "Boardroom AV, conferencing, and public-address systems built for enterprise scale.",
     accent: "blue",
     href: "/services/audio-visual",
   },
   {
     icon: Server,
     title: "IT Infrastructure",
-    description: "Structured cabling, networking, and server rooms built to last.",
+    description:
+      "Structured cabling, networking, and server rooms built to last.",
     accent: "purple",
     href: "/services/fire-protection",
   },
 ];
 
+
+// ============================================================
+// SOCIAL LINKS
+// ============================================================
+
 export const SOCIAL_LINKS: SocialLink[] = [
-  { icon: Facebook, label: "Facebook", href: "https://facebook.com" },
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com" },
-  { icon: Instagram, label: "Instagram", href: "https://instagram.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
+  {
+    icon: Facebook,
+    label: "Facebook",
+    href: "https://facebook.com",
+  },
+  {
+    icon: Twitter,
+    label: "Twitter",
+    href: "https://twitter.com",
+  },
+  {
+    icon: Instagram,
+    label: "Instagram",
+    href: "https://instagram.com",
+  },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    href: "https://linkedin.com",
+  },
 ];
 
+
+// ============================================================
+// FOOTER
+// ============================================================
 
 export const FOOTER_LINKS: FooterLinkGroup[] = [
   {
@@ -226,19 +303,39 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
       { label: "Home", href: "/" },
       { label: "About Us", href: "/about" },
       { label: "Services", href: "/services" },
-      { label: "Contact", href: "/contact" }, 
+      { label: "Contact", href: "/contact" },
     ],
   },
   {
     title: "Our Services",
     links: [
-      { label: "Fire Safety Systems", href: "/services/fire-protection" },
-      { label: "Security Surveillance", href: "/services/security-surveillance" },
-      { label: "Audio Video Solutions", href: "/services/audio-visual" },
-      { label: "IT Infrastructure", href: "/services" },
+      {
+        label: "Fire Safety Systems",
+        href: "/services/fire-protection",
+      },
+      {
+        label: "Security Surveillance",
+        href: "/services/security-surveillance",
+      },
+      {
+        label: "Audio Video Solutions",
+        href: "/services/audio-visual",
+      },
+      {
+        label: "IT Infrastructure",
+        href: "/services",
+      },
     ],
   },
-];export const ENGINEERING_CATEGORIES = [
+];
+
+
+// ============================================================
+// ENGINEERING CATEGORIES
+// ============================================================
+
+export const ENGINEERING_CATEGORIES = [
+  // Electrical Works
   {
     title: "Electrical Works",
     icon: Zap,
@@ -268,6 +365,7 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
     ],
   },
 
+  // HVAC & Air Quality
   {
     title: "HVAC & Air Quality",
     icon: Fan,
@@ -297,6 +395,7 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
     ],
   },
 
+  // Smart Automation
   {
     title: "Smart Automation",
     icon: Cpu,
@@ -326,6 +425,7 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
     ],
   },
 
+  // Fire & Life Safety
   {
     title: "Fire & Life Safety",
     icon: ShieldCheck,
@@ -354,6 +454,7 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
     ],
   },
 
+  // Interior Fit-Out
   {
     title: "Interior Fit-Out",
     icon: Building2,
@@ -383,6 +484,7 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
     ],
   },
 
+  // IT & Networking
   {
     title: "IT & Networking",
     icon: Network,
@@ -412,7 +514,14 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
     ],
   },
 ];
+
+
+// ============================================================
+// MATERIAL CATEGORIES
+// ============================================================
+
 export const MATERIAL_CATEGORIES = [
+  // Networking Equipment
   {
     title: "Networking Equipment",
     icon: Router,
@@ -423,6 +532,8 @@ export const MATERIAL_CATEGORIES = [
       "Network Firewalls",
     ],
   },
+
+  // Server Infrastructure
   {
     title: "Server Infrastructure",
     icon: Server,
@@ -433,6 +544,8 @@ export const MATERIAL_CATEGORIES = [
       "Storage Systems",
     ],
   },
+
+  // Computer Hardware
   {
     title: "Computer Hardware",
     icon: Monitor,
@@ -443,6 +556,8 @@ export const MATERIAL_CATEGORIES = [
       "Thin Clients",
     ],
   },
+
+  // Storage Solutions
   {
     title: "Storage Solutions",
     icon: HardDrive,
@@ -453,6 +568,8 @@ export const MATERIAL_CATEGORIES = [
       "Backup Appliances",
     ],
   },
+
+  // Industrial Systems
   {
     title: "Industrial Systems",
     icon: Cpu,
@@ -463,6 +580,8 @@ export const MATERIAL_CATEGORIES = [
       "Automation Hardware",
     ],
   },
+
+  // Accessories
   {
     title: "Accessories",
     icon: Package,
