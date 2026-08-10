@@ -167,7 +167,7 @@ export function ContactForm() {
         >
           {/* <GlowBlob color="purple" className="right-0 top-0 h-64 w-64" /> */}
 
-          <div className="relative z-10 flex items-center gap-2">
+          {/* <div className="relative z-10 flex items-center gap-2">
             <Image
               src="/images/eSmart-Fetch-logo-Contact.png"
               alt="eSmart Fetch Logo"
@@ -176,7 +176,7 @@ export function ContactForm() {
               className="h-16 w-auto object-contain"
               priority
             />
-          </div>
+          </div> */}
 
           <h3 className="relative z-10 mt-8 font-display text-2xl font-medium text-accent-white">
             Send Us a Message
