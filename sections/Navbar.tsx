@@ -45,7 +45,7 @@ export function Navbar() {
           className="flex items-center"
         >
         <Image
-          src="/images/esmart-fetch-logo-Footer.png"
+          src="/images/esmart-Fetch.png"
           alt="eSmart Fetch"
           width={875}
           height={350}
