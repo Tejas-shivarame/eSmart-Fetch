@@ -31,7 +31,7 @@ export function Footer() {
               className="inline-flex w-fit items-center"
             >
               <Image
-                src="/images/esmart-Fetch.png"
+                src="/images/eSmart-Fetch.png"
                 alt="eSmart Fetch"
                 width={875}
                 height={350}
