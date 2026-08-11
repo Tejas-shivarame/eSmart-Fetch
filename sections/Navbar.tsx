@@ -45,8 +45,8 @@ export function Navbar() {
           className="flex items-center"
         >
         <Image
-          src="/images/esmart-Fetch.png"
-          alt="eSmart Fetch"
+          src="/images/eSmart-Fetch.png"
+          alt="eSmartFetch"
           width={875}
           height={350}
           priority
