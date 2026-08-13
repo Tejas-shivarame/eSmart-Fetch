@@ -13,10 +13,8 @@ export const HERO_DATA = {
     description:
       "Best-in-Class Technology Solutions in Professional Audio, Concert Audio, Audio-Video Integration & Security Systems.",
 
-    image:{
-     dark:"/images/home_light.webp",
-     light:"/images/home_dark.webp"
-    },
+    image:"/images/home_dark.webp",
+
 
 
     primaryButton: {
@@ -44,10 +42,9 @@ export const HERO_DATA = {
     description:
       "Delivering integrated security, fire protection, audiovisual, and IT infrastructure solutions across India with innovation, reliability, and engineering excellence.",
 
-    image:{
-     dark:"/images/about_light.webp",
-     light:"/images/about_dark.webp"
-    },
+    image:"/images/about_dark.webp",
+     
+   
 
     primaryButton: {
       text: "Our Story",
@@ -74,10 +71,7 @@ export const HERO_DATA = {
     description:
       "We design, supply, install, commission, and maintain security, fire protection, electrical, HVAC, audiovisual, and IT infrastructure solutions for enterprises, healthcare, education, and commercial facilities.",
 
-    image:{
-     dark:"/images/service_light.webp",
-     light:"/images/service_dark.webp"
-    },
+    image:"/images/service_dark.webp",
 
     primaryButton: {
       text: "Explore Services",
@@ -104,10 +98,7 @@ export const HERO_DATA = {
     description:
       "Whether you're planning a new project, upgrading existing systems, or seeking technical consultation, our specialists are ready to help you build secure, intelligent, and future-ready environments.",
 
-    image:{
-     dark:"/images/contact_light.webp",
-     light:"/images/contact_dark.webp"
-    },
+    image:"/images/contact_dark.webp", 
 
     primaryButton: {
       text: "Send an Enquiry",
