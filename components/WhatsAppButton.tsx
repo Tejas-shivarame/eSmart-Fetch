@@ -4,7 +4,7 @@ import Link from "next/link";
 import { SiWhatsapp } from "react-icons/si";
 
 export function WhatsAppButton() {
-  const phoneNumber ="919916172599";
+  const phoneNumber ="+919916172599";
 
 
   return (

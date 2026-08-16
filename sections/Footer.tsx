@@ -128,7 +128,7 @@ export function Footer() {
                 <Phone className="h-4 w-4 flex-none text-accent-blue" />
 
                 <span>
-                  +91-{COMPANY.phoneDisplay}
+                  {COMPANY.phoneDisplay}
                 </span>
               </a>
 

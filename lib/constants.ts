@@ -1,7 +1,6 @@
 import {
   Award,
   Building2,
-  Code2,
   Cpu,
   Facebook,
   Fan,
@@ -22,6 +21,7 @@ import {
   Video,
   Zap,
   Brush,
+  HardHat
 } from "lucide-react";
 
 import type {
@@ -35,7 +35,6 @@ import type {
   CompanyInfo,
   SocialLink,
 } from "@/types";
-import AboutPage from "@/app/about/page";
 
 export const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
@@ -46,7 +45,7 @@ export const NAV_LINKS: NavLink[] = [
 
 export const COMPANY: CompanyInfo = {
   phone: "+919916172599",
-  phoneDisplay: "9916172599",
+  phoneDisplay: "+91-9916172599",
   email: "sales@smart-fetch.com",
   since: "2025",
 
@@ -186,7 +185,7 @@ export const PREMIUM_SERVICES: FeatureCardData[] = [
     href: "/services/security-surveillance",
   },
   {
-    icon: Code2,
+    icon: HardHat,
     title: "Interior & Fit-Out Solutions",
     description:
       "End-to-end interior design and fit-out services that deliver functional, modern, and aesthetically refined spaces.",
