@@ -14,7 +14,7 @@ interface TrustedByProps {
 
 export function TrustedBy({
   logos,
-  title = "Trusted by Global Leaders",
+  title = "Clients We Serve",
 }: TrustedByProps) {
   const track = [...logos, ...logos];
 
