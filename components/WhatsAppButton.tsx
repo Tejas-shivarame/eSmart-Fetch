@@ -4,15 +4,12 @@ import Link from "next/link";
 import { SiWhatsapp } from "react-icons/si";
 
 export function WhatsAppButton() {
-  const phoneNumber = "919876543210"; // Replace with your WhatsApp number
+  const phoneNumber ="919916172599";
 
-  const message = encodeURIComponent(
-    "Hello! I'm interested in eSmart Fetch services."
-  );
 
   return (
     <Link
-      href={`https://wa.me/${phoneNumber}?text=${message}`}
+      href={`https://wa.me/${phoneNumber}`}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"

@@ -160,11 +160,7 @@ export const QUALITY_PILLARS: QualityPillar[] = [
     tagline: "International standards",
     image: "/images/quality.png",
   },
-  {
-    title: "Innovation",
-    tagline: "Leading since inception",
-    image: "/images/Innovation-labs.png",
-  },
+
 ];
 
 

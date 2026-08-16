@@ -111,16 +111,16 @@ export function Navbar() {
             </Link>
 
             {/* Theme Toggle */}
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </div>
 
           {/* ---------------------------------------------------------- */}
           {/* Mobile Theme Toggle */}
           {/* ---------------------------------------------------------- */}
-
+{/* 
           <div className="lg:hidden">
             <ThemeToggle />
-          </div>
+          </div> */}
 
           {/* ---------------------------------------------------------- */}
           {/* Mobile Hamburger */}

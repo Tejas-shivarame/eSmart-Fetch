@@ -48,7 +48,7 @@ export function QualityDrive() {
           standards.
         </motion.p>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {QUALITY_PILLARS.map((pillar, i) => (
             <motion.div
               key={pillar.title}
@@ -56,13 +56,13 @@ export function QualityDrive() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="group overflow-hidden rounded-card border border-white/[0.08] bg-white/[0.02] text-left"
+              className="group overflow-hidden rounded-card border border-white/[0.08] bg-white/[0.02]  text-center"
             >
               <div className="p-6">
                 <h4 className="font-display text-lg font-bold uppercase tracking-wide text-accent-white">
                   {pillar.title}
                 </h4>
-                <div className="mt-2 h-px w-8 bg-white/15" />
+                <div className="mt-2 h-px w-8 bg-white/15 mx-auto" />
                 <p className="mt-3 text-sm italic text-accent-gray">
                   &ldquo;{pillar.tagline}&rdquo;
                 </p>

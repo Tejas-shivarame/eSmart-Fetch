@@ -104,8 +104,8 @@ export const KNOWLEDGE_BASE = {
 
   contact: {
     email: "contact@esmartfetch.com",
-    phone: "+91 XXXXX XXXXX",
-    website: "https://www.esmartfetch.com",
+    phone: "+91 99161 72599",
+    website: "https://www.eSmartFetch.com",
   },
 };
 
