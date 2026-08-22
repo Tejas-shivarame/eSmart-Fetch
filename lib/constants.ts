@@ -263,28 +263,28 @@ export const SERVICES: FeatureCardData[] = [
 // SOCIAL LINKS
 // ============================================================
 
-// export const SOCIAL_LINKS: SocialLink[] = [
-//   {
-//     icon: Facebook,
-//     label: "Facebook",
-//     href: "https://facebook.com",
-//   },
-//   {
-//     icon: Twitter,
-//     label: "Twitter",
-//     href: "https://twitter.com",
-//   },
-//   {
-//     icon: Instagram,
-//     label: "Instagram",
-//     href: "https://instagram.com",
-//   },
-//   {
-//     icon: Linkedin,
-//     label: "LinkedIn",
-//     href: "https://linkedin.com",
-//   },
-// ];
+export const SOCIAL_LINKS: SocialLink[] = [
+  {
+    icon: Facebook,
+    label: "Facebook",
+    href: "https://facebook.com",
+  },
+  {
+    icon: Twitter,
+    label: "Twitter",
+    href: "https://twitter.com",
+  },
+  {
+    icon: Instagram,
+    label: "Instagram",
+    href: "https://instagram.com",
+  },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    href: "https://linkedin.com",
+  },
+];
 
 
 // ============================================================
