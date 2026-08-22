@@ -53,15 +53,15 @@ export const COMPANY: CompanyInfo = {
     {
       label: "Office",
       address:
-        "No.10, Ground floor, Kalkere Main Road, Near Underpass, Anjanappa Layout, Horamavu, Bangalore - 560043",
-    },
+        "No.J2, Ward No.77, Khatha No.6/39 DT Street, Pipeline Road Near Chaitanya Techno School, Sheshadripuram Malleshwaram Bengaluru - 560003"
+      },
     {
       label: "Godown",
       address: "R.M. Nagar, Bangalore",
     },
   ],
 
-  gstin: "GST",
+  gstin: "29AAJCE8255B1ZI",
 };
 //===========
 //AboutPage
@@ -263,28 +263,28 @@ export const SERVICES: FeatureCardData[] = [
 // SOCIAL LINKS
 // ============================================================
 
-export const SOCIAL_LINKS: SocialLink[] = [
-  {
-    icon: Facebook,
-    label: "Facebook",
-    href: "https://facebook.com",
-  },
-  {
-    icon: Twitter,
-    label: "Twitter",
-    href: "https://twitter.com",
-  },
-  {
-    icon: Instagram,
-    label: "Instagram",
-    href: "https://instagram.com",
-  },
-  {
-    icon: Linkedin,
-    label: "LinkedIn",
-    href: "https://linkedin.com",
-  },
-];
+// export const SOCIAL_LINKS: SocialLink[] = [
+//   {
+//     icon: Facebook,
+//     label: "Facebook",
+//     href: "https://facebook.com",
+//   },
+//   {
+//     icon: Twitter,
+//     label: "Twitter",
+//     href: "https://twitter.com",
+//   },
+//   {
+//     icon: Instagram,
+//     label: "Instagram",
+//     href: "https://instagram.com",
+//   },
+//   {
+//     icon: Linkedin,
+//     label: "LinkedIn",
+//     href: "https://linkedin.com",
+//   },
+// ];
 
 
 // ============================================================
