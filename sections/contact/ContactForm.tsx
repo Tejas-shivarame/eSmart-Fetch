@@ -21,7 +21,7 @@ import Image from "next/image";
   {
     icon: Phone,
     label: "Call Us",
-    value: `+91-${COMPANY.phoneDisplay}`,
+    value: `${COMPANY.phoneDisplay}`,
     href: `tel:${COMPANY.phone}`,
   },
   {
