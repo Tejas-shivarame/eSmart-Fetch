@@ -51,6 +51,7 @@ export interface ServiceData {
   title: string;
   highlight: string;
   description: string;
+  heroImage?: string;
   overview: string;
 
   features: Feature[];

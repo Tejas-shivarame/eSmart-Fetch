@@ -21,6 +21,7 @@ interface ServiceHeroProps {
     title: string;
     highlight: string;
     description: string;
+    heroImage?: string;
   };
 }
 
@@ -48,13 +49,37 @@ const FEATURES = [
 ];
 
 export function ServiceHero({ service }: ServiceHeroProps) {
-  return (
-    <section className="relative overflow-hidden px-6 pt-40 pb-28">
+  return (<section className="relative min-h-[850px] overflow-hidden px-6 pt-40 pb-28">
+      {/* =========================================================
+          HERO BACKGROUND IMAGE
+      ========================================================= */}
 
-      {/* ================= Background ================= */}
+      {service.heroImage && (
+        <div
+          className="absolute inset-0 -z-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(${service.heroImage})`,
+          }}
+        />
+      )}
 
-      <div className="absolute inset-0 -z-20">
+      {/* =========================================================
+          DARK OVERLAY
+      ========================================================= */}
 
+      <div className="absolute inset-0 -z-20 bg-black/70" />
+
+      {/* =========================================================
+          GRADIENT OVERLAY
+      ========================================================= */}
+
+      <div className="absolute inset-0 -z-20 bg-gradient-to-br from-black/90 via-accent-purple/20 to-accent-blue/30" />
+
+      {/* =========================================================
+          ANIMATED BACKGROUND
+      ========================================================= */}
+
+      <div className="absolute inset-0 -z-10">
         <AnimatedGrid />
 
         <ParticleField />
@@ -68,52 +93,27 @@ export function ServiceHero({ service }: ServiceHeroProps) {
           color="blue"
           className="right-1/4 top-1/2 h-[380px] w-[380px]"
         />
-
       </div>
 
-      <div className="absolute inset-0 -z-10">
+      {/* =========================================================
+          ADDITIONAL LIGHT EFFECTS
+      ========================================================= */}
 
+      <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="absolute left-1/2 top-16 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-accent-purple/15 blur-[150px]" />
 
         <div className="absolute bottom-0 right-0 h-[340px] w-[340px] rounded-full bg-accent-blue/15 blur-[130px]" />
-
       </div>
 
-      <div className="mx-auto max-w-container">
+      {/* =========================================================
+          HERO CONTENT
+      ========================================================= */}
 
-        {/* ================= Breadcrumb ================= */}
+      <div className="relative mx-auto max-w-container">
 
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          animate="show"
-          custom={0}
-          className="flex items-center gap-2 text-sm text-accent-gray"
-        >
-          <Link
-            href="/"
-            className="transition-colors hover:text-accent-purple"
-          >
-            Home
-          </Link>
-
-          <ChevronRight className="h-4 w-4" />
-
-          <Link
-            href="/services"
-            className="transition-colors hover:text-accent-purple"
-          >
-            Services
-          </Link>
-
-          <ChevronRight className="h-4 w-4" />
-
-          <span className="text-white">
-            {service.title}
-          </span>
-        </motion.div>
-
-        {/* ================= Badge ================= */}
+        {/* =======================================================
+            BADGE
+        ======================================================= */}
 
         <motion.div
           variants={fadeUp}
@@ -121,44 +121,45 @@ export function ServiceHero({ service }: ServiceHeroProps) {
           animate="show"
           custom={1}
           className="mt-10 flex justify-center"
-
         >
-          <Badge pulse>
-            {service.badge}
-          </Badge>
+          <Badge pulse>{service.badge}</Badge>
         </motion.div>
 
-        {/* ================= Heading ================= */}
+        {/* =======================================================
+            HEADING
+        ======================================================= */}
 
         <motion.h1
           variants={fadeUp}
           initial="hidden"
           animate="show"
           custom={2}
-          className="mx-auto mt-10 max-w-5xl font-display text-center text-5xl font-bold leading-[1.05] text-white sm:text-6xl lg:text-7xl"
+          className="mx-auto mt-10 max-w-5xl text-center font-display text-5xl font-bold leading-[1.05] text-white sm:text-6xl lg:text-7xl"
         >
           {service.title}
 
-          <span className="block bg-gradient-purple-blue bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-x">
-
+          <span className="block animate-gradient-x bg-gradient-purple-blue bg-[length:200%_auto] bg-clip-text text-transparent">
             {service.highlight}
-
           </span>
         </motion.h1>
 
-        {/* ================= Description ================= */}
+        {/* =======================================================
+            DESCRIPTION
+        ======================================================= */}
 
         <motion.p
           variants={fadeUp}
           initial="hidden"
           animate="show"
           custom={3}
-          className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-accent-gray lg:text-xl"
+          className="mx-auto mt-8 max-w-3xl text-center text-lg leading-8 text-white lg:text-xl"
         >
           {service.description}
         </motion.p>
 
-        {/* ================= Feature Chips ================= */}
+        {/* =======================================================
+            FEATURE CHIPS
+        ======================================================= */}
 
         <motion.div
           variants={fadeUp}
@@ -167,36 +168,38 @@ export function ServiceHero({ service }: ServiceHeroProps) {
           custom={4}
           className="mt-12 flex flex-wrap justify-center gap-4"
         >
-          {FEATURES.map((item) => (
+          {FEATURES.map((feature) => (
             <div
-              key={item}
+              key={feature}
               className="
                 flex
                 items-center
                 gap-2
                 rounded-full
                 border
-                border-border
-                bg-base-card/60
+                border-white/15
+                bg-black/30
                 px-5
                 py-3
                 backdrop-blur-xl
                 transition-all
                 duration-300
                 hover:border-accent-purple
-                hover:bg-base-card
+                hover:bg-black/50
               "
             >
               <CheckCircle2 className="h-5 w-5 text-accent-purple" />
 
-              <span className="text-sm font-medium">
-                {item}
+              <span className="text-sm font-medium text-white">
+                {feature}
               </span>
             </div>
           ))}
         </motion.div>
 
-        {/* ================= CTA ================= */}
+        {/* =======================================================
+            CTA BUTTONS
+        ======================================================= */}
 
         <motion.div
           variants={fadeUp}
@@ -205,10 +208,7 @@ export function ServiceHero({ service }: ServiceHeroProps) {
           custom={5}
           className="mt-14 flex flex-wrap justify-center gap-5"
         >
-          <Button
-            variant="primary"
-            href="/contact"
-          >
+          <Button variant="primary" href="/contact">
             Get Free Consultation
 
             <ArrowRight className="ml-2 h-4 w-4" />
@@ -220,6 +220,7 @@ export function ServiceHero({ service }: ServiceHeroProps) {
             Download Brochure
           </Button>
         </motion.div>
+  
 
                 {/* ================= Premium Stats ================= */}
 
