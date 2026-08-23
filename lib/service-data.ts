@@ -2,6 +2,8 @@ import { ServiceData } from "@/components/services/ServiceLayout";
 
 export const fireProtection: ServiceData = {
   badge: "Fire Protection Systems",
+  
+  heroImage: "/images/fire-protection-hero.png",
 
   title: "Complete Fire Protection",
 
@@ -252,6 +254,8 @@ export const fireProtection: ServiceData = {
 
 export const securitySurveillance: ServiceData = {
   badge: "Security & Surveillance",
+
+  heroImage: "/images/securitySurveillance.png",
 
   title: "Advanced Security",
 
@@ -571,6 +575,8 @@ export const securitySurveillance: ServiceData = {
 export const interiorFitOut: ServiceData = {
   badge: "Interior & Fit-Out",
 
+  heroImage: "/images/interiorFitOut.png",
+
   title: "Modern Interior",
 
   highlight: "& Fit-Out Solutions",
@@ -837,6 +843,8 @@ export const interiorFitOut: ServiceData = {
 
 export const audioVisualSolutions: ServiceData = {
   badge: "Audio Visual Solutions",
+
+  heroImage: "/images/audioVisualSolutions.png",
 
   title: "Professional Audio",
 
@@ -1118,6 +1126,8 @@ export const audioVisualSolutions: ServiceData = {
 export const consumablesMaterials: ServiceData = {
   badge: "Consumables & Materials",
 
+  heroImage: "/images/consumablesMaterials.png",
+
   title: "Industrial Consumables",
 
   highlight: "& Engineering Materials",
@@ -1397,6 +1407,8 @@ export const consumablesMaterials: ServiceData = {
 
 export const paintingPrinting: ServiceData = {
   badge: "Painting & Printing",
+
+  heroImage: "/images/paintingPrinting.png",
 
   title: "Professional Painting",
 
