@@ -7,11 +7,47 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Assistant } from "@/components/AIAssistant/Assistant";
 
 export const metadata: Metadata = {
-  title: "eSmart Fetch | Infrastructure & Technology Solutions",
+  title: "eSmart Fetch | Fire Safety, Security & Technology Solutions",
   description:
-    "eSmart Fetch-integrates hardware, software, and human expertise into security, fire safety, and audiovisual systems for India's leading enterprises.",
+    "eSmart Fetch provides fire safety, security and surveillance, audio-visual, IT infrastructure, interior fit-out and technical solutions for businesses and institutions.",
+
   icons: {
     icon: "/images/eSmart-Fetch-logo-Favi-icon.png",
+  },
+
+  metadataBase: new URL("https://esmartfetch.com"),
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "eSmart Fetch | Fire Safety, Security & Technology Solutions",
+    description:
+      "Fire safety, security, surveillance, audio-visual, IT infrastructure and technical solutions by eSmart Fetch.",
+    url: "https://esmartfetch.com/",
+    siteName: "eSmart Fetch",
+    type: "website",
+    images: [
+      {
+        url: "/images/eSmart-Fetch-logo-Favi-icon.png",
+        width: 512,
+        height: 512,
+        alt: "eSmart Fetch",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary",
+    title: "eSmart Fetch | Fire Safety, Security & Technology Solutions",
+    description:
+      "Fire safety, security, surveillance, AV, IT infrastructure and technical solutions by eSmart Fetch.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -33,7 +69,7 @@ export default function RootLayout({
           <Assistant />
           {children}
           <Footer />
-          <WhatsAppButton/>  
+          <WhatsAppButton />
         </ThemeProvider>
       </body>
     </html>
