@@ -7,10 +7,9 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Assistant } from "@/components/AIAssistant/Assistant";
 
 export const metadata: Metadata = {
-  title: "eSmart Fetch | Fire Safety, Security & Technology Solutions",
+  title: "eSmart Fetch Private Limited | Fire Safety, Security & Technology Solutions",
   description:
-    "eSmart Fetch provides fire safety, security and surveillance, audio-visual, IT infrastructure, interior fit-out and technical solutions for businesses and institutions.",
-
+  "eSmart Fetch Private Limited provides fire safety, security and surveillance, audio-visual, IT infrastructure, interior fit-out and technical solutions for businesses and institutions.",
   icons: {
     icon: "/images/eSmart-Fetch-logo-Favi-icon.png",
   },
@@ -22,9 +21,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "eSmart Fetch | Fire Safety, Security & Technology Solutions",
+    title: "eSmart Fetch Private Limited | Fire Safety, Security & Technology Solutions",
     description:
-      "Fire safety, security, surveillance, audio-visual, IT infrastructure and technical solutions by eSmart Fetch.",
+      "Fire safety, security, surveillance, audio-visual, IT infrastructure and technical solutions by eSmart Fetch Private Limited.",
     url: "https://esmartfetch.com/",
     siteName: "eSmart Fetch",
     type: "website",
