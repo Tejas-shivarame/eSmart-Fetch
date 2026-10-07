@@ -116,9 +116,9 @@ export function Navbar() {
           {/* Mobile Theme Toggle */}
           {/* ---------------------------------------------------------- */}
 
-          <div className="lg:hidden">
+          {/* <div className="lg:hidden">
             <ThemeToggle />
-          </div>
+          </div> */}
 
           {/* ---------------------------------------------------------- */}
           {/* Mobile Hamburger */}
