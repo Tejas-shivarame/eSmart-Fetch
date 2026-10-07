@@ -109,18 +109,16 @@ export function Navbar() {
             >
               <Headset size={18} />
             </Link>
-
-            {/* Theme Toggle */}
-            {/* <ThemeToggle /> */}
+            <ThemeToggle />
           </div>
 
           {/* ---------------------------------------------------------- */}
           {/* Mobile Theme Toggle */}
           {/* ---------------------------------------------------------- */}
-{/* 
+
           <div className="lg:hidden">
             <ThemeToggle />
-          </div> */}
+          </div>
 
           {/* ---------------------------------------------------------- */}
           {/* Mobile Hamburger */}
