@@ -109,7 +109,7 @@ export function Navbar() {
             >
               <Headset size={18} />
             </Link>
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </div>
 
           {/* ---------------------------------------------------------- */}
