@@ -104,7 +104,7 @@ The website highlights the following major service areas:
 ### Deployment & Infrastructure
 
 - **Vercel**
-- **Cloudflare**
+- **Hostinger**
 - Custom domain configuration
 - HTTPS
 - Sitemap
@@ -204,7 +204,7 @@ User
 Custom Domain
   │
   ▼
-Cloudflare
+Hostinger
   │
   ▼
 Vercel
