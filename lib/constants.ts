@@ -134,7 +134,7 @@ export const TRUSTED_COMPANIES = [
   { name: "ABB", image: "/companies/abb.png" },
 
   // { name: "Bosch", image: "/companies/bosch.png" },
-  // { name: "Siemens", image: "/companies/siemens.png" },
+  { name: "Siemens", image: "/companies/siemens.png" },
   // { name: "Honeywell", image: "/companies/honeywell.png" },
 ];
 
