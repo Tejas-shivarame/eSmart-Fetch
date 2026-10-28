@@ -132,10 +132,10 @@ export const TRUSTED_COMPANIES = [
   {name: "Aditya Birla Group",image: "/companies/aditya-birla.png",},
   { name: "Hitachi", image: "/companies/hitachi.png" },
   { name: "ABB", image: "/companies/abb.png" },
-
-  // { name: "Bosch", image: "/companies/bosch.png" },
   { name: "Siemens", image: "/companies/siemens.png" },
   // { name: "Honeywell", image: "/companies/honeywell.png" },
+  // { name: "Bosch", image: "/companies/bosch.png" },
+
 ];
 
 
